@@ -1,0 +1,9 @@
+{
+  "libpath": "/home/joshua445/.local/share/solana/install/active_release/bin/plugins/libgelato_geyser.so",
+  "send_upd_extra_info": true,
+  "grpc": {
+    "address": "127.0.0.1:10000",
+    "snapshot_plugin_client_grpc_enable": false
+  },
+  "commitment": "processed"
+}
