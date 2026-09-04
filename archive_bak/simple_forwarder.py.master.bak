@@ -1,0 +1,12 @@
+import asyncio
+async def handle(sr, sw):
+    ur, uw = await asyncio.open_connection("127.0.0.1", 8080)
+    async def f(a, b):
+        try:
+            while d := await a.read(131072): b.write(d); await b.drain()
+        finally: b.close()
+    await asyncio.gather(f(sr, uw), f(ur, sw))
+async def main():
+    server = await asyncio.start_server(handle, "127.0.0.1", 8888, reuse_address=True, reuse_port=True)
+    async with server: await server.serve_forever()
+asyncio.run(main())

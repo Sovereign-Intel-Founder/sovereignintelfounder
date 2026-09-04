@@ -1,0 +1,75 @@
+import sys, os
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+
+import sys, os
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+import sqlite3
+import threading
+import logging
+
+# --- LOGGING SETUP ---
+logging.basicConfig(
+    level=logging.INFO,
+    format="[%(asctime)s] [%(levelname)s] [DATABASE-CORE] %(message)s"
+)
+
+db_lock = threading.Lock()
+
+def get_db():
+    """
+    Thread-safe SQLite connection with a 30-second timeout
+    to prevent locking under heavy multi-worker throughput.
+    """
+    conn = sqlite3.connect("toll_bridge.db", timeout=30.0, check_same_thread=False)
+    conn.row_factory = sqlite3.Row
+    return conn
+
+def init_database():
+    """
+    Initializes database tables in WAL mode with high-speed indexes.
+    Maintains 100% compatibility with toll_bridge.py and stream_ingestor.py.
+    """
+    with db_lock:
+        conn = get_db()
+        c = conn.cursor()
+        
+        # --- ENTERPRISE CONCURRENCY & SPEED PRAGMAS ---
+        c.execute("PRAGMA journal_mode=WAL;")
+        c.execute("PRAGMA synchronous=NORMAL;")
+        c.execute("PRAGMA busy_timeout=30000;")
+        
+        # --- EXACT ORIGINAL SCHEMAS (ZERO CONFLICTS) ---
+        c.execute("""
+            CREATE TABLE IF NOT EXISTS trials (
+                ip TEXT PRIMARY KEY, 
+                requests_left INTEGER
+            )
+        """)
+        
+        c.execute("""
+            CREATE TABLE IF NOT EXISTS ledger (
+                id INTEGER PRIMARY KEY AUTOINCREMENT, 
+                timestamp TEXT, 
+                source_service TEXT, 
+                trader_signature TEXT, 
+                revenue REAL, 
+                user_agent TEXT, 
+                remote_addr TEXT, 
+                payload_size INTEGER, 
+                status TEXT
+            )
+        """)
+        
+        # --- HIGH-PERFORMANCE INDEXES ---
+        c.execute("CREATE INDEX IF NOT EXISTS idx_trials_ip ON trials(ip);")
+        c.execute("CREATE INDEX IF NOT EXISTS idx_ledger_trader ON ledger(trader_signature);")
+        c.execute("CREATE INDEX IF NOT EXISTS idx_ledger_timestamp ON ledger(timestamp);")
+        c.execute("CREATE INDEX IF NOT EXISTS idx_ledger_status ON ledger(status);")
+        c.execute("CREATE INDEX IF NOT EXISTS idx_ledger_remote_addr ON ledger(remote_addr);")
+        
+        conn.commit()
+        conn.close()
+        logging.info("Database initialized successfully in WAL mode with fast-query indexes.")
+
+if __name__ == "__main__":
+    init_database()
