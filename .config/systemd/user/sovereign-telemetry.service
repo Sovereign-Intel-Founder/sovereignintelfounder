@@ -1,0 +1,11 @@
+[Unit]
+Description=Sovereign Intelligence Protocol Private Telemetry
+After=network.target
+
+[Service]
+WorkingDirectory=/home/joshua445/sip_core
+ExecStart=/usr/bin/python3 -m uvicorn dashboard_server:app --host 127.0.0.1 --port 8082
+Restart=always
+
+[Install]
+WantedBy=default.target

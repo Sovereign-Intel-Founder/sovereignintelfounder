@@ -1,0 +1,4 @@
+[core]
+	excludesFile = /home/joshua445/.gitignore_global
+[credential]
+	helper = store
