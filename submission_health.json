@@ -1,0 +1,1 @@
+{"ledger": {"completed": 2, "failed": 0, "queued_or_processing": 0}, "mesh": {"financial_broadcast_enabled": false, "node_mode": "non_voting_bridge", "routing_mode": "local_pipeline"}, "redis": true, "reth_chain_id": "0x1"}

@@ -1,0 +1,126 @@
+TARGET=local URL=http://127.0.0.1:8899
+METHOD=getHealth
+1 http_code=000 total_seconds=0.000138
+curl_failed
+2 http_code=000 total_seconds=0.000132
+curl_failed
+3 http_code=000 total_seconds=0.000107
+curl_failed
+4 http_code=000 total_seconds=0.000101
+curl_failed
+5 http_code=000 total_seconds=0.000108
+curl_failed
+6 http_code=000 total_seconds=0.000111
+curl_failed
+7 http_code=000 total_seconds=0.000116
+curl_failed
+8 http_code=000 total_seconds=0.000119
+curl_failed
+9 http_code=000 total_seconds=0.000113
+curl_failed
+10 http_code=000 total_seconds=0.000112
+curl_failed
+11 http_code=000 total_seconds=0.000113
+curl_failed
+12 http_code=000 total_seconds=0.000108
+curl_failed
+13 http_code=000 total_seconds=0.000106
+curl_failed
+14 http_code=000 total_seconds=0.000109
+curl_failed
+15 http_code=000 total_seconds=0.000108
+curl_failed
+16 http_code=000 total_seconds=0.000110
+curl_failed
+17 http_code=000 total_seconds=0.000108
+curl_failed
+18 http_code=000 total_seconds=0.000108
+curl_failed
+19 http_code=000 total_seconds=0.000109
+curl_failed
+20 http_code=000 total_seconds=0.000103
+curl_failed
+METHOD=getSlot
+1 http_code=000 total_seconds=0.000101
+curl_failed
+2 http_code=000 total_seconds=0.000155
+curl_failed
+3 http_code=000 total_seconds=0.000120
+curl_failed
+4 http_code=000 total_seconds=0.000113
+curl_failed
+5 http_code=000 total_seconds=0.000115
+curl_failed
+6 http_code=000 total_seconds=0.000110
+curl_failed
+7 http_code=000 total_seconds=0.000114
+curl_failed
+8 http_code=000 total_seconds=0.000158
+curl_failed
+9 http_code=000 total_seconds=0.000102
+curl_failed
+10 http_code=000 total_seconds=0.000112
+curl_failed
+11 http_code=000 total_seconds=0.000104
+curl_failed
+12 http_code=000 total_seconds=0.000119
+curl_failed
+13 http_code=000 total_seconds=0.000114
+curl_failed
+14 http_code=000 total_seconds=0.000108
+curl_failed
+15 http_code=000 total_seconds=0.000112
+curl_failed
+16 http_code=000 total_seconds=0.000131
+curl_failed
+17 http_code=000 total_seconds=0.000120
+curl_failed
+18 http_code=000 total_seconds=0.000107
+curl_failed
+19 http_code=000 total_seconds=0.000115
+curl_failed
+20 http_code=000 total_seconds=0.000115
+curl_failed
+TARGET=public URL=https://api.mainnet-beta.solana.com
+METHOD=getHealth
+1 http_code=200 total_seconds=0.035481
+2 http_code=200 total_seconds=0.159697
+3 http_code=200 total_seconds=0.041976
+4 http_code=200 total_seconds=0.167846
+5 http_code=200 total_seconds=0.158871
+6 http_code=200 total_seconds=0.039021
+7 http_code=200 total_seconds=0.038980
+8 http_code=200 total_seconds=0.176727
+9 http_code=200 total_seconds=0.116024
+10 http_code=200 total_seconds=0.049461
+11 http_code=200 total_seconds=0.048387
+12 http_code=200 total_seconds=0.035682
+13 http_code=200 total_seconds=0.041748
+14 http_code=200 total_seconds=0.038859
+15 http_code=200 total_seconds=0.164248
+16 http_code=200 total_seconds=0.205765
+17 http_code=200 total_seconds=0.046038
+18 http_code=200 total_seconds=0.043376
+19 http_code=200 total_seconds=0.049940
+20 http_code=200 total_seconds=0.163677
+METHOD=getSlot
+1 http_code=200 total_seconds=0.042714
+2 http_code=200 total_seconds=0.034881
+3 http_code=200 total_seconds=0.156975
+4 http_code=200 total_seconds=0.158353
+5 http_code=200 total_seconds=0.038225
+6 http_code=200 total_seconds=0.186934
+7 http_code=200 total_seconds=0.166067
+8 http_code=200 total_seconds=0.038304
+9 http_code=200 total_seconds=0.054892
+10 http_code=200 total_seconds=0.158164
+11 http_code=200 total_seconds=0.164601
+12 http_code=200 total_seconds=0.161923
+13 http_code=200 total_seconds=0.061465
+14 http_code=200 total_seconds=0.042208
+15 http_code=200 total_seconds=0.160435
+16 http_code=200 total_seconds=0.177413
+17 http_code=200 total_seconds=0.171999
+18 http_code=200 total_seconds=0.161509
+19 http_code=200 total_seconds=0.156849
+20 http_code=200 total_seconds=0.071897
