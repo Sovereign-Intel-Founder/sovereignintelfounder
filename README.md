@@ -1,8 +1,9 @@
-# Sovereign Intelligence Protocol (SIP)
-High-performance blockchain mesh architecture, automated arbitrage systems, and low-latency validation pipelines.
+# Sovereign Intel Founder - Omni Mesh & Toll Bridge Architecture
 
-## Core Architecture
-- **`sip_core/omni_mesh.py`**: Distributed mesh routing and index engine.
-- **`sip_core/toll_bridge.py`**: High-throughput transaction and settlement bridge.
-- **`sip_core/tollbridge_ring_buffer.py`**: Shared memory buffer and concurrent worker architecture.
-- **`sip_core/execution_worker.py`**: Sub-millisecond latency execution workers.
+High-performance blockchain infrastructure and automated arbitrage engine featuring shared memory buffer architectures and validator integration.
+
+## Architecture Overview
+* **`mesh/core/`**: High-performance execution engine, cluster management, and orchestration modules.
+* **`mesh/bridge/`**: Integrated toll bridge, gateway routing, ledger management, and payout forwarders.
+* **`mesh/configs/`**: Deployment manifests and network configuration schemas.
+* **`solana-ledger/`**: Ledger integration components.
