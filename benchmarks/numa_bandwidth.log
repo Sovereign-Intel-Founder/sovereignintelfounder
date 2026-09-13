@@ -1,0 +1,5 @@
+# Running 'mem/memcpy' benchmark:
+# function 'default' (Default memcpy() provided by glibc)
+# Copying 2GB bytes ...
+
+      20.842104 GB/sec
