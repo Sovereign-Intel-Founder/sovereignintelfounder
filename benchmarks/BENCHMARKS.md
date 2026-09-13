@@ -19,3 +19,9 @@ Captured during 128-thread pipeline load testing (`omni_mesh_engine.py`):
 | Local RPC Transport | **0.011 ms** | Zero-Queue Drop |
 | Base / Ethereum Pipeline | **0.202 ms - 0.325 ms** | Failover Handled |
 
+
+## 3. NUMA Topology & Memory Interconnect Bandwidth
+Captured via `numactl` and `perf bench mem`:
+* **Node 0/1 Memory Bandwidth (Local Access)**: **20.84 GB/sec**
+* **Cross-Node Memory Access (Node 0 CPU -> Node 1 RAM)**: **13.48 GB/sec**
+* **Interconnect Overhead Penalty**: **35.3% latency/throughput decay** under unpinned cross-socket memory access.
