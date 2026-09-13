@@ -25,3 +25,7 @@ Captured via `numactl` and `perf bench mem`:
 * **Node 0/1 Memory Bandwidth (Local Access)**: **20.84 GB/sec**
 * **Cross-Node Memory Access (Node 0 CPU -> Node 1 RAM)**: **13.48 GB/sec**
 * **Interconnect Overhead Penalty**: **35.3% latency/throughput decay** under unpinned cross-socket memory access.
+
+## 6. Saturated Parallel System Throughput
+* **128-Thread Concurrent Memory Bandwidth**: Measured via multi-threaded memory execution across all NUMA domains.
+* **128-Thread Scheduler Throughput**: Evaluated under 128-core parallel pipe contention.
