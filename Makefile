@@ -1,28 +1,19 @@
 CC = gcc
 CFLAGS = -O3 -Wall -Wextra -pthread
 
-all: ingestion_worker latency_worker spsc_benchmark afxdp_ingest numa_alloc simd_match consensus_node
+showcase_all: afxdp_packet_capture numa_core_pin avx512_order_matcher zero_alloc_ipc
 
-ingestion_worker: src/ingestion_worker.c
-	$(CC) $(CFLAGS) src/ingestion_worker.c -o ingestion_worker
+afxdp_packet_capture: src/showcase/afxdp_packet_capture.c
+	$(CC) $(CFLAGS) $< -o $@
 
-latency_worker: src/latency_worker.c
-	$(CC) $(CFLAGS) src/latency_worker.c -o latency_worker
+numa_core_pin: src/showcase/numa_core_pin.c
+	$(CC) $(CFLAGS) $< -o $@ -lnuma -lpthread
 
-spsc_benchmark: src/spsc_benchmark.c
-	$(CC) $(CFLAGS) src/spsc_benchmark.c -o spsc_benchmark
+avx512_order_matcher: src/showcase/avx512_order_matcher.c
+	$(CC) -O3 -mavx512f $< -o $@
 
-afxdp_ingest: src/afxdp_ingest.c
-	$(CC) $(CFLAGS) src/afxdp_ingest.c -o afxdp_ingest
-
-numa_alloc: src/numa_alloc.c
-	$(CC) $(CFLAGS) src/numa_alloc.c -o numa_alloc -lnuma
-
-simd_match: simd/vector_match.c
-	$(CC) -O3 -mavx512f simd/vector_match.c -o simd_match
-
-consensus_node: consensus/raft_node.c
-	$(CC) $(CFLAGS) consensus/raft_node.c -o consensus_node
+zero_alloc_ipc: src/showcase/zero_alloc_ipc.c
+	$(CC) $(CFLAGS) $< -o $@ -lrt
 
 clean:
-	rm -f ingestion_worker latency_worker spsc_benchmark afxdp_ingest numa_alloc simd_match consensus_node ebpf/*.o /dev/shm/spsc_queue
+	rm -f afxdp_packet_capture numa_core_pin avx512_order_matcher zero_alloc_ipc
