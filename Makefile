@@ -101,3 +101,6 @@ dpdk_ring_stub: src/showcase/dpdk_ring_stub.c
 
 midi_synthesizer_stub: src/showcase/midi_synthesizer_stub.c
 	$(CC) $(CFLAGS) $< -o $@
+
+telemetry_exporter: src/showcase/telemetry_exporter.c
+	$(CC) $(CFLAGS) $< -o $@
