@@ -20,7 +20,7 @@ This index maps each showcase component and research area to its source path, ex
 ## Low-Latency Measurement & Telemetry
 | Capability | Repository path | Evidence file | Exact command | Workload/environment | What it proves | Limitations |
 |---|---|---|---|---|---|---|
-| RDTSC Cycle Counter | `portfolio/src/rdtsc_telemetry.c` | `portfolio/src/rdtsc_telemetry.c` | `gcc -O3 portfolio/src/rdtsc_telemetry.c -o rdtsc_test && ./rdsc_test` | Pinned core, performance governor | Raw CPU cycle deltas for execution tracing | Measures cycles, requires frequency scaling calibration for real-time |
+| RDTSC Cycle Counter | `portfolio/src/rdtsc_telemetry.c` | `portfolio/src/rdtsc_telemetry.c` | `gcc -O3 portfolio/src/rdtsc_telemetry.c -o rdtsc_test && ./rdtsc_test` | Pinned core, performance governor | Raw CPU cycle deltas for execution tracing | Measures cycles, requires frequency scaling calibration for real-time |
 
 ## Network & Kernel-Bypass Experiments
 | Capability | Repository path | Evidence file | Exact command | Workload/environment | What it proves | Limitations |
