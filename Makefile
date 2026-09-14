@@ -35,3 +35,6 @@ xdp_driver_hook: src/showcase/xdp_driver_hook.c
 
 latency_benchmark: src/showcase/latency_benchmark.c
 	$(CC) $(CFLAGS) $< -o $@
+
+lockfree_spsc_ring: src/showcase/lockfree_spsc_ring.c
+	$(CC) $(CFLAGS) $< -o $@
