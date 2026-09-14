@@ -56,3 +56,6 @@ avx512_tensor_dot: src/showcase/avx512_tensor_dot.c
 
 edge_ai_inference: src/showcase/edge_ai_inference.c
 	$(CC) $(CFLAGS) -mavx512f -mavx512cd $< -o $@ -lrt
+
+lockfree_memory_pool: src/showcase/lockfree_memory_pool.c
+	$(CC) $(CFLAGS) $< -o $@
