@@ -77,3 +77,12 @@ numa_aware_alloc: src/showcase/numa_aware_alloc.c
 
 sbe_binary_parser: src/showcase/sbe_binary_parser.c
 	$(CC) $(CFLAGS) $< -o $@
+
+freestanding_unikernel: src/showcase/freestanding_unikernel.c
+	$(CC) -ffreestanding -nostdlib -fno-pie -c $< -o freestanding_unikernel.o
+
+fpga_hls_pipeline: src/showcase/fpga_hls_pipeline.c
+	$(CC) $(CFLAGS) $< -o $@
+
+sub_ns_ptp_daemon: src/showcase/sub_ns_ptp_daemon.c
+	$(CC) $(CFLAGS) $< -o $@
