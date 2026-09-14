@@ -20,12 +20,12 @@ This index maps each showcase component and research area to its source path, ex
 ## Low-Latency Measurement & Telemetry
 | Capability | Repository path | Evidence file | Exact command | Workload/environment | What it proves | Limitations |
 |---|---|---|---|---|---|---|
-| RDTSC Cycle Counter | `portfolio/src/rdtsc_telemetry.c` | `portfolio/src/rdtsc_telemetry.c` | `gcc -O3 portfolio/src/rdtsc_telemetry.c -o rdtsc_test && ./rdtsc_test` | Pinned core, performance governor | Raw CPU cycle deltas for execution tracing | Measures cycles, requires frequency scaling calibration for real-time |
+| RDTSC Cycle Counter | `portfolio/src/rdtsc_telemetry.c` | `portfolio/src/rdtsc_telemetry.c` | `gcc -O3 portfolio/src/rdtsc_telemetry.c -o rdtsc_test && ./rdtsc_test` | Bare-metal host ( pinned core & performance governor applied via host environment) | Raw CPU cycle deltas for execution tracing | Measures cycles; requires frequency scaling calibration for real-time translation |
 
 ## Network & Kernel-Bypass Experiments
 | Capability | Repository path | Evidence file | Exact command | Workload/environment | What it proves | Limitations |
 |---|---|---|---|---|---|---|
-| AF_XDP Socket Bypass | `portfolio/src/af_xdp_packet_bypass.c` | `portfolio/src/af_xdp_packet_bypass.c` | `gcc -O3 portfolio/src/af_xdp_packet_bypass.c -lbpf -o xdp_test` | Linux network interface, root context | Raw socket creation and packet extraction probe | Socket-level prototype / demonstration |
+| AF_XDP Socket Bypass | `portfolio/src/af_xdp_packet_bypass.c` | `portfolio/src/af_xdp_packet_bypass.c` | `gcc -O3 portfolio/src/af_xdp_packet_bypass.c -lbpf -o xdp_test` | Linux network interface, root context | Socket-level setup and raw packet ring structure creation | Socket-level prototype; proves socket creation and ring setup, not a full production packet-processing pipeline |
 
 ## Benchmark & Failure Testing
 | Capability | Repository path | Evidence file | Exact command | Workload/environment | What it proves | Limitations |

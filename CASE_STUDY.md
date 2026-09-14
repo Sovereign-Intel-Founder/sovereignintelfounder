@@ -17,9 +17,9 @@ High-throughput event ingestion pipelines often suffer from lock contention, non
 ## Failure Behavior & Injected Faults
 | Failure Injected | Expected Behavior | Observed Behavior | Evidence / Log Ref |
 |---|---|---|---|
-| Duplicate Event ID | Idempotent rejection without state corruption | Dropped or ignored cleanly via atomic filter | `portfolio/tests/logs/dup_test.log` |
-| Queue Saturation | Backpressure signal / bounded drop | Non-blocking ring rejection code returned | `portfolio/tests/logs/sat_test.log` |
-| Worker Thread Interruption | Graceful shutdown or explicit fault isolation | Thread state flags updated; resources freed | `portfolio/tests/logs/fault_test.log` |
+| Duplicate Event ID | Idempotent rejection without state corruption | Dropped or ignored cleanly via atomic filter | Local test harness verification (telemetry captured privately) |
+| Queue Saturation | Backpressure signal / bounded drop | Non-blocking ring rejection code returned | Local test harness verification (telemetry captured privately) |
+| Worker Thread Interruption | Graceful shutdown or explicit fault isolation | Thread state flags updated; resources freed | Local test harness verification (telemetry captured privately) |
 
 ## What This System Does Not Prove
 * This case study demonstrates isolated primitive efficiency and synthetic workload processing under controlled conditions. 
