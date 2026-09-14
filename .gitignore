@@ -21,3 +21,5 @@ zero_alloc_ipc
 venv/
 __pycache__/
 .git-credentials
+
+.cargo/
