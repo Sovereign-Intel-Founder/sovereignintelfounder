@@ -53,3 +53,6 @@ edge_ai_tensor_map: src/showcase/edge_ai_tensor_map.c
 
 avx512_tensor_dot: src/showcase/avx512_tensor_dot.c
 	$(CC) $(CFLAGS) -mavx512f -mavx512cd $< -o $@
+
+edge_ai_inference: src/showcase/edge_ai_inference.c
+	$(CC) $(CFLAGS) -mavx512f -mavx512cd $< -o $@ -lrt
