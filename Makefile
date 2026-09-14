@@ -44,3 +44,6 @@ numa_pinning: src/showcase/numa_pinning.c
 
 ptp_hardware_timestamp: src/showcase/ptp_hardware_timestamp.c
 	$(CC) $(CFLAGS) $< -o $@
+
+rdtsc_telemetry: src/showcase/rdtsc_telemetry.c
+	$(CC) $(CFLAGS) $< -o $@
