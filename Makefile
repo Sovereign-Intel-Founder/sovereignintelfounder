@@ -26,3 +26,9 @@ ebpf_loader: src/showcase/ebpf_loader.c
 
 market_feed_ingest: src/showcase/market_feed_ingest.c
 	$(CC) $(CFLAGS) $< -o $@ -lrt
+
+ptp_hardware_timestamp: src/showcase/ptp_hardware_timestamp.c
+	$(CC) $(CFLAGS) $< -o $@
+
+xdp_driver_hook: src/showcase/xdp_driver_hook.c
+	$(CC) $(CFLAGS) $< -o $@
