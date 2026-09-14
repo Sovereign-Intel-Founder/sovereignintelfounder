@@ -47,3 +47,8 @@ To scale performance from single-digit milliseconds down to microsecond physical
 * **Hardware:** Dedicated 128-Core AMD EPYC / 728GB RAM / Dual 10GbE SFP+
 * **OS / Kernel:** Customized Linux 6.x kernel with low-latency real-time patches (`PREEMPT_RT`)
 * **Measurement Methodology:** Microsecond-resolution monotonic system clocks (`CLOCK_MONOTONIC`) logging ingress socket timestamps against state map completion.
+
+## End-to-End Pipeline Telemetry (128-Core AMD EPYC)
+- **Ingestion Worker**: Attached via POSIX shared memory (`/spsc_queue`), core affinity pinned.
+- **Latency Worker**: SPSC consumer active on Core 2, lock-free ring buffer polling validated.
+- **Status**: Pipeline cycle verified under local synthetic workload.
