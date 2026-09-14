@@ -50,3 +50,6 @@ rdtsc_telemetry: src/showcase/rdtsc_telemetry.c
 
 edge_ai_tensor_map: src/showcase/edge_ai_tensor_map.c
 	$(CC) $(CFLAGS) $< -o $@ -lrt
+
+avx512_tensor_dot: src/showcase/avx512_tensor_dot.c
+	$(CC) $(CFLAGS) -mavx512f -mavx512cd $< -o $@
