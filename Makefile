@@ -17,3 +17,9 @@ zero_alloc_ipc: src/showcase/zero_alloc_ipc.c
 
 clean:
 	rm -f afxdp_packet_capture numa_core_pin avx512_order_matcher zero_alloc_ipc
+
+spsc_ring: src/showcase/spsc_ring.c
+	$(CC) $(CFLAGS) $< -o $@
+
+ebpf_loader: src/showcase/ebpf_loader.c
+	$(CC) $(CFLAGS) $< -o $@
