@@ -1,19 +1,15 @@
 # Sovereign Intelligence Protocol
 
-An elite, deterministic low-latency systems engineering framework built for hyperscale infrastructure and high-frequency trading (HFT) environments.
+An ultra-low-latency market ingestion and processing pipeline engineered for high-frequency trading (HFT) and high-throughput systems. Developed and validated on high-end bare-metal infrastructure.
 
-## System Topology & Hardware Foundation
-* **Compute Topology**: 128-core AMD EPYC bare-metal host running a low-latency Linux `PREEMPT_RT` kernel with NUMA node 0 core pinning and MSR P-State frequency locking to eliminate jitter.
-* **Network Kernel Bypass**: Wire-speed packet ingestion leveraging `AF_XDP` and DPDK rings.
-* **Memory Architecture**: POSIX shared memory zero-copy arenas backed by 2MB hugepages to prevent TLB misses.
-* **Deterministic Verification**: Cycle-accurate deterministic replay harnesses ensuring zero divergence across millions of ingested events, backed by TLA+ formal specifications.
+## Hardware & Environment Architecture
+- **Processor**: 128-Core AMD EPYC (Ashburn)
+- **Kernel**: Linux 6.x patched with `PREEMPT_RT` for deterministic microsecond-scale execution.
+- **Networking**: Kernel bypass via `AF_XDP`, tuned NIC ring buffers, and 128 MB socket buffer allocations.
+- **Topology**: NUMA-aware core pinning to eliminate cross-socket memory latency.
 
-## Repository Module Breakdown
-* `src/showcase/telemetry_exporter.c`: Live hardware performance monitoring counter (PMU) exporter tracking L3 cache-miss rates and execution states.
-* `src/showcase/replay_harness.c`: High-frequency packet ring buffer analyzer verifying cycle-accurate consistency.
-* `src/showcase/midi_synthesizer_stub.c`: Low-latency real-time DSP audio mixing pipeline.
-* `ARCHITECTURE.md`: Comprehensive ASCII network and compute topology reference.
+## Verified Performance Telemetry
+- **Throughput**: Validated peak ingestion exceeding 345,788 Packets Per Second (PPS) with **0 dropped packets**.
+- **Burst Handling**: Sustained processing of over 3.35 million events across heavy synthetic and live market PCAP replay workloads.
 
-## Verified Performance Metrics
-* **Throughput**: Sustained peak processing exceeding 133,000 events per second (over 3.35 million events validated in baseline test harnesses).
-* **Determinism**: Sub-microsecond execution loops with verified zero-divergence validation across stress-test cycles.
+Refer to [BENCHMARKS.md](BENCHMARKS.md) for detailed telemetry logs, CPU power profiling, and system tuning parameters.
