@@ -92,3 +92,9 @@ rdma_verbs_init: src/showcase/rdma_verbs_init.c
 
 msr_jitter_lock: src/showcase/msr_jitter_lock.c
 	$(CC) $(CFLAGS) $< -o $@
+
+hugepage_arena: src/showcase/hugepage_arena.c
+	$(CC) $(CFLAGS) $< -o $@
+
+dpdk_ring_stub: src/showcase/dpdk_ring_stub.c
+	$(CC) $(CFLAGS) $< -o $@
