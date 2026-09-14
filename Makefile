@@ -59,3 +59,6 @@ edge_ai_inference: src/showcase/edge_ai_inference.c
 
 lockfree_memory_pool: src/showcase/lockfree_memory_pool.c
 	$(CC) $(CFLAGS) $< -o $@
+
+af_xdp_packet_bypass: src/showcase/af_xdp_packet_bypass.c
+	$(CC) $(CFLAGS) $< -o $@
