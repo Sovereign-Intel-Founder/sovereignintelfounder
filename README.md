@@ -1,15 +1,15 @@
-# Sovereign Intelligence Protocol
+# High-Performance Systems & Infrastructure Portfolio
 
-An ultra-low-latency market ingestion and processing pipeline engineered for high-frequency trading (HFT) and high-throughput systems. Developed and validated on high-end bare-metal infrastructure.
+Production-grade systems engineering portfolio focusing on kernel-level optimizations, low-latency network bypass, and extreme concurrency models. Built and validated on dedicated bare-metal infrastructure (128-Core AMD EPYC, PREEMPT_RT Linux kernel).
 
-## Hardware & Environment Architecture
-- **Processor**: 128-Core AMD EPYC (Ashburn)
-- **Kernel**: Linux 6.x patched with `PREEMPT_RT` for deterministic microsecond-scale execution.
-- **Networking**: Kernel bypass via `AF_XDP`, tuned NIC ring buffers, and 128 MB socket buffer allocations.
-- **Topology**: NUMA-aware core pinning to eliminate cross-socket memory latency.
+## Core Competencies & Architecture
+* **Network Kernel Bypass**: Direct `AF_XDP` packet ingestion bypassing standard OS network stacks to eliminate packet drop under high-throughput burst loads.
+* **Concurrency & Lock-Free IPC**: Lock-free single-producer single-consumer ring buffers (`SPSC`) and zero-copy POSIX shared memory inter-process communication.
+* **NUMA-Aware Memory Management**: Rigorous CPU core pinning and memory allocation mapped to physical NUMA nodes to minimize cross-socket memory latency.
+* **Deterministic Execution**: `PREEMPT_RT` kernel telemetry and high-precision TSC (Time-Stamp Counter) timing validation for sub-microsecond tracing.
 
-## Verified Performance Telemetry
-- **Throughput**: Validated peak ingestion exceeding 345,788 Packets Per Second (PPS) with **0 dropped packets**.
-- **Burst Handling**: Sustained processing of over 3.35 million events across heavy synthetic and live market PCAP replay workloads.
-
-Refer to [BENCHMARKS.md](BENCHMARKS.md) for detailed telemetry logs, CPU power profiling, and system tuning parameters.
+## Repository Layout
+* `portfolio/src/` - Canonical low-latency C systems primitives, memory allocators, and networking drivers.
+* `PORTFOLIO_MAP.md` - Complete architectural index for technical reviewers and hiring managers.
+* `SECURITY.md` - Repository hygiene, data scrubbing, and credential isolation standards.
+* `coliseum-submission/` - Archived historical competition records and domain-specific test harnesses.
