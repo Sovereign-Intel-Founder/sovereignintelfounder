@@ -23,3 +23,6 @@ spsc_ring: src/showcase/spsc_ring.c
 
 ebpf_loader: src/showcase/ebpf_loader.c
 	$(CC) $(CFLAGS) $< -o $@
+
+market_feed_ingest: src/showcase/market_feed_ingest.c
+	$(CC) $(CFLAGS) $< -o $@ -lrt
