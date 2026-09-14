@@ -11,8 +11,9 @@ Over the past two years, I independently designed and developed SIP while invest
 This repository presents selected evidence of that systems work. It combines the active Sovereign Intelligence Protocol competition entry with a modular, evidence-based C-primitives portfolio for engineers who value empirical results, reproducibility, and clearly stated limitations.
 
 ## Repository Layout
-* `coliseum-submission/` - Active competition entry, architecture documentation, and benchmark claims (preserved for judging).
-* `portfolio/` - Standalone low-latency C primitives, concurrency models, and hardware optimization research components.
-* `EVIDENCE_INDEX.md` - Command, workload, output, and limitation index for verification.
-* `PORTFOLIO_MAP.md` - Technical index mapping showcase files and their implementation status.
-* `SECURITY.md` - Repository security, hygiene, and data handling standards.
+
+* [`coliseum-submission/`](./coliseum-submission/) — Active competition entry, architecture documentation, and benchmark evidence and claims, preserved for judging.
+* [`portfolio/`](./portfolio/) — Standalone low-latency C primitives, concurrency models, and hardware-optimization research components.
+* [`EVIDENCE_INDEX.md`](./EVIDENCE_INDEX.md) — Command, workload, output, and limitation index for verification.
+* [`PORTFOLIO_MAP.md`](./PORTFOLIO_MAP.md) — Technical index mapping showcase files and their implementation status.
+* [`SECURITY.md`](./SECURITY.md) — Repository security, hygiene, and data-handling standards.
