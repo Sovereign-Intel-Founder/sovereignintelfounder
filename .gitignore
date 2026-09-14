@@ -1,9 +1,22 @@
-afxdp_ingest
-ingestion_worker
-latency_worker
-numa_alloc
-spsc_benchmark
-/dev/shm/spsc_queue
-.git-credentials
-configs/
-mesh/configs/
+# Build binaries
+afxdp_packet_capture
+avx512_order_matcher
+ebpf_loader
+latency_benchmark
+market_feed_ingest
+numa_core_pin
+production_xsk_kernel
+ptp_hardware_timestamp
+spsc_ring
+xdp_driver_hook
+zero_alloc_ipc
+
+# Compiled objects and databases
+*.o
+*.a
+*.so
+*.db
+
+# Python & Environment
+venv/
+__pycache__/
