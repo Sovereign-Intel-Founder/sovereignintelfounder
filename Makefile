@@ -71,3 +71,9 @@ hardware_perf_counters: src/showcase/hardware_perf_counters.c
 
 udp_consensus_heartbeat: src/showcase/udp_consensus_heartbeat.c
 	$(CC) $(CFLAGS) $< -o $@
+
+numa_aware_alloc: src/showcase/numa_aware_alloc.c
+	$(CC) $(CFLAGS) $< -o $@ -lnuma
+
+sbe_binary_parser: src/showcase/sbe_binary_parser.c
+	$(CC) $(CFLAGS) $< -o $@
