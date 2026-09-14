@@ -98,3 +98,6 @@ hugepage_arena: src/showcase/hugepage_arena.c
 
 dpdk_ring_stub: src/showcase/dpdk_ring_stub.c
 	$(CC) $(CFLAGS) $< -o $@
+
+midi_synthesizer_stub: src/showcase/midi_synthesizer_stub.c
+	$(CC) $(CFLAGS) $< -o $@
