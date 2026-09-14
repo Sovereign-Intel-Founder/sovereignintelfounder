@@ -65,3 +65,9 @@ af_xdp_packet_bypass: src/showcase/af_xdp_packet_bypass.c
 
 shm_ipc_ring: src/showcase/shm_ipc_ring.c
 	$(CC) $(CFLAGS) -lrt $< -o $@
+
+hardware_perf_counters: src/showcase/hardware_perf_counters.c
+	$(CC) $(CFLAGS) $< -o $@
+
+udp_consensus_heartbeat: src/showcase/udp_consensus_heartbeat.c
+	$(CC) $(CFLAGS) $< -o $@
