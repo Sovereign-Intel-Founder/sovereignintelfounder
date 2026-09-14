@@ -42,3 +42,7 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+class QuotaGate:
+    def __init__(self, db_path):
+        self.db_path = db_path

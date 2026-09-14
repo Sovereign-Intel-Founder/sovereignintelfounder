@@ -2,3 +2,6 @@
 	excludesFile = /home/joshua445/.gitignore_global
 [credential]
 	helper = store
+[user]
+	name = Joshua Kleinsasser
+	email = joshua445@penguin

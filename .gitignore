@@ -23,3 +23,13 @@ __pycache__/
 .git-credentials
 
 .cargo/
+secure_vault/
+.config/
+.rustup/
+.ssh/
+cache/
+secure_vault/
+.config/
+.rustup/
+.ssh/
+cache/
