@@ -47,3 +47,6 @@ ptp_hardware_timestamp: src/showcase/ptp_hardware_timestamp.c
 
 rdtsc_telemetry: src/showcase/rdtsc_telemetry.c
 	$(CC) $(CFLAGS) $< -o $@
+
+edge_ai_tensor_map: src/showcase/edge_ai_tensor_map.c
+	$(CC) $(CFLAGS) $< -o $@ -lrt
