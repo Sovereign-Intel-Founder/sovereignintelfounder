@@ -86,3 +86,9 @@ fpga_hls_pipeline: src/showcase/fpga_hls_pipeline.c
 
 sub_ns_ptp_daemon: src/showcase/sub_ns_ptp_daemon.c
 	$(CC) $(CFLAGS) $< -o $@
+
+rdma_verbs_init: src/showcase/rdma_verbs_init.c
+	$(CC) $(CFLAGS) $< -o $@ -libverbs
+
+msr_jitter_lock: src/showcase/msr_jitter_lock.c
+	$(CC) $(CFLAGS) $< -o $@
