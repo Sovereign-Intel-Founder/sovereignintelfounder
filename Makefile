@@ -32,3 +32,6 @@ ptp_hardware_timestamp: src/showcase/ptp_hardware_timestamp.c
 
 xdp_driver_hook: src/showcase/xdp_driver_hook.c
 	$(CC) $(CFLAGS) $< -o $@
+
+latency_benchmark: src/showcase/latency_benchmark.c
+	$(CC) $(CFLAGS) $< -o $@
