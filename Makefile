@@ -38,3 +38,6 @@ latency_benchmark: src/showcase/latency_benchmark.c
 
 lockfree_spsc_ring: src/showcase/lockfree_spsc_ring.c
 	$(CC) $(CFLAGS) $< -o $@
+
+numa_pinning: src/showcase/numa_pinning.c
+	$(CC) $(CFLAGS) $< -o $@
