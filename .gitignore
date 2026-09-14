@@ -33,3 +33,4 @@ secure_vault/
 .rustup/
 .ssh/
 cache/
+solana-ledger/*.json
