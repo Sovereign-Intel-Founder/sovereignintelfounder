@@ -5,6 +5,7 @@
 #include <unistd.h>
 
 void* thread_worker(void* arg) {
+    (void)arg; // Explicitly suppress unused parameter warning
     int cpu = sched_getcpu();
     printf("[+] Worker thread successfully pinned and executing on CPU core: %d\n", cpu);
     return NULL;
@@ -15,7 +16,6 @@ int main() {
     cpu_set_t cpuset;
     CPU_ZERO(&cpuset);
     
-    // Pin to core 4 on NUMA node 0
     int target_core = 4;
     CPU_SET(target_core, &cpuset);
 
