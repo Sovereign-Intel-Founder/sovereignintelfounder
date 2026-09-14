@@ -14,3 +14,6 @@
 * **Ingestion Rate**: 345,788 packets per second (~368 Mbps) at topspeed execution.
 * **Kernel Integrity**: 0 dropped packets, 0 ring buffer retries (`ENBUFS`/`EAGAIN`).
 * **Execution Latency**: 2,619 live market packets processed in 7.5 milliseconds under strict NUMA-aware core pinning.
+
+## Hardware & Thermal Profile
+- Turbostat & Ethtool NIC Statistics: Captured and Verified
