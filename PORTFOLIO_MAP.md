@@ -1,13 +1,13 @@
-# Systems Engineering Portfolio Map
+# Systems Engineering Portfolio Map & Navigation
 
-This repository showcases low-latency C primitives, concurrency models, and hardware optimization prototypes.
+This repository serves a dual purpose: preserving the active Sovereign Intelligence Protocol (SIP) competition entry and showcasing standalone systems-engineering primitives developed during its research.
 
-## Component Index & Status
-* **AF_XDP Packet Bypass**: `portfolio/src/af_xdp_packet_bypass.c` (Status: Socket-level prototype / probe)
-* **Lock-Free SPSC Ring**: `portfolio/src/lockfree_spsc_ring.c` (Status: Atomic concurrency primitive)
-* **NUMA Allocation & Core Pinning**: `portfolio/src/numa_aware_alloc.c`, `portfolio/src/numa_core_pin.c` (Status: Hardware topology API demonstrations)
-* **Latency & RDTSC Telemetry**: `portfolio/src/latency_benchmark.c`, `portfolio/src/rdtsc_telemetry.c` (Status: Cycle-counter measurement probes)
+## Navigation & Architecture
+* **Active Competition Entry**: `coliseum-submission/` (Maintains original architecture, components, and benchmark evidence for judging).
+* **Standalone C Primitives**: `portfolio/src/` (Low-latency networking probes, lock-free structures, NUMA-aware allocation, and telemetry tools).
 
-## Evidence & Reproducibility
-* Archived competition materials remain isolated in `coliseum-submission/`.
-* Build and test execution details for individual primitives are documented alongside source modules.
+## Component Index
+* **AF_XDP Packet Bypass**: `portfolio/src/af_xdp_packet_bypass.c` (Socket-level probe)
+* **Lock-Free SPSC Ring**: `portfolio/src/lockfree_spsc_ring.c` (Atomic concurrency primitive)
+* **NUMA Allocation & Core Pinning**: `portfolio/src/numa_aware_alloc.c`, `portfolio/src/numa_core_pin.c` (Hardware topology API demonstrations)
+* **Latency & RDTSC Telemetry**: `portfolio/src/latency_benchmark.c`, `portfolio/src/rdtsc_telemetry.c` (Cycle-counter measurement probes)
