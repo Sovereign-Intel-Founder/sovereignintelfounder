@@ -4,3 +4,6 @@ latency_worker
 numa_alloc
 spsc_benchmark
 /dev/shm/spsc_queue
+.git-credentials
+configs/
+mesh/configs/
