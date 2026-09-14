@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <immintrin.h>
 
-#float simd_dot_product_avx512(const float *a, const float *b, int n) {
+float simd_dot_product_avx512(const float *a, const float *b, int n) {
     __m512 sum512 = _mm512_setzero_ps();
     int i;
     
