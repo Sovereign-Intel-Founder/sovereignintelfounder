@@ -62,3 +62,6 @@ lockfree_memory_pool: src/showcase/lockfree_memory_pool.c
 
 af_xdp_packet_bypass: src/showcase/af_xdp_packet_bypass.c
 	$(CC) $(CFLAGS) $< -o $@
+
+shm_ipc_ring: src/showcase/shm_ipc_ring.c
+	$(CC) $(CFLAGS) -lrt $< -o $@
