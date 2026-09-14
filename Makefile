@@ -104,3 +104,6 @@ midi_synthesizer_stub: src/showcase/midi_synthesizer_stub.c
 
 telemetry_exporter: src/showcase/telemetry_exporter.c
 	$(CC) $(CFLAGS) $< -o $@
+
+replay_harness: src/showcase/replay_harness.c
+	$(CC) $(CFLAGS) $< -o $@
