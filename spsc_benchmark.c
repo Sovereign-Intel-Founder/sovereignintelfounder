@@ -69,7 +69,7 @@ int main() {
     clock_gettime(CLOCK_MONOTONIC, &end);
     
     long elapsed = (end.tv_sec - start.tv_sec) * 1000000000L + (end.tv_nsec - start.tv_nsec);
-    printf("SPSC Ring Benchmark: %d items passed in %ld ns (~%Ld ns/msg)\n", 
+    printf("SPSC Ring Benchmark: %d items passed in `%lld ns (~%.2Lf ns/msg)\n", 
            ITERATIONS, elapsed, (long double)elapsed / ITERATIONS);
     return 0;
 }
