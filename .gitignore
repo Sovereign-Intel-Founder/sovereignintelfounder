@@ -20,3 +20,4 @@ zero_alloc_ipc
 # Python & Environment
 venv/
 __pycache__/
+.git-credentials
