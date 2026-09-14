@@ -41,3 +41,6 @@ lockfree_spsc_ring: src/showcase/lockfree_spsc_ring.c
 
 numa_pinning: src/showcase/numa_pinning.c
 	$(CC) $(CFLAGS) $< -o $@
+
+ptp_hardware_timestamp: src/showcase/ptp_hardware_timestamp.c
+	$(CC) $(CFLAGS) $< -o $@
