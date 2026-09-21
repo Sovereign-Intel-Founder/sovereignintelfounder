@@ -4,15 +4,18 @@ A high-performance systems engineering portfolio demonstrating low-latency IPC, 
 
 ## Repository Architecture
 
-* `sip_core/` — Core protocol runtime and low-latency execution flow.
-* `mesh/` — Mesh networking architecture and high-throughput event routing layers.
-* `tollbridge_system/` — Toll bridge architecture, concurrency handlers, and gate logic.
-* `portfolio/` — Standalone low-latency C primitives, ring buffers, and hardware-optimization research components.
-* `simd/` — SIMD and vectorization research primitives.
-* `solana-ledger/` — Ledger integration and RPC interface components.
-* `scripts/` — Execution wrappers, stress test harnesses, and validation pipelines.
-* `telemetry/` — Raw machine telemetry sweeps, stress logs, and JSON metrics.
 * `docs/` — Deep-dive architecture specs, data matrices, and performance case studies.
+* `mesh/` — Mesh networking architecture and high-throughput event routing layers.
+* `portfolio/` — Standalone low-latency C primitives, ring buffers, and hardware-optimization research components.
+* `scripts/` — Execution wrappers, stress test harnesses, and validation pipelines.
+* `simd/` — SIMD and vectorization research primitives.
+* `sip_core/` — Core protocol runtime and low-latency execution flow.
+* `solana-ledger/` — Ledger integration and RPC interface components.
+* `src/` — Implementation sources and modular components.
+* `telemetry/` — Raw machine telemetry sweeps, stress logs, and JSON metrics.
+* `tests/` — Test suites and validation harnesses.
+* `tollbridge_system/` — Toll bridge architecture, concurrency handlers, and gate logic.
+* `tools/` — Operational utility scripts and diagnostic tooling.
 
 ## Verified Benchmarks & Telemetry
 
