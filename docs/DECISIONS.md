@@ -5,7 +5,7 @@
 * **Rationale:** In high-throughput event routing pipelines, MPMC queues introduce heavy cache-line bouncing and expensive Compare-And-Swap (CAS) contention under high thread concurrency. SPSC guarantees atomic head/tail progression without atomic retry loops, keeping latency deterministic at the nanosecond scale.
 
 ## 2. Memory Ordering Semantics (`acquire`/`release`)
-* **Decision:** Utilize explicit acquire-release semantics (`std::memory_order_acquire` / `std::memory_order_release`) rather than sequential consistency (`std::memory_order_seq_cst`) or volatile locks.
+* **Decision:** Utilize explicit acquire-release semantics (`memory_order_acquire` / `memory_order_release`) rather than sequential consistency (`memory_order_seq_cst`) or volatile locks.
 * **Rationale:** Sequential consistency imposes unnecessary memory barrier overhead across CPU pipelines. Acquire-release synchronization ensures precise ordering constraints between producer writes and consumer reads while allowing optimal CPU out-of-order execution headroom.
 
 ## 3. NUMA Locality and Core Pinning
