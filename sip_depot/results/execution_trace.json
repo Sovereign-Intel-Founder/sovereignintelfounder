@@ -1,0 +1,13 @@
+[
+  {
+    "tick": 0,
+    "status": "EXECUTED",
+    "bot_id": 0,
+    "reason": "All 12 Brains Approved"
+  },
+  {
+    "tick": 1,
+    "status": "FILTERED_OUT",
+    "reason": "Brain 1 Rejected: Spread too narrow"
+  }
+]

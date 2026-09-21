@@ -1,0 +1,9 @@
+{
+  "duration_seconds": 0.0096,
+  "total_processed": 5000,
+  "throughput_ops_sec": 522703.3,
+  "approved": 2500,
+  "filtered": 2500,
+  "dispatched_bots": 2500,
+  "avg_dispatch_latency_ns": 209.4
+}

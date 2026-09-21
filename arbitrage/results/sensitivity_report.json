@@ -1,0 +1,32 @@
+[
+  {
+    "condition": "Zero latency, zero fees",
+    "opportunities": 4,
+    "executable": 3,
+    "net_pnl": 2.7
+  },
+  {
+    "condition": "Realistic fees & slippage",
+    "opportunities": 4,
+    "executable": 3,
+    "net_pnl": 2.2723
+  },
+  {
+    "condition": "1 ms latency penalty",
+    "opportunities": 4,
+    "executable": 3,
+    "net_pnl": 2.2714
+  },
+  {
+    "condition": "5 ms latency penalty",
+    "opportunities": 4,
+    "executable": 3,
+    "net_pnl": 2.0813
+  },
+  {
+    "condition": "High slippage & risk bounds",
+    "opportunities": 4,
+    "executable": 3,
+    "net_pnl": 0.8529
+  }
+]
