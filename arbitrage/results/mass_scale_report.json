@@ -1,0 +1,103 @@
+{
+  "total_events": 5000000,
+  "duration_seconds": 0.1607,
+  "throughput_events_per_sec": 31114237.9,
+  "worker_results": [
+    {
+      "executed": 222818,
+      "failed": 11557,
+      "net_pnl": 5070059.753901492,
+      "expired": 78125
+    },
+    {
+      "executed": 222754,
+      "failed": 11621,
+      "net_pnl": 5062959.023101458,
+      "expired": 78125
+    },
+    {
+      "executed": 222834,
+      "failed": 11541,
+      "net_pnl": 5080061.588701514,
+      "expired": 78125
+    },
+    {
+      "executed": 222721,
+      "failed": 11654,
+      "net_pnl": 5051662.3089015,
+      "expired": 78125
+    },
+    {
+      "executed": 222790,
+      "failed": 11585,
+      "net_pnl": 5068640.442051478,
+      "expired": 78125
+    },
+    {
+      "executed": 222663,
+      "failed": 11712,
+      "net_pnl": 5041362.82665148,
+      "expired": 78125
+    },
+    {
+      "executed": 222534,
+      "failed": 11841,
+      "net_pnl": 5025499.053551452,
+      "expired": 78125
+    },
+    {
+      "executed": 222643,
+      "failed": 11732,
+      "net_pnl": 5037488.292651497,
+      "expired": 78125
+    },
+    {
+      "executed": 222713,
+      "failed": 11662,
+      "net_pnl": 5054786.948251494,
+      "expired": 78125
+    },
+    {
+      "executed": 222629,
+      "failed": 11746,
+      "net_pnl": 5040517.524751509,
+      "expired": 78125
+    },
+    {
+      "executed": 222528,
+      "failed": 11847,
+      "net_pnl": 5022975.465801463,
+      "expired": 78125
+    },
+    {
+      "executed": 222823,
+      "failed": 11552,
+      "net_pnl": 5072768.364651487,
+      "expired": 78125
+    },
+    {
+      "executed": 222548,
+      "failed": 11827,
+      "net_pnl": 5025083.541051446,
+      "expired": 78125
+    },
+    {
+      "executed": 222786,
+      "failed": 11589,
+      "net_pnl": 5067239.430801523,
+      "expired": 78125
+    },
+    {
+      "executed": 222597,
+      "failed": 11778,
+      "net_pnl": 5027876.251351496,
+      "expired": 78125
+    },
+    {
+      "executed": 222892,
+      "failed": 11483,
+      "net_pnl": 5081776.729351471,
+      "expired": 78125
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "simulation_ticks": 1000,
+  "metrics": {
+    "total_opportunities": 1000,
+    "executed_trades": 721,
+    "partial_fills": 108,
+    "failed_legs": 29,
+    "expired_quotes": 250,
+    "gross_pnl": 24447.5,
+    "total_fees": 0.3335,
+    "total_slippage": 0.1292,
+    "net_pnl": 17748.435,
+    "max_exposure": 0.0
+  },
+  "final_capital": 117748.44,
+  "max_drawdown": 300.0,
+  "win_rate_pct": 95.98
+}

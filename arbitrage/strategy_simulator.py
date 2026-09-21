@@ -2,13 +2,13 @@ import json
 from arbitrage.opportunity_detector import OpportunityDetector
 
 def run_sensitivity_analysis():
-    print("[*] Running SIP Arbitrage Sensitivity Analysis...")
+    print("[*] Running Upgraded SIP Arbitrage Sensitivity Analysis...")
     
     test_ticks = [
-        {"ask_a": 100.0, "bid_b": 100.8, "depth_a": 15.0, "depth_b": 20.0},
-        {"ask_a": 100.0, "bid_b": 100.1, "depth_a": 5.0, "depth_b": 5.0},
-        {"ask_a": 105.0, "bid_b": 106.2, "depth_a": 25.0, "depth_b": 30.0},
-        {"ask_a": 98.5,  "bid_b": 99.2,  "depth_a": 12.0, "depth_b": 14.0},
+        {"ask_a": 100.0, "bid_b": 100.8, "depth_a": 15.0, "depth_b": 20.0, "timestamp_ms": 1000.0},
+        {"ask_a": 100.0, "bid_b": 100.1, "depth_a": 5.0,  "depth_b": 5.0,  "timestamp_ms": 1000.0},
+        {"ask_a": 105.0, "bid_b": 106.2, "depth_a": 25.0, "depth_b": 30.0, "timestamp_ms": 1000.0},
+        {"ask_a": 98.5,  "bid_b": 99.2,  "depth_a": 12.0, "depth_b": 14.0, "timestamp_ms": 940.0}, # Stale test case
     ]
 
     scenarios = [
@@ -27,7 +27,7 @@ def run_sensitivity_analysis():
         cumulative_pnl = 0.0
 
         for tick in test_ticks:
-            res = detector.evaluate_edge(tick, latency_ms=s["lat"])
+            res = detector.evaluate_edge(tick, current_time_ms=1010.0, latency_ms=s["lat"], order_notional=5000.0)
             if res["executable"]:
                 executable_count += 1
                 cumulative_pnl += res["net_edge"]
@@ -42,7 +42,7 @@ def run_sensitivity_analysis():
     with open("arbitrage/results/sensitivity_report.json", "w") as out:
         json.dump(results, out, indent=2)
 
-    print("[+] Sensitivity Analysis Complete. Results saved to arbitrage/results/sensitivity_report.json")
+    print("[+] Upgraded Sensitivity Analysis Complete.")
     for r in results:
         cond = r['condition']
         exec_count = r['executable']
