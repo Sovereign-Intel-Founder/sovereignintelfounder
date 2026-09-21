@@ -1,9 +1,9 @@
-/**
+#
  * @file industrial_shunt_bridge.cpp
  * @brief Complete 1:1 Native C++ Industrial Shunt Toll Bridge Control Plane
  * @note Replaces Python/aiohttp with high-performance C++ socket/HTTP server daemon,
  *       Hiredis pipelines, msgpack-c validation, and lock-free background workers.
- */
+ #
 
 #define _GNU_SOURCE
 #include <iostream>
