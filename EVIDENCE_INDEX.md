@@ -5,7 +5,6 @@ This index maps each showcase component and research area to its source path, ex
 ## Active Colosseum Submission
 | Capability | Repository path | Evidence file | Exact command | Workload/environment | What it proves | Limitations |
 |---|---|---|---|---|---|---|
-| Competition Entry | `coliseum-submission/` | `coliseum-submission/README.md` | `cat coliseum-submission/README.md` | Colosseum evaluation environment | Complete architecture and benchmark claims under active review | Preserved as-is; pending final judging |
 
 ## Concurrency & Shared Memory
 | Capability | Repository path | Evidence file | Exact command | Workload/environment | What it proves | Limitations |

@@ -16,4 +16,3 @@ These files are **standalone demonstrations and research components**. They are 
 
 Benchmark results, hardware context, methodology, and limitations are documented separately. A component should be treated as a demonstration or research primitive unless its documentation includes a reproducible build command, workload, measurement boundary, raw output, and known limitations.
 
-The completed competition materials are preserved separately in `../coliseum-submission/`. This directory is the broader software-engineering portfolio showcase and is not required to form one unified runtime.

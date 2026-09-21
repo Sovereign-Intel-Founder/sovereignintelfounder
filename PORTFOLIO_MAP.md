@@ -3,7 +3,6 @@
 This repository serves a dual purpose: preserving the active Sovereign Intelligence Protocol (SIP) competition entry and showcasing standalone systems-engineering primitives developed during its research.
 
 ## Navigation & Architecture
-* **Active Competition Entry**: `coliseum-submission/` (Maintains original architecture, components, and benchmark evidence for judging).
 * **Standalone C Primitives**: `portfolio/src/` (Low-latency networking probes, lock-free structures, NUMA-aware allocation, and telemetry tools).
 
 ## Component Index
