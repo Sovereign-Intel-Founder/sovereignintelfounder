@@ -47,7 +47,6 @@ To scale performance from single-digit milliseconds down to microsecond physical
 * **Hardware:** Dedicated 128-Core AMD EPYC / 728GB RAM / Dual 10GbE SFP+
 * **OS / Kernel:** Customized Linux 6.x kernel with low-latency real-time patches (`PREEMPT_RT`)
 * **Measurement Methodology:** Microsecond-resolution monotonic system clocks (`CLOCK_MONOTONIC`) logging ingress socket timestamps against state map completion.
-No module named 'vault'
 {
   "accepted": 240,
   "drain_window_ms": 50.619,
