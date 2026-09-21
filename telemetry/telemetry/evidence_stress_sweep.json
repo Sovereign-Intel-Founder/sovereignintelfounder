@@ -1,0 +1,44 @@
+No module named 'vault'
+{
+  "accepted": 240,
+  "drain_window_ms": 50.604,
+  "end_to_end_window_ms": 61.228,
+  "events_per_thread": 8,
+  "framework_metrics": {
+    "accepted": 240,
+    "completed": 240,
+    "db_counts": {
+      "completed": 240
+    },
+    "failed": 0,
+    "max_workers": 4,
+    "queue_capacity": 256,
+    "queue_depth": 0,
+    "rejected": 0
+  },
+  "rejected": 0,
+  "safety": {
+    "synthetic_payloads_only": true,
+    "used_live_ledger": false,
+    "used_live_redis": false,
+    "used_wallet_or_broadcast": false
+  },
+  "sqlite": {
+    "file_bytes": 102400,
+    "journal_mode": "wal",
+    "path": "/tmp/tollbridge_concurrency_test.db",
+    "synchronous_pragma_value": 2
+  },
+  "submit_latency_ms": {
+    "max": 0.075,
+    "mean": 0.008,
+    "min": 0.004,
+    "p50": 0.005,
+    "p95": 0.023,
+    "p99": 0.041
+  },
+  "submit_window_ms": 10.624,
+  "submitted_total": 240,
+  "threads": 30,
+  "throughput_events_per_second": 3919.773
+}
