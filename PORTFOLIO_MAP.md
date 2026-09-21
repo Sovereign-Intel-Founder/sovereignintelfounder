@@ -1,6 +1,6 @@
 # Systems Engineering Portfolio Map & Navigation
 
-This repository serves a dual purpose: preserving the active Sovereign Intelligence Protocol (SIP) competition entry and showcasing standalone systems-engineering primitives developed during its research.
+This repository serves a dual purpose: preserving the active Sovereign Intelligence Protocol (SIP) systems entry and showcasing standalone systems-engineering primitives developed during its research.
 
 ## Navigation & Architecture
 * **Standalone C Primitives**: `portfolio/src/` (Low-latency networking probes, lock-free structures, NUMA-aware allocation, and telemetry tools).

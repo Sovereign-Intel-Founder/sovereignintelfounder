@@ -2,7 +2,7 @@
 
 This index maps each showcase component and research area to its source path, exact execution command, environment, empirical proof, and stated limitations.
 
-## Active Colosseum Submission
+
 | Capability | Repository path | Evidence file | Exact command | Workload/environment | What it proves | Limitations |
 |---|---|---|---|---|---|---|
 
