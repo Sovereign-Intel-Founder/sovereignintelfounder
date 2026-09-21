@@ -1,18 +1,20 @@
 {
-  "simulation_ticks": 1000,
+  "simulation_classification": "Seeded synthetic execution-lifecycle simulation",
+  "seed": 42,
   "metrics": {
-    "total_opportunities": 1000,
-    "executed_trades": 721,
-    "partial_fills": 108,
+    "simulation_classification": "Seeded synthetic execution-lifecycle simulation",
+    "total_opportunities": 1002,
+    "executed_trades": 639,
+    "profitable_trades": 639,
+    "losing_trades": 29,
+    "breakeven_trades": 0,
+    "partial_fills": 99,
     "failed_legs": 29,
-    "expired_quotes": 250,
-    "gross_pnl": 24447.5,
-    "total_fees": 0.3335,
-    "total_slippage": 0.1292,
-    "net_pnl": 17748.435,
-    "max_exposure": 0.0
-  },
-  "final_capital": 117748.44,
-  "max_drawdown": 300.0,
-  "win_rate_pct": 95.98
+    "expired_quotes": 334,
+    "gross_pnl": 36825.0,
+    "total_fees": 1473.75,
+    "total_slippage": 1073.25,
+    "net_pnl": 29044.5,
+    "max_exposure": 5000.0
+  }
 }

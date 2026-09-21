@@ -1,32 +1,29 @@
-[
-  {
-    "condition": "Zero latency, zero fees",
-    "opportunities": 4,
-    "executable": 2,
-    "net_pnl": 1.9998
-  },
-  {
-    "condition": "Realistic fees & slippage",
-    "opportunities": 4,
-    "executable": 2,
-    "net_pnl": 1.7108
-  },
-  {
-    "condition": "1 ms latency penalty",
-    "opportunities": 4,
-    "executable": 2,
-    "net_pnl": 1.7102
-  },
-  {
-    "condition": "5 ms latency penalty",
-    "opportunities": 4,
-    "executable": 2,
-    "net_pnl": 1.5818
-  },
-  {
-    "condition": "High slippage & risk bounds",
-    "opportunities": 4,
-    "executable": 2,
-    "net_pnl": 0.7518
-  }
-]
+{
+  "simulation_classification": "Seeded synthetic parameter sensitivity sweep",
+  "results": [
+    {
+      "slippage_multiplier": 1.0,
+      "net_pnl": 17080.5,
+      "profitable_trades": 479,
+      "losing_trades": 21
+    },
+    {
+      "slippage_multiplier": 1.5,
+      "net_pnl": 16849.5,
+      "profitable_trades": 479,
+      "losing_trades": 21
+    },
+    {
+      "slippage_multiplier": 2.0,
+      "net_pnl": 16618.5,
+      "profitable_trades": 479,
+      "losing_trades": 21
+    },
+    {
+      "slippage_multiplier": 3.0,
+      "net_pnl": 16156.5,
+      "profitable_trades": 479,
+      "losing_trades": 21
+    }
+  ]
+}
