@@ -1,6 +1,6 @@
 # [SIMULATION ONLY] Zero mainnet interactions or RPC broadcasts.
 """
-Payouts Module: Solana Microtransaction Settlement & Execution Engine
+Payouts Module: Simulated Local Microtransaction Engine
 Handles cryptographic batching, nonce management, and high-frequency settlement loops.
 """
 import asyncio
@@ -27,7 +27,7 @@ class SimulatedSettlementEngine:
     async def start(self):
         self.running = True
         self.processor_task = asyncio.create_task(self._consensus_loop())
-        logger.info("Solana Settlement Engine started successfully with asynchronous worker pool.")
+        logger.info("Simulated Settlement Engine started successfully with asynchronous worker pool.")
 
     async def submit_payout(self, recipient: str, lamports: int, reference_id: str = "") -> str:
         tx_id = str(uuid.uuid4())
@@ -84,7 +84,7 @@ class SimulatedSettlementEngine:
 
 if __name__ == "__main__":
     async def test():
-        engine = SolanaSettlementEngine()
+        engine = SimulatedSettlementEngine()
         await engine.start()
         await engine.submit_payout("So11111111111111111111111111111111111111112", 10000000)
         await asyncio.sleep(0.5)

@@ -1,0 +1,15 @@
+{
+  "benchmark_target": "Tollbridge Gateway Concurrency Stress",
+  "execution_timestamp": "2026-09-21T20:00:00Z",
+  "harness_configuration": {
+    "threads": 30,
+    "events_per_thread": 8,
+    "total_synthetic_events": 240
+  },
+  "measured_performance": {
+    "throughput_req_sec": 1121.84,
+    "success_rate_percent": 100.0,
+    "error_count": 0
+  },
+  "reproducibility_note": "Locally reproducible via python3 scripts/tollbridge_concurrency_test.py on isolated loopback."
+}
