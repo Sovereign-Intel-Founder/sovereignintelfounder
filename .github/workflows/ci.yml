@@ -49,3 +49,15 @@ jobs:
                   json.load(f)
               print(f"Valid JSON: {path}")
           '
+
+  security-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Scan for unauthorized shell execution
+        run: |
+          if grep -rn "shell=True" . --exclude-dir=.git --exclude-dir=venv --exclude="ci.yml"; then
+            echo "CRITICAL: Unsafe shell=True execution detected in source code."
+            exit 1
+          fi
+          echo "Security audit passed: No unauthorized shell=True found."
