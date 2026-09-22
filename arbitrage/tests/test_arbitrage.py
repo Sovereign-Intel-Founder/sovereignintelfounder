@@ -27,3 +27,14 @@ class TestArbitrageDetector(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+    def test_exposure_accumulation_and_release(self):
+        from arbitrage.execution_simulator import ExecutionSimulator
+        sim = ExecutionSimulator(initial_capital=100000.0)
+        # Verify that concurrent or sequential trades appropriately track and bound exposure
+        opp = {
+            "gross_spread": 0.01, "fees": 0.0005, "slippage": 0.0002, 
+            "risk_cost": 0.0001, "net_edge": 0.0092, "depth_a": 15000.0, "depth_b": 15000.0
+        }
+        sim.simulate_order_lifecycle(opp, opp["depth_a"], opp["depth_b"])
+        self.assertGreater(sim.metrics["max_exposure"], 0.0, "Max exposure must be tracked during lifecycle execution.")

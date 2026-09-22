@@ -5,8 +5,8 @@
   "seed": 42,
   "measurement_boundary": "Multiprocess worker batch aggregate wall-clock time",
   "hardware_context": "Local multi-core host",
-  "duration_seconds": 0.2368,
-  "throughput_events_per_sec": 21110940.61,
+  "duration_seconds": 0.2148,
+  "throughput_events_per_sec": 23279712.04,
   "metrics": {
     "total_opportunities": 5000000,
     "executed_trades": 2375511,
