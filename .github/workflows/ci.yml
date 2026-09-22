@@ -17,9 +17,9 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Build C Primitives (Make)
+      - name: Build C Primitives (Strict)
         run: |
-          make all || gcc -O3 -Wall -Wextra ring_buffer.c -o ring_sanitized || true
+          make all || gcc -O3 -Wall -Wextra ring_buffer.c -o ring_sanitized
 
       - name: Verify Python Compilation
         run: |
@@ -33,10 +33,10 @@ jobs:
         run: |
           PYTHONPATH=. python3 -m unittest discover -s sip_depot/tests -v
 
-      - name: Static Security Analysis (Bandit)
+      - name: Static Security Analysis (Advisory Bandit Scan)
         run: |
           pip install bandit
-          bandit -r . -ll -ii --exclude ./venv,.git || true
+          bandit -r . -ll -ii --exclude ./venv,.git || echo "Advisory security findings noted."
 
       - name: Validate JSON Artifacts
         run: |

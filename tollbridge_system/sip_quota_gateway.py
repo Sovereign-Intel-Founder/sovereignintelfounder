@@ -1,3 +1,4 @@
+# [SIMULATION_GUARD] Local loopback in-process harness only. Not for public exposure.
 #!/usr/bin/env python3
 from __future__ import annotations
 

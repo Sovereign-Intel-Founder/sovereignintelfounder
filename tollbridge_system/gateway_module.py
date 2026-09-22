@@ -1,3 +1,4 @@
+# [SIMULATION_GUARD] Local loopback in-process harness only. Not for public exposure.
 """
 Gateway Module: Enterprise FastAPI Ingress & High-Throughput Traffic Gateway
 Engineered for massive concurrent connections and low-latency packet routing.

@@ -68,8 +68,8 @@ class SolanaSettlementEngine:
         
         self.settlement_count += len(batch)
         for tx in batch:
-            tx["status"] = "confirmed"
-            logger.info(f"Microtransaction confirmed on-chain: {tx['tx_id']}")
+            tx["status"] = "simulated"
+            logger.info(f"Microtransaction simulated-dispatch-recorded: {tx['tx_id']}")
 
     async def stop(self):
         self.running = False
