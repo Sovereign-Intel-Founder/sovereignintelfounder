@@ -274,4 +274,4 @@ async def create_app():
     return app
 
 if __name__ == "__main__":
-    web.run_app(create_app(), host="0.0.0.0", port=8080, backlog=8192, reuse_address=True, reuse_port=True)
+    web.run_app(create_app(), host=os.getenv("SIP_BIND_HOST", "127.0.0.1"), port=8080, backlog=8192, reuse_address=True, reuse_port=True)
