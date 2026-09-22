@@ -1,27 +1,45 @@
-# Sovereign Intelligence Protocol — Systems Engineering & Low-Latency Primitives
+# Sovereign Intelligence Protocol (SIP)
 
-A high-performance systems engineering portfolio demonstrating low-latency IPC, custom ring buffers, POSIX shared memory zero-copy mechanisms, and rigorous bare-metal concurrency test harnesses.
+A high-performance local simulation and research prototype focused on low-latency concurrency, secure IPC, and automated CI security guardrails.
 
-## Repository Architecture
+---
 
-* `docs/` — Deep-dive architecture specs, data matrices, and performance case studies.
-* `mesh/` — Mesh networking architecture and high-throughput event routing layers.
-* `portfolio/` — Standalone low-latency C primitives, ring buffers, and hardware-optimization research components.
-* `scripts/` — Execution wrappers, stress test harnesses, and validation pipelines.
-* `simd/` — SIMD and vectorization research primitives.
-* `sip_core/` — Core protocol runtime and low-latency execution flow.
-* `solana-ledger/` — Ledger integration and RPC interface components.
-* `src/` — Implementation sources and modular components.
-* `telemetry/` — Raw machine telemetry sweeps, stress logs, and JSON metrics.
-* `tests/` — Test suites and validation harnesses.
-* `tollbridge_system/` — Toll bridge architecture, concurrency handlers, and gate logic.
-* `tools/` — Operational utility scripts and diagnostic tooling.
+## Overview
 
-## Verified Benchmarks & Telemetry
+The Sovereign Intelligence Protocol (SIP) is a systems-engineering project built to explore low-latency data ingestion, lock-free concurrency, and rigorous security practices in Python and C. 
 
-Tested on dedicated bare-metal infrastructure (128-core AMD EPYC, PREEMPT_RT Linux kernel, dual 10GbE SFP+):
-* **Multi-Core Compute Saturation:** 2,787,589.29 ops/sec (`sip_core` SPSC pipeline).
-* **Ring Buffer Latency:** ~8.15 ns per operation via zero-copy memory mapping.
-* **Network Concurrency Stress:** 1,121.84 req/sec across 256 concurrent heavy multi-vector workers with 100% success rate.
+> **Note:** This repository is a **local simulation and research prototype** built for performance experimentation and security architecture design.
 
-See [RAW_MATRIX.md](RAW_MATRIX.md) and [BENCHMARKS.md](BENCHMARKS.md) for full execution telemetry and verification harnesses.
+---
+
+## Key Features & Architecture
+
+* **Core Pipeline:** Python-based stream ingestion and modular event processing handlers.
+* **Low-Latency Components:** Custom C single-producer single-consumer (SPSC) lock-free ring buffer (`portfolio/src/lockfree_spsc_ring.c`) optimized with `-O3` flags.
+* **Secure Networking:** All core network bindings default strictly to loopback (`127.0.0.1`) and can be configured safely via the `SIP_BIND_HOST` environment variable.
+* **Automated CI Security Guardrails:** Custom GitHub Actions workflows configured to aggressively scan for and block unauthorized `shell=True` usages and wildcard network bindings (`0.0.0.0`) in core network paths.
+
+---
+
+## Security & Hardening History
+
+As part of ongoing architectural audits, this repository underwent a rigorous security sweep:
+* Permanently removed unauthenticated remote command execution (RCE) bridge modules.
+* Hardened network bindings to eliminate wildcard listeners by default.
+* Established automated repository-level CI security guardrails to enforce continuous compliance.
+
+---
+
+## Getting Started
+
+### Prerequisites
+* Python 3.10+
+* GCC (with C11 support)
+* Make
+
+### Quickstart & Verification
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Sovereign-Intel-Founder/sovereignintelfounder.git](https://github.com/Sovereign-Intel-Founder/sovereignintelfounder.git)
+   cd sovereign-intelligence
