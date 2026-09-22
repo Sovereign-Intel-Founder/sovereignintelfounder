@@ -1,0 +1,5 @@
+{
+  "iterations": 100000,
+  "cold_alloc_ns_per_op": 52.39,
+  "warm_acquire_ns_per_op": 25.75
+}

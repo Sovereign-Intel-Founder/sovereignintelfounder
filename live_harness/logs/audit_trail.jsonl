@@ -1,0 +1,5 @@
+{"sequence": 1, "timestamp_ms": 1790032846481, "venue_ask": 99.9605, "venue_bid": 100.1097, "gross_spread": 0.1492, "decision": "DRY_RUN_FILL"}
+{"sequence": 2, "timestamp_ms": 1790032846981, "venue_ask": 100.0552, "venue_bid": 100.1878, "gross_spread": 0.1326, "decision": "DRY_RUN_FILL"}
+{"sequence": 3, "timestamp_ms": 1790032847482, "venue_ask": 100.087, "venue_bid": 100.1166, "gross_spread": 0.0296, "decision": "SKIPPED_SPREAD_NARROW"}
+{"sequence": 4, "timestamp_ms": 1790032847982, "venue_ask": 100.0054, "venue_bid": 99.9919, "gross_spread": -0.0135, "decision": "SKIPPED_SPREAD_NARROW"}
+{"sequence": 5, "timestamp_ms": 1790032848483, "venue_ask": 99.9149, "venue_bid": 99.8767, "gross_spread": -0.0382, "decision": "SKIPPED_SPREAD_NARROW"}
