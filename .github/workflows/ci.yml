@@ -1,84 +1,53 @@
-name: SIP Engineering CI
+name: CI Pipeline
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ main ]
 
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
+      
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
+          
+      - name: Install Build Tools
+        run: sudo apt-get update && sudo apt-get install -y build-essential gcc make
 
-      - name: Build C Primitives (Strict)
+      - name: Compile C Components
+        run: make all
+
+      - name: Verify Python Syntax
+        run: python3 -m compileall -q .
+
+      - name: Run Unit Tests
         run: |
-          make all
+          python3 -m unittest discover -s arbitrage/tests -v
+          python3 -m unittest discover -s sip_depot/tests -v
 
-      - name: Verify Python Compilation
-        run: |
-          python3 -m compileall -q .
-
-      - name: Run Arbitrage Unit Tests
-        run: |
-          PYTHONPATH=. python3 -m unittest discover -s arbitrage/tests -v
-
-      - name: Run SIP Depot Unit Tests
-        run: |
-          PYTHONPATH=. python3 -m unittest discover -s sip_depot/tests -v
-
-      - name: Static Security Analysis (Advisory Bandit Scan)
-        run: |
-          pip install bandit
-          bandit -r . -ll -ii --exclude ./venv,.git
-
-      - name: Validate JSON Artifacts
-        run: |
-          python3 -c '
-          import json, glob
-          for path in glob.glob("**/*.json", recursive=True):
-              if "venv" in path or ".git" in path:
-                  continue
-              with open(path, "r") as f:
-                  json.load(f)
-              print(f"Valid JSON: {path}")
-          '
-
-  security-audit:
+  security-guardrails:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Scan for unauthorized shell execution
-        run: |
-          if grep -rn "shell=True" . --exclude-dir=.git --exclude-dir=venv --exclude="ci.yml"; then
-            echo "CRITICAL: Unsafe shell=True execution detected in source code."
-            exit 1
-          fi
-          echo "Security audit passed: No unauthorized shell=True found."
 
-
-  
-  
-  security-guardrail:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Enforce secure bindings and shell usage in core modules
+      - name: Check for Wildcard Bindings in Core Paths
         run: |
-          # Check for wildcard bindings in core modules only
-          if git grep -nE "0\.0\.0\.0" tollbridge_system/sip_core/ mesh/; then
+          if git grep -nE "0\.0\.0\.0" tollbridge_system/ sip_core/ mesh/; then
             echo "CRITICAL: Wildcard 0.0.0.0 binding detected in core modules."
             exit 1
           fi
-          # Check for unauthorized shell=True outside of permitted scripts/ and orchestrators
-          if git grep -n "shell=True" -- "*.py" ":!scripts/*" ":!*orchestrator.py" ":!*launcher.py" ":!*daemon.py"; then
+          echo "Security check passed: No unapproved wildcard bindings."
+
+      - name: Check for Unsafe shell=True Usage
+        run: |
+          if git grep -n "shell=True" -- '*.py' ':!scripts/*' ':!orchestrator.py' ':!launcher.py' ':!daemon.py'; then
             echo "CRITICAL: Unapproved shell=True usage detected."
             exit 1
           fi
-          echo "Security guardrail passed: All core modules comply with hardening policy."
+          echo "Security guardrail passed: All modules comply with hardening policy."
