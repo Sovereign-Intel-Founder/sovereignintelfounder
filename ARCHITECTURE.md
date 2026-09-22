@@ -1,7 +1,7 @@
 Sovereign Intelligence Protocol: Hardware & Software Topology
 
 
-​[ Physical NIC (100GbE) ]
+​[ Physical NIC (dual 10GbE SFP+) ]
 
 
 | (AF_XDP / Kernel Bypass)
