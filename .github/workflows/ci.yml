@@ -17,6 +17,10 @@ jobs:
         with:
           python-version: '3.10'
 
+      - name: Build C Primitives (Make)
+        run: |
+          make all || gcc -O3 -Wall -Wextra ring_buffer.c -o ring_sanitized || true
+
       - name: Verify Python Compilation
         run: |
           python3 -m compileall -q .
@@ -29,11 +33,18 @@ jobs:
         run: |
           PYTHONPATH=. python3 -m unittest discover -s sip_depot/tests -v
 
+      - name: Static Security Analysis (Bandit)
+        run: |
+          pip install bandit
+          bandit -r . -ll -ii --exclude ./venv,.git || true
+
       - name: Validate JSON Artifacts
         run: |
           python3 -c '
           import json, glob
           for path in glob.glob("**/*.json", recursive=True):
+              if "venv" in path or ".git" in path:
+                  continue
               with open(path, "r") as f:
                   json.load(f)
               print(f"Valid JSON: {path}")

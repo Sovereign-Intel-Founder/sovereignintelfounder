@@ -10,8 +10,8 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-FRAMEWORK = Path('/opt/tollbridge_system/tollbridge_backend_framework.py')
-CONFIG = Path('/opt/tollbridge_system/tollbridge_framework.json')
+FRAMEWORK = Path('./sip_depot/tollbridge_backend_framework.py')
+CONFIG = Path('./sip_depot/tollbridge_framework.json')
 DB = Path('/tmp/tollbridge_concurrency_test.db')
 THREADS = 30
 EVENTS_PER_THREAD = 8

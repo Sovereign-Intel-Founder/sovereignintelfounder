@@ -7,7 +7,7 @@ import time
 from urllib.request import Request, urlopen
 
 URL = "http://127.0.0.1:8080/v1/ingress/raw"
-SECRET_PATH = "/opt/tollbridge_system/.ingress_secret"
+SECRET_PATH = "./sip_depot/.ingress_secret"
 DB = "/var/lib/tollbridge-core/toll_bridge.db"
 
 def post(client: str, event_id: str) -> tuple[int, dict]:

@@ -16,7 +16,7 @@ from fastapi.responses import JSONResponse
 
 HOST = os.environ.get("SIP_GATEWAY_HOST", "127.0.0.1")
 PORT = int(os.environ.get("SIP_GATEWAY_PORT", "4021"))
-DB_PATH = Path(os.environ.get("SIP_GATEWAY_DB", "/opt/tollbridge_system/tollbridge.db"))
+DB_PATH = Path(os.environ.get("SIP_GATEWAY_DB", "./sip_depot/tollbridge.db"))
 UPSTREAM_DB = Path(os.environ.get("SIP_GATEWAY_CORE_DB", "/var/lib/tollbridge-core/toll_bridge.db"))
 
 INGRESS_TOKEN = os.environ.get("SIP_GATEWAY_INGRESS_TOKEN", "")
