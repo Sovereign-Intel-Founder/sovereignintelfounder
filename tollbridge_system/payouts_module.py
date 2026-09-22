@@ -14,7 +14,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger("payouts_enterprise")
 
-class SolanaSettlementEngine:
+class SimulatedSettlementEngine:
     def __init__(self, rpc_url: str = "https://api.devnet.solana.com # Simulation default; mainnet requires active Ed25519 signer keypair"):
         self.rpc_url = rpc_url
         self.transaction_queue = asyncio.Queue(maxsize=100000)
