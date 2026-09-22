@@ -147,11 +147,11 @@ from typing import Dict, List, Any
 
 logging.basicConfig(
     level=logging.INFO,
-    format="%(asctime)s [PAYOUTS-ENTERPRISE] %(levelname)s: %(message)s"
+    format="%(asctime)s [SIMULATED-PAYOUTS] %(levelname)s: %(message)s"
 )
 logger = logging.getLogger("payouts_enterprise")
 
-class SolanaSettlementEngine:
+class SimulatedSettlementEngine:
     def __init__(self, rpc_url: str = "https://api.mainnet-beta.solana.com"):
         self.rpc_url = rpc_url
         self.transaction_queue = asyncio.Queue(maxsize=100000)
@@ -206,7 +206,7 @@ class SolanaSettlementEngine:
         self.settlement_count += len(batch)
         for tx in batch:
             tx["status"] = "confirmed"
-            logger.info(f"Microtransaction confirmed on-chain: {tx['tx_id']}")
+            logger.info(f"Microtransaction simulated-dispatch-recorded: {tx['tx_id']}")
 
     async def stop(self):
         self.running = False
@@ -220,7 +220,7 @@ class SolanaSettlementEngine:
 
 if __name__ == "__main__":
     async def test():
-        engine = SolanaSettlementEngine()
+        engine = SimulatedSettlementEngine()
         await engine.start()
         await engine.submit_payout("So11111111111111111111111111111111111111112", 10000000)
         await asyncio.sleep(0.5)
