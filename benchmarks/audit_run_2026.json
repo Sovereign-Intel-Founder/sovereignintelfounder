@@ -1,6 +1,12 @@
 {
   "benchmark_target": "Tollbridge Gateway Concurrency Stress",
   "execution_timestamp": "2026-09-21T20:00:00Z",
+  "runtime_environment": {
+    "processor": "128-core AMD EPYC",
+    "kernel": "Linux 6.x PREEMPT_RT",
+    "runtime": "Python 3.10",
+    "execution_mode": "Bare-metal local loopback"
+  },
   "harness_configuration": {
     "threads": 30,
     "events_per_thread": 8,

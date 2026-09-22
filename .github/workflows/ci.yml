@@ -19,7 +19,7 @@ jobs:
 
       - name: Build C Primitives (Strict)
         run: |
-          make all || gcc -O3 -Wall -Wextra ring_buffer.c -o ring_sanitized
+          make all
 
       - name: Verify Python Compilation
         run: |
