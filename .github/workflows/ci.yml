@@ -61,3 +61,21 @@ jobs:
             exit 1
           fi
           echo "Security audit passed: No unauthorized shell=True found."
+
+
+  
+  security-guardrail:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject unsafe network and shell patterns in core modules
+        run: |
+          if git grep -nE "shell=True" mesh/ tollbridge_system/bridge.py 2>/dev/null; then
+            echo "CRITICAL: shell=True detected in network-facing modules."
+            exit 1
+          fi
+          if git grep -nE "0\.0\.0\.0" mesh/ tollbridge_system/bridge.py 2>/dev/null; then
+            echo "CRITICAL: Wildcard 0.0.0.0 binding detected in network-facing modules."
+            exit 1
+          fi
+          echo "Security guardrail passed: Core network modules secure."

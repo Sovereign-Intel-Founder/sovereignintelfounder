@@ -17,7 +17,7 @@ import sys
 import logging
 import time
 
-HOST = '0.0.0.0'
+HOST = os.getenv("SIP_BIND_HOST", "127.0.0.1")
 PORT = 8080
 
 logging.basicConfig(
