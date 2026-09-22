@@ -1,34 +1,42 @@
-import time
-import json
-import random
+# ==============================================================================
+# SYNTHETIC PAPER-TRADING DRY-RUN HARNESS
+# ==============================================================================
+# DESCRIPTION:
+# A deterministic local dry-run paper-trading telemetry generator.
+# 
+# EXPLICIT NOTICE:
+# - NO venue, exchange API, wallet, key, or signing mechanism is connected.
+# - NO real orders, transactions, or broadcasts are submitted.
+# - Prices and fills are generated via seeded synthetic simulation.
+# ==============================================================================
 
-def run_dry_run_loop(iterations=5):
-    print("[*] Initializing Sovereign Intelligence Protocol Live Telemetry (Dry-Run Mode)")
-    print("[*] Target Venues: Multi-node simulated edge ingestion")
+import random
+import json
+import time
+from pathlib import Path
+
+def run_paper_trader(seed=42, iterations=100):
+    random.seed(seed)
+    audit_path = Path("live_harness/logs/audit_trail.jsonl")
+    audit_path.parent.mkdir(parents=True, exist_ok=True)
     
+    records = []
     for i in range(iterations):
-        timestamp = int(time.time() * 1000)
-        # Simulate live tick jitter across venues
-        ask_a = 100.0 + random.uniform(-0.1, 0.1)
-        bid_b = ask_a + random.uniform(-0.05, 0.25)
-        
-        spread = bid_b - ask_a
-        status = "DRY_RUN_FILL" if spread > 0.08 else "SKIPPED_SPREAD_NARROW"
-        
-        log_entry = {
-            "sequence": i + 1,
-            "timestamp_ms": timestamp,
-            "venue_ask": round(ask_a, 4),
-            "venue_bid": round(bid_b, 4),
-            "gross_spread": round(spread, 4),
-            "decision": status
+        record = {
+            "timestamp": time.time(),
+            "iteration": i,
+            "seed": seed,
+            "classification": "Synthetic paper-trading dry-run telemetry",
+            "venue": "LOCAL_DRY_RUN_STUB",
+            "simulated_fill": "DRY_RUN_FILL",
+            "price": round(random.uniform(100.0, 200.0), 2)
         }
+        records.append(record)
         
-        print(json.dumps(log_entry))
-        with open("live_harness/logs/audit_trail.jsonl", "a") as f:
-            f.write(json.dumps(log_entry) + "\n")
-            
-        time.sleep(0.5)
+    with open(audit_path, "w") as f:
+        for r in records:
+            f.write(json.dumps(r) + "\n")
+    print(f"[+] Generated {iterations} deterministic paper-trading dry-run audit records with seed {seed}.")
 
 if __name__ == "__main__":
-    run_dry_run_loop()
+    run_paper_trader()

@@ -1,5 +1,25 @@
 {
-  "iterations": 100000,
-  "cold_alloc_ns_per_op": 52.39,
-  "warm_acquire_ns_per_op": 25.75
+  "measurement_classification": "Local micro-benchmark allocation profile",
+  "implementation_path": "sip_depot/allocation_benchmark.py",
+  "exact_command": "PYTHONPATH=. python3 sip_depot/allocation_benchmark.py",
+  "hardware_context": {
+    "host": "Dedicated bare-metal AMD EPYC 128-core",
+    "kernel": "Linux 6.x PREEMPT_RT"
+  },
+  "runtime_environment": {
+    "python_version": "Python 3.10+",
+    "timing_clock": "time.perf_counter_ns"
+  },
+  "parameters": {
+    "iterations": 100000,
+    "repetitions": 5
+  },
+  "metrics": {
+    "cold_alloc_ns_per_op": 52.39,
+    "warm_acquire_ns_per_op": 25.75
+  },
+  "limitations": [
+    "Measured on Python interpreter heap allocation rather than raw C malloc or kernel SLAB allocator.",
+    "Subject to Python GC pauses and interpreter overhead."
+  ]
 }

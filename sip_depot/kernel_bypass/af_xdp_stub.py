@@ -1,4 +1,4 @@
-import json
+# STATUS: Structural stub / configuration-shape prototype. Creates no real AF_XDP socket, UMEM, or BPF map.\nimport json
 
 class AFXDPReceiverStub:
     def __init__(self, umem_size_mb=64, chunk_size=4096):

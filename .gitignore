@@ -3,3 +3,5 @@ __pycache__/
 *.pyc
 *.db
 
+ring_sanitized
+live_harness/logs/
