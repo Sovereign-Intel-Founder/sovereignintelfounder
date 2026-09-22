@@ -14,7 +14,7 @@ cd sovereignintelfounder
 make lockfree_spsc_ring
 ./lockfree_spsc_ring
 
-# Run the toll bridge concurrency test harness (256 workers)
+# Run the toll bridge concurrency test harness (30-thread workers)
 python3 scripts/tollbridge_concurrency_test.py
 ```
 
@@ -26,7 +26,7 @@ To maintain absolute transparency, metrics are categorized by execution boundary
 |---|---|---|---|---|
 | **Multi-Core Compute Saturation** | 2,787,589.29 ops/sec | **Ashburn Bare-Metal Telemetry** (Archived Measurement) | `RAW_MATRIX.md` / `telemetry/` | 128-Core AMD EPYC, PREEMPT_RT Kernel, core-pinned |
 | **Ring Buffer Latency** | ~8.15 ns per op | **Hardware-Validated Measurement** (Source-level probe) | `sip_core/` / `portfolio/` | Zero-copy POSIX shared memory mapping |
-| **Network Concurrency Stress** | 1,121.84 req/sec | **Locally Reproducible Test** | `scripts/tollbridge_concurrency_test.py` | 256 concurrent multi-vector workers (100% success rate) |
+| **Network Concurrency Stress** | 1,121.84 req/sec | **Locally Reproducible Test** | `scripts/tollbridge_concurrency_test.py` | 30-thread, 240-event synthetic local batch (100% success rate) |
 
 ## 3. Design Tradeoffs & Limitations
 * **Hardware Dependence:** Peak multi-core saturation and nanosecond ring buffer bounds require dedicated NUMA-local node alignment and kernel thread priority configuration (`PREEMPT_RT`). Standard consumer hardware will yield different baseline deltas.

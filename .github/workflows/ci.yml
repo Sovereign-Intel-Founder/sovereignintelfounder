@@ -36,7 +36,7 @@ jobs:
       - name: Static Security Analysis (Advisory Bandit Scan)
         run: |
           pip install bandit
-          bandit -r . -ll -ii --exclude ./venv,.git || echo "Advisory security findings noted."
+          bandit -r . -ll -ii --exclude ./venv,.git
 
       - name: Validate JSON Artifacts
         run: |

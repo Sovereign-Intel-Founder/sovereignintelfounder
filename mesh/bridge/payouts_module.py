@@ -1,3 +1,4 @@
+# [SIMULATION ONLY] Zero mainnet interactions or RPC broadcasts.
 """
 Payouts Module: Solana Microtransaction Settlement & Execution Engine
 Handles cryptographic batching, nonce management, and high-frequency settlement loops.
@@ -61,7 +62,7 @@ class SimulatedSettlementEngine:
 
     async def _process_batch(self, batch: List[Dict[str, Any]]):
         batch_hash = str(uuid.uuid4())[:12]
-        logger.info(f"Broadcasting settlement batch [{batch_hash}] containing {len(batch)} microtransactions...")
+        logger.info(f"Simulating local batch dispatch [{batch_hash}] containing {len(batch)} microtransactions...")
         
         # Simulate network round-trip and validation on Solana consensus
         await asyncio.sleep(0.008)
