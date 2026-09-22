@@ -1,4 +1,4 @@
-# Sovereign Intelligence Protocol (sovereignintelfounder)
+# Sovereign Intelligence Protocol (`sovereignintelfounder`)
 
 A modular C/Python systems prototype suite demonstrating low-latency lock-free data structures, concurrent database test harnesses, and automated security guardrails.
 
