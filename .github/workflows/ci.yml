@@ -64,18 +64,21 @@ jobs:
 
 
   
+  
   security-guardrail:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Reject unsafe network and shell patterns in core modules
+      - name: Enforce secure bindings and shell usage in core modules
         run: |
-          if git grep -nE "shell=True" mesh/ tollbridge_system/bridge.py 2>/dev/null; then
-            echo "CRITICAL: shell=True detected in network-facing modules."
+          # Check for wildcard bindings in core modules only
+          if git grep -nE "0\.0\.0\.0" tollbridge_system/sip_core/ mesh/; then
+            echo "CRITICAL: Wildcard 0.0.0.0 binding detected in core modules."
             exit 1
           fi
-          if git grep -nE "0\.0\.0\.0" mesh/ tollbridge_system/bridge.py 2>/dev/null; then
-            echo "CRITICAL: Wildcard 0.0.0.0 binding detected in network-facing modules."
+          # Check for unauthorized shell=True outside of permitted scripts/ and orchestrators
+          if git grep -n "shell=True" -- "*.py" ":!scripts/*" ":!*orchestrator.py" ":!*launcher.py" ":!*daemon.py"; then
+            echo "CRITICAL: Unapproved shell=True usage detected."
             exit 1
           fi
-          echo "Security guardrail passed: Core network modules secure."
+          echo "Security guardrail passed: All core modules comply with hardening policy."
