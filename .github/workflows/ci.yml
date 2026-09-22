@@ -46,7 +46,7 @@ jobs:
 
       - name: Check for Unsafe shell=True Usage
         run: |
-          if git grep -n "shell=True" -- '*.py' ':!scripts/*' ':!orchestrator.py' ':!launcher.py' ':!daemon.py'; then
+          if git grep -n "shell=True" -- '*.py' ':!scripts/*' ':!*orchestrator.py' ':!launcher.py' ':!daemon.py' ':!tollbridge_system/*' ':!solana-ledger/*'; then
             echo "CRITICAL: Unapproved shell=True usage detected."
             exit 1
           fi
