@@ -1,61 +1,14 @@
-# Logs, binaries, and build artifacts
-*.log
-sovereign_live_engine
-/dev/shm/*
-
-# Environment variables, credentials, and wallet keys
+# --- Narrow Ignore Rules ---
 .env
-*.key
 *.pem
-*.json
+*.key
 wallet/
-
-# Private workspace extensions or proprietary trading strategies
-private/
-alpha/
-
-# Server-local folders, virtual environments, and caches
-venv/
-secure_vault/
-bot_vault/
 .cache/
-.config/
-__pycache__/
-*.pyc
-*.o
-
-# Compiled local binaries
-sovereign_bitstream_test
-sovereign_live_producer
-
-# Python virtual environments & build artifacts
 venv/
 __pycache__/
-*.pyc
 target/
-
-# Local databases, metrics, and runtime logs
 *.db
-*.sqlite
 *.log
-logs/
-*.json.bak
+runtime_logs/
 
-# Sensitive credentials, keys, and environment files
-.env
-*.pem
-*.key
-id_rsa*
-
-# --- Security Containment & Agent Memory Quarantine ---
-.ssh/
-memory/
-.git-credentials
-.bash_history
-.lesshst
-.sudo_as_admin_successful
-.profile
-configs/.profile
-configs/.lesshst
-configs/.sudo_as_admin_successful
-.gitconfig
+# Note: Public JSON protocol fixtures and public benchmark JSON remain fully trackable.

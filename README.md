@@ -10,11 +10,11 @@ A high-throughput, low-latency bare-metal protocol implementation featuring nati
 * **[Demo Index](docs/DEMO_INDEX.md):** Safe local inspection and execution commands.
 * **[Evidence Index](docs/EVIDENCE_INDEX.md):** Telemetry ledger and performance logs.
 * **[Submodules](docs/SUBMODULES.md):** Explicit boundaries for auxiliary repositories (`clean-check`, `sovereign-intelligence`, `sovereign-seed-commons`).
-* **[Security & Hygiene](docs/SECURITY_AND_DATA_HYGIENE.md):** Containment policies and quarantine rules.
+* **[Security & Data Hygiene](docs/SECURITY_AND_DATA_HYGIENE.md):** Containment policies and quarantine rules.
 
 ## Maturity & Limitations
 * **Project Stage:** Alpha / Founder-Engineered Prototype.
-* **Hardware Dependencies:** Certain core affinity and ring-buffer modules require dedicated multi-core NUMA architectures.
+* **Operational Status:** Environment-dependent local synthetic harness. It is **not** an out-of-the-box live production financial gateway; hardware-dependent core affinity and ring-buffer modules require dedicated multi-core NUMA architectures.
 * **Boundaries:** Sovereign Seed Commons is maintained as a strictly separate project and is not merged into SIP.
 
 ## License

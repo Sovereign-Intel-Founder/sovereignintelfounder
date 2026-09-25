@@ -1,0 +1,45 @@
+name: SIP CI Validation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Security Path Check
+        run: |
+          echo "Checking for forbidden sensitive paths..."
+          if git ls-files | grep -E '(^|/)(\.bash_history|\.gitconfig|\.git-credentials|\.ssh|memory|secure_vault|bot_vault|venv)(/|$)' ; then
+            echo "ERROR: Sensitive paths detected in git tracking!"
+            exit 1
+          fi
+          echo "Security path check passed."
+
+      - name: Documentation Link & File Verification
+        run: |
+          echo "Verifying core documentation existence..."
+          test -f README.md
+          test -f docs/START_HERE.md
+          test -f docs/BENCHMARK_INDEX.md
+          test -f docs/PROOF_INDEX.md
+          echo "Documentation files present."
+
+      - name: Python Syntax Check
+        run: |
+          echo "Checking Python syntax across repository..."
+          find . -name "*.py" -not -path "./.git/*" -not -path "*/venv/*" -print0 | xargs -0 python -m py_compile
+          echo "Python syntax check passed."
