@@ -1,22 +1,32 @@
-# Sovereign Intelligence Protocol (SIP)
+# Sovereign Intelligence Protocol
 
-A high-throughput, low-latency bare-metal protocol implementation featuring native telemetry harnesses, sharded memory queues, and modular verification layers. Optimized for high-frequency event streaming and hardware-aligned execution.
+> **Sovereign Intelligence Protocol is a long-term, cell-based infrastructure ecosystem being developed by a solo founder. Its Commons is a lightweight, free-tier-friendly participation layer that engineers can fork, run, modify, and contribute back through pull requests. Around that foundation are a reference cell architecture, a bare-metal performance lab, telemetry and benchmark tooling, and a staged 27-cell roadmap involving specialized toll bridges, arbitrage machines, voting infrastructure, and future network coordination.**
 
-## Navigation & Documentation
-* **[Start Here](docs/START_HERE.md):** Project overview, reading order, and scope.
-* **[Repository Map](docs/REPOSITORY_MAP.md):** Structural layout of the codebase.
-* **[Submodules](docs/SUBMODULES.md):** Explicit boundaries for auxiliary repositories (`clean-check`, `sovereign-intelligence`, `sovereign-seed-commons`).
-* **[Benchmark Index](docs/BENCHMARK_INDEX.md):** High-throughput baseline metrics and evidence ledger.
-* **[Proof Index](docs/PROOF_INDEX.md):** Verification assets, protocol fixtures, and status matrix.
-* **[Demo Index](docs/DEMO_INDEX.md):** Safe local inspection and execution commands.
-* **[Evidence Index](docs/EVIDENCE_INDEX.md):** Telemetry ledger and performance logs.
-* **[Maturity & Limitations](docs/MATURITY_AND_LIMITATIONS.md):** Detailed breakdown of operational scope and boundaries.
+---
 
-## Maturity & Operational Scope
-* **Project Stage:** Alpha / Founder-Engineered Prototype.
-* **Operational Status:** Environment-dependent local synthetic harness. It is **not** a live financial execution gateway.
-* **Evidence Categories:** Native C, Python, synthetic, captured, and server-only evidence are strictly categorized. Benchmark measurements reflect distinct operational scopes (e.g., producer-only enqueue vs. consumer-validated).
-* **Architecture Boundaries:** Sovereign Intelligence Protocol (SIP) is strictly separate from **Sovereign Seed Commons**. The parent repository utilizes git submodules (`.gitmodules`) without code mixing or history rewriting.
+## The Four-Tier Architecture
 
-## License
-Distributed under the terms specified in the [LICENSE](LICENSE) file.
+1. **The Commons** — Small, lightweight, free-tier-friendly, forkable, and contributor-oriented. Requires zero specialized hardware, private keys, or paid infrastructure.
+2. **The Reference Cell** — The canonical example of how a cell is structured and operated.
+3. **The Bare-Metal Lab** — Where native performance, NUMA behavior, native queues, packet processing, and hardware limits are measured on a 128-core EPYC host.
+4. **The Ecosystem Roadmap** — The planned 27-cell network, including toll bridges, arbitrage machines, voting nodes, and coordination infrastructure.
+
+---
+
+## Ecosystem Roadmap
+
+| Cell group | Planned count | Purpose | Status |
+|---|---:|---|---|
+| Commons/reference cells | Open | Contributor participation and testing | Initial design |
+| Toll bridges | 8 | Ingress, routing, telemetry, service boundaries | In progress |
+| Arbitrage machines | 14 | Specialized analysis/execution roles | Roadmap |
+| Voting nodes | 4 | Consensus/network integrity roles | Planned/separately verified |
+| Coordination/observability | 1 | Network-level coordination | Roadmap |
+| **Total** | **27** | Full ecosystem topology | Staged implementation |
+
+---
+
+## Contribution Quick-Start
+1. Fork the repository
+2. Run local cell tests using the Commons partition
+3. Open a pull request
