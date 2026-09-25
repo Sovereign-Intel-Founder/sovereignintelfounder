@@ -1,15 +1,19 @@
-.PHONY: all build test clean
+CC = gcc
+CFLAGS = -O3 -march=native -mavx512f -mavx512cd -std=gnu11 -pthread
+INCLUDES = -I 02-low-latency/bitstream/include \
+           -I 02-low-latency/bitstream/tests \
+           -I 02-low-latency/toll_bridge/include \
+           -I 02-low-latency/mesh_index/include
+LIBS = -lnuma
 
-all: build
+all: sovereign_live_engine
 
-build:
-	@echo "==> Building Sovereign Intelligence Protocol components..."
-	@cargo build --release 2>/dev/null || echo "No Cargo.toml at root, checking modules..."
-
-test:
-	@echo "==> Running verification and conformance suites..."
-	@cargo test 2>/dev/null || echo "No root test runner configured."
+sovereign_live_engine:
+	$(CC) $(CFLAGS) \
+		02-low-latency/bitstream/tests/test_live_engine.c \
+		02-low-latency/toll_bridge/src/sovereign_toll_bridge.c \
+		02-low-latency/mesh_index/src/sovereign_mesh_index.c \
+		$(INCLUDES) $(LIBS) -o sovereign_live_engine
 
 clean:
-	@echo "==> Cleaning build artifacts..."
-	@rm -rf target/ __pycache__/ .pytest_cache/
+	rm -f sovereign_live_engine *.log

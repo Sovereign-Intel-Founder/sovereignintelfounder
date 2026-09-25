@@ -1,49 +1,15 @@
-.rustup/
-.local/
-.cargo/
-solana-accounts/
-*.tar.gz
-*.o
+# Logs, binaries, and build artifacts
 *.log
-*.so
-*.bin
-*.a
-__pycache__/
-.env
+sovereign_live_engine
+/dev/shm/*
 
-# Local configs and credentials
-.config/
-
-# Server Debris & Sensitive Paths
-.ssh/
-.git-credentials
-.bash_history
-.gitconfig
-.gitignore_global
-.lesshst
-.profile
-.sudo_as_admin_successful
+# Environment variables, credentials, and wallet keys
 .env
-.cache/
-venv/
-secure_vault/
-bot_vault/
-__pycache__/
-*.pyc
+*.key
+*.pem
+*.json
+wallet/
 
-# Server Debris & Sensitive Paths
-.ssh/
-.git-credentials
-.bash_history
-.gitconfig
-.gitignore_global
-.lesshst
-.profile
-.sudo_as_admin_successful
-.env
-.cache/
-venv/
-secure_vault/
-bot_vault/
-__pycache__/
-*.pyc
+# Private workspace extensions or proprietary trading strategies
+private/
+alpha/
