@@ -13,3 +13,37 @@ __pycache__/
 
 # Local configs and credentials
 .config/
+
+# Server Debris & Sensitive Paths
+.ssh/
+.git-credentials
+.bash_history
+.gitconfig
+.gitignore_global
+.lesshst
+.profile
+.sudo_as_admin_successful
+.env
+.cache/
+venv/
+secure_vault/
+bot_vault/
+__pycache__/
+*.pyc
+
+# Server Debris & Sensitive Paths
+.ssh/
+.git-credentials
+.bash_history
+.gitconfig
+.gitignore_global
+.lesshst
+.profile
+.sudo_as_admin_successful
+.env
+.cache/
+venv/
+secure_vault/
+bot_vault/
+__pycache__/
+*.pyc
