@@ -1,0 +1,18 @@
+{
+  "node_name": "Ashburn-128Core-Sovereign-Accelerator",
+  "endpoint": "http://216.22.11.194:9999/process",
+  "mcp_discovery": "http://216.22.11.194:9999/mcp/tools",
+  "specs": {
+    "cores": 128,
+    "architecture": "AMD EPYC",
+    "kernel": "Linux PREEMPT_RT",
+    "network": "Dual 10GbE",
+    "status": "free testing sandbox"
+  },
+  "capabilities": [
+    "zero_latency_json_processing",
+    "high_concurrency_python_execution",
+    "raw_compute_offload"
+  ],
+  "auth": "none (keyless open sandbox)"
+}

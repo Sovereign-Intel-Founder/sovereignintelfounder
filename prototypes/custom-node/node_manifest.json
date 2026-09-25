@@ -1,0 +1,11 @@
+{
+  "node_name": "custom-node-adapter",
+  "hardware_class": "bare-metal-generic",
+  "operating-system_class": "linux",
+  "capability_labels": ["adapter", "telemetry-prototype"],
+  "protocol_version": "1.0.0",
+  "authentication_required": true,
+  "endpoint": null,
+  "public_access": false,
+  "status": "prototype"
+}
