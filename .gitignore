@@ -46,3 +46,16 @@ logs/
 *.pem
 *.key
 id_rsa*
+
+# --- Security Containment & Agent Memory Quarantine ---
+.ssh/
+memory/
+.git-credentials
+.bash_history
+.lesshst
+.sudo_as_admin_successful
+.profile
+configs/.profile
+configs/.lesshst
+configs/.sudo_as_admin_successful
+.gitconfig

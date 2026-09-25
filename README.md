@@ -1,18 +1,21 @@
 # Sovereign Intelligence Protocol (SIP)
 
-An elite, 100% live, bare-metal low-latency Solana systems engineering pipeline designed for real-time mainnet transaction ingestion, temporal delta tracking, and dynamic Jito bundle tipping.
+A high-throughput, low-latency bare-metal protocol implementation featuring native telemetry harnesses, sharded memory queues, and modular verification layers. Optimized for high-frequency event streaming and hardware-aligned execution.
 
-## Architecture Overview
+## Navigation & Documentation
+* **[Start Here](docs/START_HERE.md):** Project overview, reading order, and scope.
+* **[Repository Map](docs/REPOSITORY_MAP.md):** Structural layout of the codebase.
+* **[Benchmark Index](docs/BENCHMARK_INDEX.md):** High-throughput baseline metrics (exceeding 133,000 events/sec peak on 128-core Ashburn bare-metal).
+* **[Proof Index](docs/PROOF_INDEX.md):** Verification assets and protocol fixtures.
+* **[Demo Index](docs/DEMO_INDEX.md):** Safe local inspection and execution commands.
+* **[Evidence Index](docs/EVIDENCE_INDEX.md):** Telemetry ledger and performance logs.
+* **[Submodules](docs/SUBMODULES.md):** Explicit boundaries for auxiliary repositories (`clean-check`, `sovereign-intelligence`, `sovereign-seed-commons`).
+* **[Security & Hygiene](docs/SECURITY_AND_DATA_HYGIENE.md):** Containment policies and quarantine rules.
 
-SIP breaks away from traditional node bloat and simulation placeholders by implementing a decoupled, zero-copy inter-process communication model:
+## Maturity & Limitations
+* **Project Stage:** Alpha / Founder-Engineered Prototype.
+* **Hardware Dependencies:** Certain core affinity and ring-buffer modules require dedicated multi-core NUMA architectures.
+* **Boundaries:** Sovereign Seed Commons is maintained as a strictly separate project and is not merged into SIP.
 
-* **High-Performance C Engine:** Handles raw byte parsing, bitstream validation, toll-bridge filtering, and mesh routing. Pinned to dedicated silicon with real-time scheduling priority.
-* **Resilient Python Wire Feeder:** Maintains an autonomous WebSocket connection to Solana mainnet RPCs with an exponential backoff watchdog, pushing raw slots straight into shared memory.
-* **POSIX Shared Memory Ring Buffer:** Zero-copy lock-free ring buffer (`/dev/shm/sovereign_live_ring`) engineered for microsecond-scale cross-process throughput.
-
-## Low-Latency Hardening & Determinism
-
-* **Core Isolation & Pinning:** Execution threads are explicitly pinned to physical CPU cores via `pthread_setaffinity_np`.
-* **Real-Time Priority:** Engages `SCHED_FIFO` priority 99 and locks physical RAM via `mlockall` to eliminate paging latency.
-* **NUMA Optimization:** Shared memory buffers are explicitly bound to NUMA Node 0 memory controllers using `mbind`.
-* **Unified Temporal Domain:** High-resolution monotonic nanosecond timing (`clock_gettime(CLOCK_MONOTONIC)`) tracks exact wire-to-execution deltas.
+## License
+Distributed under the terms specified in the [LICENSE](LICENSE) file.

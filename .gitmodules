@@ -1,0 +1,11 @@
+[submodule "clean-check"]
+	path = clean-check
+	url = https://github.com/Sovereign-Intel-Founder/clean-check.git
+
+[submodule "sovereign-intelligence"]
+	path = sovereign-intelligence
+	url = https://github.com/Sovereign-Intel-Founder/sovereign-intelligence.git
+
+[submodule "sovereign-seed-commons"]
+	path = sovereign-seed-commons
+	url = https://github.com/Sovereign-Intel-Founder/sovereign-seed-commons.git
