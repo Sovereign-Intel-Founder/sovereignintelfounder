@@ -13,3 +13,36 @@ wallet/
 # Private workspace extensions or proprietary trading strategies
 private/
 alpha/
+
+# Server-local folders, virtual environments, and caches
+venv/
+secure_vault/
+bot_vault/
+.cache/
+.config/
+__pycache__/
+*.pyc
+*.o
+
+# Compiled local binaries
+sovereign_bitstream_test
+sovereign_live_producer
+
+# Python virtual environments & build artifacts
+venv/
+__pycache__/
+*.pyc
+target/
+
+# Local databases, metrics, and runtime logs
+*.db
+*.sqlite
+*.log
+logs/
+*.json.bak
+
+# Sensitive credentials, keys, and environment files
+.env
+*.pem
+*.key
+id_rsa*

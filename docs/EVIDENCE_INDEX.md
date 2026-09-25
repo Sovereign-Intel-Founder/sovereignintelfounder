@@ -1,3 +1,3 @@
-# Evidence Index
+# Evidence Index & Telemetry Ledger
 
-Catalog of telemetry runs, performance logs, and validation results supporting the Sovereign Intelligence Protocol.
+This ledger links architectural claims and benchmark results to verified execution origins.
