@@ -1,0 +1,15 @@
+.rustup/
+.local/
+.cargo/
+solana-accounts/
+*.tar.gz
+*.o
+*.log
+*.so
+*.bin
+*.a
+__pycache__/
+.env
+
+# Local configs and credentials
+.config/

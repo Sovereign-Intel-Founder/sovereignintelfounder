@@ -1,0 +1,16 @@
+[core]
+	excludesFile = /home/joshua445/.gitignore_global
+[credential]
+	helper = store
+[user]
+	name = Joshua Kleinsasser
+	email = joshua445@penguin
+[safe]
+	directory = /home/joshua445/sovereign-intelligence/tollbridge_system
+	directory = /home/joshua445/sovereign-intelligence
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential

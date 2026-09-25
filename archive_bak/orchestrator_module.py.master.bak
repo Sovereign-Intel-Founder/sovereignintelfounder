@@ -1,0 +1,231 @@
+import sys, os
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+
+import sys, os
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+#!/usr/bin/env python3
+"""
+=========================================================================================
+TOLL BRIDGE ENTERPRISE ORCHESTRATOR - HARDENED PRODUCTION CORE (v3.3)
+Architect-Grade Process Supervisor with One-Shot Task Retirement & Stream Protection.
+=========================================================================================
+"""
+
+import os
+import sys
+import time
+import sqlite3
+import logging
+import subprocess
+import signal
+
+WORKSPACE = "/home/joshua445/tollbridge_system"
+DB_PATH = os.path.join(WORKSPACE, "beast_ultimate_ledger.db")
+LOG_PATH = os.path.join(WORKSPACE, "orchestrator_runtime.log")
+
+os.makedirs(WORKSPACE, exist_ok=True)
+
+# -------------------------------------------------------------------------
+# 1. COMPONENT REGISTRIES (Separated Daemons vs One-Shots)
+# -------------------------------------------------------------------------
+PRODUCTION_DAEMONS = [
+    "gateway_module.py",
+    "payouts_module.py",
+    "master_cluster.py",
+    "bridge.py"
+]
+
+ONE_SHOT_MODULES = [
+    "ledger_module.py",
+    "bridge_mesh.py",
+    "deep_swarm_auditor.py"
+]
+
+# Logging Configuration
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] [ORCHESTRATOR] %(message)s",
+    handlers=[
+        logging.StreamHandler(sys.stdout),
+        logging.FileHandler(LOG_PATH, mode='a')
+    ]
+)
+logger = logging.getLogger("Orchestrator")
+
+
+# -------------------------------------------------------------------------
+# 2. STATE LEDGER INITIALIZATION
+# -------------------------------------------------------------------------
+def init_ledger():
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        c = conn.cursor()
+        c.execute('''
+            CREATE TABLE IF NOT EXISTS component_registry (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                component_name TEXT UNIQUE,
+                file_path TEXT,
+                status TEXT,
+                last_seen DATETIME DEFAULT CURRENT_TIMESTAMP
+            )
+        ''')
+        c.execute('''
+            CREATE TABLE IF NOT EXISTS telemetry_log (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+                source TEXT,
+                event_level TEXT,
+                message TEXT
+            )
+        ''')
+        conn.commit()
+        conn.close()
+        logger.info("Master state ledger schema verified [OK].")
+    except Exception as e:
+        logger.error(f"Ledger initialization failure: {e}")
+
+
+# -------------------------------------------------------------------------
+# 3. SUPERVISOR ENGINE WITH CLEAN SIGNAL HANDLING
+# -------------------------------------------------------------------------
+class ProductionSupervisor:
+    def __init__(self):
+        self.processes = {}
+        self.running = True
+        
+        # Register system signal listeners for clean shutdown
+        signal.signal(signal.SIGINT, self._handle_signal)
+        signal.signal(signal.SIGTERM, self._handle_signal)
+
+    def _handle_signal(self, signum, frame):
+        logger.info(f"Received termination signal ({signum}). Initiating clean cluster shutdown...")
+        self.running = False
+        self.stop_all()
+
+    def run_one_shots(self):
+        """Executes initialization scripts once and retires them cleanly."""
+        logger.info("=========================================================================")
+        logger.info(" EXECUTING ONE-SHOT INITIALIZATION MODULES")
+        logger.info("=========================================================================")
+
+        for script_name in ONE_SHOT_MODULES:
+            filepath = os.path.join(WORKSPACE, script_name)
+            if not os.path.exists(filepath):
+                logger.warning(f"[SKIP] One-shot module not present in workspace: {script_name}")
+                continue
+            
+            logger.info(f"[INIT] Running setup module: {script_name}")
+            try:
+                result = subprocess.run(
+                    [sys.executable, filepath],
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE,
+                    text=True,
+                    cwd=WORKSPACE,
+                    timeout=30
+                )
+                if result.returncode == 0:
+                    logger.info(f"[OK] One-shot module completed successfully: {script_name}")
+                else:
+                    logger.error(f"[ERROR] One-shot module {script_name} failed: {result.stderr.strip()}")
+            except Exception as e:
+                logger.error(f"Execution error on one-shot module {script_name}: {e}")
+
+    def launch_daemons(self):
+        """Launches continuous production daemons."""
+        logger.info("=========================================================================")
+        logger.info(" LAUNCHING CONTINUOUS PRODUCTION DAEMONS")
+        logger.info("=========================================================================")
+
+        for script_name in PRODUCTION_DAEMONS:
+            filepath = os.path.join(WORKSPACE, script_name)
+            if not os.path.exists(filepath):
+                logger.warning(f"[SKIP] Daemon not present in workspace: {script_name}")
+                continue
+
+            logger.info(f"[SPAWN] Launching core daemon: {script_name}")
+            try:
+                proc = subprocess.Popen(
+                    [sys.executable, filepath],
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE,
+                    text=True,
+                    cwd=WORKSPACE
+                )
+                self.processes[script_name] = proc
+
+                # Update SQLite State
+                conn = sqlite3.connect(DB_PATH)
+                c = conn.cursor()
+                c.execute('''
+                    INSERT INTO component_registry (component_name, file_path, status)
+                    VALUES (?, ?, 'RUNNING')
+                    ON CONFLICT(component_name) DO UPDATE SET status='RUNNING', last_seen=CURRENT_TIMESTAMP
+                ''', (script_name, filepath))
+                conn.commit()
+                conn.close()
+
+            except Exception as e:
+                logger.error(f"Failed to launch daemon {script_name}: {e}")
+
+        logger.info(f"Cluster online. Active core processes: {len(self.processes)}")
+
+    def monitor_loop(self):
+        """Self-healing loop with respawn protection exclusively for daemons."""
+        while self.running:
+            time.sleep(3.0)
+            for script_name, proc in list(self.processes.items()):
+                retcode = proc.poll()
+                if retcode is not None:
+                    stderr_out = proc.stderr.read() if proc.stderr else ""
+                    logger.warning(f"[ALERT] Daemon '{script_name}' exited (Code: {retcode}). Respawning...")
+                    
+                    if stderr_out.strip():
+                        logger.error(f"[{script_name} STDERR]: {stderr_out.strip()}")
+
+                    # Respawn Process
+                    try:
+                        new_proc = subprocess.Popen(
+                            [sys.executable, os.path.join(WORKSPACE, script_name)],
+                            stdout=subprocess.PIPE,
+                            stderr=subprocess.PIPE,
+                            text=True,
+                            cwd=WORKSPACE
+                        )
+                        self.processes[script_name] = new_proc
+                    except Exception as e:
+                        logger.error(f"Failed to respawn {script_name}: {e}")
+
+    def stop_all(self):
+        """Cleanly terminates all sub-processes and releases port locks."""
+        for script_name, proc in self.processes.items():
+            if proc.poll() is None:
+                logger.info(f"Terminating module: {script_name}")
+                proc.terminate()
+                try:
+                    proc.wait(timeout=2.0)
+                except subprocess.TimeoutExpired:
+                    proc.kill()
+
+        # Update state ledger
+        try:
+            conn = sqlite3.connect(DB_PATH)
+            c = conn.cursor()
+            c.execute("UPDATE component_registry SET status='STOPPED'")
+            conn.commit()
+            conn.close()
+        except Exception:
+            pass
+
+        sys.exit(0)
+
+
+# -------------------------------------------------------------------------
+# 4. ENTRY POINT
+# -------------------------------------------------------------------------
+if __name__ == "__main__":
+    init_ledger()
+    supervisor = ProductionSupervisor()
+    supervisor.run_one_shots()
+    supervisor.launch_daemons()
+    supervisor.monitor_loop()

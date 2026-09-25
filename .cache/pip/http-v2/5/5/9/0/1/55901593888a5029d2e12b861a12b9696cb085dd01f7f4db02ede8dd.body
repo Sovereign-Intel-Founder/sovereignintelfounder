@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: solders
+Version: 0.29.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: typing-extensions>=4.2.0
+Requires-Dist: jsonalias==0.1.1
+License-File: LICENSE
+Summary: Python bindings for Solana Rust tools
+Author-email: kevinheavey <kevinheavey123@gmail.com>
+Requires-Python: >=3.10, <4.0
+Project-URL: changelog, https://github.com/kevinheavey/solders/blob/main/CHANGELOG.md
+Project-URL: documentation, https://kevinheavey.github.io/solders/
+Project-URL: homepage, https://github.com/kevinheavey/solders
+Project-URL: repository, https://github.com/kevinheavey/solders

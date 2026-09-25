@@ -1,0 +1,61 @@
+Metadata-Version: 2.4
+Name: opentelemetry-instrumentation-exceptions
+Version: 0.65b0
+Summary: OpenTelemetry unhandled exceptions instrumentation
+Project-URL: Homepage, https://github.com/open-telemetry/opentelemetry-python-contrib/tree/main/instrumentation/opentelemetry-instrumentation-exceptions
+Project-URL: Repository, https://github.com/open-telemetry/opentelemetry-python-contrib
+Author-email: OpenTelemetry Authors <cncf-opentelemetry-contributors@lists.cncf.io>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Requires-Python: >=3.10
+Requires-Dist: opentelemetry-api<2.0.0,>=1.42.0.dev
+Requires-Dist: opentelemetry-instrumentation==0.65b0
+Requires-Dist: opentelemetry-semantic-conventions==0.65b0
+Provides-Extra: instruments
+Description-Content-Type: text/x-rst
+
+OpenTelemetry unhandled exceptions instrumentation
+==================================================
+
+|pypi|
+
+.. |pypi| image:: https://badge.fury.io/py/opentelemetry-instrumentation-exceptions.svg
+   :target: https://pypi.org/project/opentelemetry-instrumentation-exceptions/
+
+Installation
+------------
+
+::
+
+    pip install opentelemetry-instrumentation-exceptions
+
+Usage
+-----
+
+.. code-block:: python
+
+    from opentelemetry.instrumentation.exceptions import (
+        UnhandledExceptionInstrumentor,
+    )
+
+    UnhandledExceptionInstrumentor().instrument()
+
+This instrumentation captures uncaught process exceptions, uncaught thread
+exceptions, and unhandled asyncio task exceptions and emits them as OpenTelemetry
+logs.
+
+References
+----------
+
+* `OpenTelemetry Python Contrib repository <https://github.com/open-telemetry/opentelemetry-python-contrib>`_
+* `OpenTelemetry Project <https://opentelemetry.io/>`_
