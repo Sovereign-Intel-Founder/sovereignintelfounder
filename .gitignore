@@ -1,14 +1,27 @@
-# --- Narrow Ignore Rules ---
+# --- Sovereign Intelligence Protocol (SIP) Narrow Ignore Rules ---
 .env
+.env.*
 *.pem
 *.key
+*.p12
+*.pfx
 wallet/
+private/
+alpha/
 .cache/
 venv/
+.venv/
 __pycache__/
+*.pyc
 target/
 *.db
+*.sqlite
+*.sqlite3
 *.log
-runtime_logs/
+*.pid
+/dev/shm/*
+local_runtime/
+runtime/
 
-# Note: Public JSON protocol fixtures and public benchmark JSON remain fully trackable.
+# Public protocol manifests, fixtures, signed receipts, benchmark reports, 
+# telemetry reports, and conformance vectors remain fully trackable.

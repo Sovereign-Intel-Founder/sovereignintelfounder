@@ -20,14 +20,14 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Security Path Check
+      - name: Security Path & Cache Check
         run: |
-          echo "Checking for forbidden sensitive paths..."
-          if git ls-files | grep -E '(^|/)(\.bash_history|\.gitconfig|\.git-credentials|\.ssh|memory|secure_vault|bot_vault|venv)(/|$)' ; then
-            echo "ERROR: Sensitive paths detected in git tracking!"
+          echo "Checking for forbidden sensitive paths and cache material..."
+          if git ls-files | grep -E '(^|/)(\.bash_history|\.gitconfig|\.git-credentials|\.ssh|memory|secure_vault|bot_vault|venv|\.cache)(/|$)' ; then
+            echo "ERROR: Forbidden sensitive or cache paths detected in git tracking!"
             exit 1
           fi
-          echo "Security path check passed."
+          echo "Security and cache checks passed."
 
       - name: Documentation Link & File Verification
         run: |
@@ -41,5 +41,5 @@ jobs:
       - name: Python Syntax Check
         run: |
           echo "Checking Python syntax across repository..."
-          find . -name "*.py" -not -path "./.git/*" -not -path "*/venv/*" -print0 | xargs -0 python -m py_compile
+          find . -name "*.py" -not -path "./.git/*" -not -path "*/venv/*" -not -path "*/.venv/*" -print0 | xargs -0 python -m py_compile
           echo "Python syntax check passed."
