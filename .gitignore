@@ -8,3 +8,4 @@ sovereign_workspace_diagnostics_*
 perf.data
 state.db
 *.log
+.cargo/
