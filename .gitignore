@@ -1,0 +1,10 @@
+sovereign-seed-commons/
+sovereign_backups/
+sovereign_full_backup_2026/
+sovereign_vital_backup/
+private-repository-cleanup-backup-*/
+sovereign_workspace_diagnostics_*
+*.tar.gz
+perf.data
+state.db
+*.log

@@ -1,0 +1,9 @@
+{
+  "name": "Sovereign Seed",
+  "project": "Sovereign Seed Commons",
+  "parent_project": "Sovereign Intelligence Protocol",
+  "owner": "Joshua Kleinsasser",
+  "identity_version": "0.1.0",
+  "activation_policy": "pull_request_required",
+  "publishing_policy": "approval_required"
+}
