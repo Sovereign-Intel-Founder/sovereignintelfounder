@@ -17,7 +17,7 @@ DAEMON_PATH = f"/usr/local/bin/solana-maintenance-daemon.py"
 
 def run_cmd(cmd, check=True):
     print(f"[EXEC] {cmd}")
-    res = subprocess.run(cmd, shell=True, text=True, capture_output=True)
+    res = subprocess.run(cmd, text=True, capture_output=True)
     if check and res.returncode != 0:
         print(f"[ERROR] Command failed: {res.stderr.strip()}")
         sys.exit(res.returncode)
@@ -80,10 +80,10 @@ import subprocess
 
 # Autonomous upkeep worker for disk, ledger size enforcement, and process recovery
 def check_node():
-    res = subprocess.run("systemctl is-active --quiet solana-rpc", shell=True)
+    res = subprocess.run("systemctl is-active --quiet solana-rpc")
     if res.returncode != 0:
         print("[MAINTENANCE] Node offline. Triggering recovery restart...")
-        subprocess.run("systemctl restart solana-rpc", shell=True)
+        subprocess.run("systemctl restart solana-rpc")
 
 if __name__ == "__main__":
     while True:

@@ -15,7 +15,7 @@ KEYGEN_BIN = f"{SOLANA_INSTALL_DIR}/active_release/bin/solana-keygen"
 
 def run_cmd(cmd, check=True):
     print(f"[EXEC] {cmd}")
-    res = subprocess.run(cmd, shell=True, text=True, capture_output=True, cwd=HOME_DIR)
+    res = subprocess.run(cmd, text=True, capture_output=True, cwd=HOME_DIR)
     if check and res.returncode != 0:
         print(f"[ERROR] Command failed: {res.stderr.strip()}")
         sys.exit(res.returncode)

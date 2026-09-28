@@ -13,6 +13,7 @@ lockfree_spsc_ring: spsc_ring_test
 
 sanitize: src/spsc_ring.c
 	$(CC) $(SANITIZER_FLAGS) -o spsc_ring_test_sanitize $<
+	./spsc_ring_test_sanitize
 
 test: spsc_ring_test
 	./spsc_ring_test
