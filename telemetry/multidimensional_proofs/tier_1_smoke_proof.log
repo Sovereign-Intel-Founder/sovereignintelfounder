@@ -1,0 +1,13 @@
+==================================================
+DIMENSIONAL PROFILE: TIER_1_SMOKE
+==================================================
+Timestamp: 2026-09-28 17:11:15
+Total Requests: 500
+Concurrency Limit: 100
+Compute Unit Range: 100 - 5000 CUs
+Duration: 0.1239 seconds
+Throughput: 4035.93 req/sec
+Successful Transactions: 500/500 (100.0%)
+Failed / Error States: 0
+Status: VERIFIED PASSED
+==================================================

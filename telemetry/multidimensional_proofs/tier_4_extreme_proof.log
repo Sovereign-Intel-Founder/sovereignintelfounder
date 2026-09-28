@@ -1,0 +1,13 @@
+==================================================
+DIMENSIONAL PROFILE: TIER_4_EXTREME
+==================================================
+Timestamp: 2026-09-28 17:11:23
+Total Requests: 10000
+Concurrency Limit: 1000
+Compute Unit Range: 10000 - 100000 CUs
+Duration: 2.6852 seconds
+Throughput: 3724.13 req/sec
+Successful Transactions: 10000/10000 (100.0%)
+Failed / Error States: 0
+Status: VERIFIED PASSED
+==================================================

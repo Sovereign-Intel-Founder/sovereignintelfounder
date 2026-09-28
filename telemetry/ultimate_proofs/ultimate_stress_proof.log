@@ -1,0 +1,15 @@
+==================================================
+ULTIMATE HARDENED STRESS TEST REPORT
+==================================================
+Timestamp: 2026-09-28 17:18:01
+Total Requests: 25000
+Concurrency Limit: 3000
+Total Duration: 9.0046 seconds
+Throughput: 2776.35 req/sec
+Successful Transactions: 9064/25000 (36.26%)
+Failed / Error States: 15936
+Tail Latency (p50): 5152.37 ms
+Tail Latency (p95): 8464.41 ms
+Tail Latency (p99): 8473.78 ms
+Status: CHECK BOTTLENECK
+==================================================

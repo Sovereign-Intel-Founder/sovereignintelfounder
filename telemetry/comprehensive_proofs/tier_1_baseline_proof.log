@@ -1,0 +1,12 @@
+==================================================
+TIER: TIER_1_BASELINE
+==================================================
+Timestamp: 2026-09-28 17:07:17
+Total Requests: 2500
+Concurrency Limit: 500
+Duration: 0.6366 seconds
+Throughput: 3927.08 req/sec
+Successful Transactions: 2500/2500 (100.0%)
+Failed / Errors: 0
+Status: PASSED
+==================================================

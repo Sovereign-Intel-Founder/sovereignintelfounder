@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sovereign Intelligence Protocol - Telemetry Dashboard</title>
+    <style>
+        body { background: #0f172a; color: #f8fafc; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 0; padding: 2rem; }
+        h1 { font-size: 1.5rem; border-bottom: 1px solid #334155; padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+        .metrics { display: flex; gap: 1rem; margin-bottom: 2rem; }
+        .card { background: #1e293b; padding: 1rem 1.5rem; border-radius: 8px; border: 1px solid #334155; flex: 1; }
+        .card h3 { margin: 0 0 0.5rem 0; font-size: 0.875rem; color: #94a3b8; text-transform: uppercase; }
+        .card p { margin: 0; font-size: 1.75rem; font-weight: bold; }
+        table { width: 100%; border-collapse: collapse; background: #1e293b; border-radius: 8px; overflow: hidden; border: 1px solid #334155; margin-bottom: 2rem; }
+        th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid #334155; font-size: 0.875rem; }
+        th { background: #0f172a; color: #94a3b8; }
+        .badge { padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.75rem; font-weight: bold; }
+        .badge.active { background: #065f46; color: #34d399; }
+        .badge.stopped { background: #7f1d1d; color: #fca5a5; }
+        .logs-box { background: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 1rem; font-family: monospace; font-size: 0.8rem; max-height: 200px; overflow-y: auto; color: #38bdf8; }
+    </style>
+</head>
+<body>
+    <h1>Sovereign Intelligence Protocol // Live Telemetry</h1>
+    
+    <div class="metrics">
+        <div class="card"><h3>Total Modules</h3><p id="m-total">-</p></div>
+        <div class="card"><h3>Active</h3><p id="m-active" style="color: #34d399;">-</p></div>
+        <div class="card"><h3>Stopped</h3><p id="m-stopped" style="color: #fca5a5;">-</p></div>
+    </div>
+
+    <h2>Component Registry</h2>
+    <table>
+        <thead>
+            <tr><th>ID</th><th>Name</th><th>Path</th><th>Status</th><th>Last Seen</th></tr>
+        </thead>
+        <tbody id="component-table">
+            <tr><td colspan="5" style="text-align: center;">Loading telemetry...</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Most Recent 20 System Logs</h2>
+    <div class="logs-box" id="logs-container">Waiting for logs...</div>
+
+    <script>
+        async function fetchTelemetry() {
+            try {
+                const response = await fetch('dashboard_data.json?t=' + Date.now());
+                const data = await response.json();
+                
+                if (data.status === 'success') {
+                    document.getElementById('m-total').innerText = data.metrics.total_components;
+                    document.getElementById('m-active').innerText = data.metrics.active;
+                    document.getElementById('m-stopped').innerText = data.metrics.stopped;
+                    
+                    const tbody = document.getElementById('component-table');
+                    tbody.innerHTML = '';
+                    data.components.forEach(c => {
+                        const badgeClass = c.status === 'ACTIVE' ? 'active' : 'stopped';
+                        tbody.innerHTML += `<tr>
+                            <td>${c.id}</td>
+                            <td><strong>${c.component_name}</strong></td>
+                            <td style="color: #94a3b8; font-size: 0.75rem;">${c.file_path}</td>
+                            <td><span class="badge ${badgeClass}">${c.status}</span></td>
+                            <td>${c.last_seen || 'N/A'}</td>
+                        </tr>`;
+                    });
+
+                    const logsBox = document.getElementById('logs-container');
+                    if (data.recent_logs && data.recent_logs.length > 0) {
+                        logsBox.innerHTML = data.recent_logs.join('<br>');
+                    } else {
+                        logsBox.innerHTML = 'No recent log records found in target table.';
+                    }
+                }
+            } catch (err) {
+                console.error("Polling error:", err);
+            }
+        }
+
+        setInterval(fetchTelemetry, 1000);
+        fetchTelemetry();
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+==================================================
+DIMENSIONAL PROFILE: TIER_5_BREAKPOINT
+==================================================
+Timestamp: 2026-09-28 17:11:30
+Total Requests: 20000
+Concurrency Limit: 2000
+Compute Unit Range: 25000 - 250000 CUs
+Duration: 6.3957 seconds
+Throughput: 3127.10 req/sec
+Successful Transactions: 10080/20000 (50.4%)
+Failed / Error States: 9920
+Status: CHECK THRESHOLDS
+==================================================

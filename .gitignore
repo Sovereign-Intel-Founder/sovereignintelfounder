@@ -1,0 +1,19 @@
+venv/
+__pycache__/
+*.pyc
+*.db
+
+ring_sanitized
+live_harness/logs/
+lockfree_spsc_ring
+spsc_ring_test
+spsc_ring_sanitized
+.local_signing_key.hex
+__pycache__/
+.env
+
+# Security & Bytecode
+.env
+__pycache__/
+*.py[cod]
+

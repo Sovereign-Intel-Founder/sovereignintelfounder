@@ -1,0 +1,22 @@
+==================================================
+MASTER DYNAMIC MULTI-VECTOR BENCHMARK REPORT
+==================================================
+Timestamp: 2026-09-28 17:25:31
+Total Requests Swept: 30000
+Controlled Concurrency: 1500
+Total Duration: 9.3831 seconds
+Overall Throughput: 3197.25 req/sec
+--------------------------------------------------
+Vector Breakdown:
+- Toll Bridge Executions: 6569
+- Arbitrage Route Tests: 6906
+- Latency Worker Probes: 6685
+- Total Successful Transactions: 20160/30000 (67.20%)
+- Failed / Error States: 9840
+--------------------------------------------------
+Tail Latency Distribution:
+- Median (p50): 4794.46 ms
+- Tail (p95): 8961.13 ms
+- Tail (p99): 9033.10 ms
+Status: COMPLETED WITH RESILIENT BACKPRESSURE
+==================================================

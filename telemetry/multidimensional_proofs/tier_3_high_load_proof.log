@@ -1,0 +1,13 @@
+==================================================
+DIMENSIONAL PROFILE: TIER_3_HIGH_LOAD
+==================================================
+Timestamp: 2026-09-28 17:11:19
+Total Requests: 5000
+Concurrency Limit: 1000
+Compute Unit Range: 5000 - 50000 CUs
+Duration: 1.4101 seconds
+Throughput: 3545.95 req/sec
+Successful Transactions: 5000/5000 (100.0%)
+Failed / Error States: 0
+Status: VERIFIED PASSED
+==================================================
