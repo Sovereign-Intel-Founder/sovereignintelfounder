@@ -19,3 +19,4 @@ core/spsc_ring_test
 core/spsc_ring_test_sanitize
 spsc_ring_test
 spsc_ring_test_sanitize
+core/lockfree_spsc_ring
