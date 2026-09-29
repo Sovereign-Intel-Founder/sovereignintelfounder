@@ -1,3 +1,5 @@
+[![CI Pipeline](https://github.com/Sovereign-Intel-Founder/sovereignintelfounder/actions/workflows/ci.yml/badge.svg)](https://github.com/Sovereign-Intel-Founder/sovereignintelfounder/actions)
+
 # Sovereign Seed Commons
 
 ## A utility mesh for ephemeral AI research cells
