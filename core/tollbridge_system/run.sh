@@ -8,4 +8,4 @@ pkill -9 -f solana-validator || true
     --entrypoint entrypoint.mainnet-beta.solana.com:8001 \
     --no-voting --full-rpc-api --enable-rpc-transaction-history \
     --geyser-plugin-config /home/joshua445/geyser-plugin-config.json \
-    --public-rpc-address 216.22.11.194:8899 --no-xdp
+    --public-rpc-address 216.22.11.194:8899 
