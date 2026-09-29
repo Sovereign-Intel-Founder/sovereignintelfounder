@@ -1,0 +1,14 @@
+{
+  "protocol": "Sovereign Intelligence Protocol",
+  "version": "2.6.0",
+  "cell_topology": {
+    "tier_1_core": "Ashburn Bare-Metal EPYC",
+    "tier_2_vps": "Generic SKB Cloud Node",
+    "tier_3_edge": "Development Simulation Node"
+  },
+  "execution_directives": {
+    "telemetry_stream": "active",
+    "state_resurrection": "enabled",
+    "evidence_validation": "strict"
+  }
+}
