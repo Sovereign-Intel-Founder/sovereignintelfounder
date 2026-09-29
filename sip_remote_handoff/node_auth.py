@@ -25,6 +25,8 @@ class SipHandoffNode:
                 format=serialization.PrivateFormat.Raw,
                 encryption_algorithm=serialization.NoEncryption()
             ))
+        # HARDENING: Ensure private key is read/write by owner only (chmod 600)
+        os.chmod(self.key_path, 0o600)
         return priv_key
 
     def create_envelope(self, payload: dict) -> dict:
