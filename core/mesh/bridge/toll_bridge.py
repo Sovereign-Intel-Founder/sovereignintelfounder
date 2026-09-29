@@ -264,4 +264,4 @@ if __name__ == "__main__":
     import asyncio
     loop = asyncio.get_event_loop()
     app = loop.run_until_complete(create_app())
-    web.run_app(app, host=os.getenv("SIP_BIND_HOST", "0.0.0.0"), port=8080, backlog=8192, reuse_address=True, reuse_port=True)
+    web.run_app(app, host=os.getenv("SIP_BIND_HOST", "127.0.0.1"), port=8080, backlog=8192, reuse_address=True, reuse_port=True)
