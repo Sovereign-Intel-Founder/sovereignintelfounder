@@ -1,4 +1,4 @@
-name: Commons CI
+name: SIP Pipeline
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  commons-verification:
+  build-and-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -17,29 +17,47 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install Commons Dependencies
+      - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Run Full Unittest Suite
+      - name: Build and Test C Core (ASan + UBSan)
         run: |
-          python3 -m unittest discover -s . -p 'test_*.py' -v
+          cd core
+          make clean
+          make all
+          make test
+          make sanitize
 
-      - name: Validate Cryptographic Evidence Returns
+      - name: Execute Python Unit Test Suites
         run: |
-          if [ -f "tools/validate_evidence.py" ]; then
-            python3 tools/validate_evidence.py
+          cd core
+          python3 -m unittest discover -s arbitrage/tests -v
+          python3 -m unittest discover -s sip_depot/tests -v
+
+      - name: Strict shell=True Security Guardrail
+        run: |
+          ! grep -rn "shell=True" core/ --exclude-dir=tests
+
+      - name: Wildcard Socket Binding Guardrail
+        run: |
+          ! grep -rn "0.0.0.0" core/ --exclude-dir=tests --exclude="*.md"
+
+      - name: Rust Verifier Compilation and Tests
+        run: |
+          if [ -d "core/sip-verifier" ]; then
+            cd core/sip-verifier
+            cargo check --verbose
+            cargo test --verbose
+          else
+            echo "::notice::core/sip-verifier directory pending integration"
           fi
 
-      - name: Validate Participant State
+      - name: Kinetic Capsule Verification
         run: |
-          if [ -f "tools/validate_state.py" ]; then
-            python3 tools/validate_state.py
-          fi
-
-      - name: Verify Execution Lineage
-        run: |
-          if [ -f "tools/verify_lineage.py" ]; then
-            python3 tools/verify_lineage.py
+          if [ -f "tools/verify_capsule.py" ]; then
+            python3 tools/verify_capsule.py
+          else
+            echo "::notice::Kinetic Capsule runner pending integration"
           fi
