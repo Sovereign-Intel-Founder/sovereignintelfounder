@@ -6,6 +6,22 @@ from cryptography.hazmat.primitives import serialization
 from cryptography.exceptions import InvalidSignature
 
 class SipHandoffNode:
+    
+    @property
+    def node_id(self) -> str:
+        if not self.public_key:
+            return "unbound"
+        for meth in ["to_string", "encode"]:
+            if hasattr(self.public_key, meth):
+                try:
+                    return getattr(self.public_key, meth)().hex()[:16]
+                except Exception:
+                    pass
+        try:
+            return bytes(self.public_key).hex()[:16]
+        except Exception:
+            return str(hex(hash(self.public_key)))[2:18]
+
     def __init__(self, key_path="node_key.bin"):
         self.key_path = key_path
         self.private_key = self._load_or_generate_key()
