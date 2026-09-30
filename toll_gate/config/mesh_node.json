@@ -1,0 +1,15 @@
+{
+  "protocol": "Sovereign Intelligence Protocol",
+  "version": "1.0.0",
+  "registry_status": "active",
+  "node_type": "bare_metal_execution_gateway",
+  "entry_points": [
+    {
+      "transport": "tcp/ip",
+      "endpoint": "active-node.sovereign-intel.internal:9000",
+      "latency_target_ms": "<1.0",
+      "auth_type": "sha256_canonical_envelope"
+    }
+  ],
+  "client_instructions": "Fetch this manifest, construct a SHA-256 canonical envelope, and route payloads to the active entry point."
+}
