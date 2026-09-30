@@ -1,0 +1,13 @@
+{
+  "tool_version": "1.0.1",
+  "original_commit": "2f23284444276773f5bccaea35b20c1bc1287bce",
+  "timestamp_utc": "2026-09-28T20:11:28.726808+00:00",
+  "records": [
+    {
+      "source": "core/=",
+      "archive": "/home/joshua445/secure_archive/core/=",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "moved"
+    }
+  ]
+}

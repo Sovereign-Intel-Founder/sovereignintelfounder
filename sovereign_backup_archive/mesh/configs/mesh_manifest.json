@@ -1,0 +1,27 @@
+{
+  "host_env": "bare-metal",
+  "active_services": [
+    "tollbridge-master-bridge.service",
+    "tollbridge-redis.service"
+  ],
+  "working_directory": "/opt/tollbridge_system",
+  "status": "ready_for_payload",
+  "public_gateway": "http://216.22.11.194/v1/ingress/raw",
+  "regional_hubs": [
+    "Tokyo",
+    "Germany",
+    "United States",
+    "other operational hubs"
+  ],
+  "freemium_contract": {
+    "free_requests": 8,
+    "ninth_request_status": 402,
+    "storage": "SQLite-WAL per-client tracking"
+  },
+  "documentation": [
+    "docs/REGIONAL_GATEWAY_GUIDE.md",
+    "examples/tollbridge_client_example.py",
+    "examples/tollbridge_gateway_curl.sh"
+  ],
+  "security_boundary": "No private keys, wallet credentials, Jito parameters, vault state, payout or settlement logic in integration documentation"
+}

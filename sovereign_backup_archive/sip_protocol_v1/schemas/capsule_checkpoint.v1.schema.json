@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sip.capsule_checkpoint.v1",
+  "title": "SIP Capsule Checkpoint v1",
+  "type": "object",
+  "required": [
+    "schema",
+    "capsule_id",
+    "task_id",
+    "sequence_number",
+    "state_hash",
+    "nonce",
+    "created_at"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "sip.capsule_checkpoint.v1"
+    },
+    "capsule_id": {
+      "type": "string",
+      "minLength": 36,
+      "maxLength": 36
+    },
+    "task_id": {
+      "type": "string",
+      "minLength": 36,
+      "maxLength": 36
+    },
+    "sequence_number": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "state_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "nonce": {
+      "type": "string",
+      "minLength": 16
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}
