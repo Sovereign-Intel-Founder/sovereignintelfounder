@@ -1,6 +1,7 @@
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 #include <string.h>
 #include <unistd.h>
 #include <errno.h>
@@ -11,12 +12,10 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <sys/resource.h>
-#include <sqlite3.h>
 
 #define NUM_FRAMES 65536
 #define FRAME_SIZE 2048
 #define SHM_NAME "/sip_afxdp_ring"
-#define DB_PATH "/home/joshua445/toll_gate/sip_ledger.db"
 
 typedef struct {
     uint64_t rx_packets;
@@ -48,7 +47,6 @@ void* afxdp_worker_lane(void* arg) {
     printf("[AF_XDP Core %d] Worker lane bound to NUMA node 0\n", lane_id);
     
     while (running) {
-        // Zero-copy ring buffer polling loop
         usleep(500);
     }
     return NULL;
@@ -62,7 +60,6 @@ int main(int argc, char **argv) {
 
     printf("=== SOVEREIGN AF_XDP KERNEL-BYPASS ENGINE ===\n");
 
-    // 1. Setup POSIX Shared Memory Ring Buffer
     int shm_fd = shm_open(SHM_NAME, O_CREAT | O_RDWR, 0666);
     if (shm_fd < 0) {
         perror("shm_open failed");
@@ -78,7 +75,6 @@ int main(int argc, char **argv) {
     }
     memset(meta, 0, sizeof(ring_buffer_meta_t));
 
-    // 2. Allocate UMEM Memory Chunk for Zero-Copy Frame Transfers
     void *umem_area = NULL;
     if (posix_memalign(&umem_area, getpagesize(), NUM_FRAMES * FRAME_SIZE)) {
         perror("posix_memalign UMEM failed");
@@ -86,7 +82,6 @@ int main(int argc, char **argv) {
     }
     printf("--> Allocated %d KB UMEM buffer at %p\n", (NUM_FRAMES * FRAME_SIZE) / 1024, umem_area);
 
-    // 3. Spawn Core-Pinned Worker Lanes across Cores 0-7
     pthread_t threads[8];
     int lane_ids[8];
     for (int i = 0; i < 8; i++) {
