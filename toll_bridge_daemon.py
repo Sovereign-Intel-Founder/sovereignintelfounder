@@ -1,4 +1,4 @@
-kimport asyncio
+import asyncio
 import hashlib
 import hmac
 import json
@@ -40,15 +40,15 @@ def init_db():
 
 def log_to_ledger(client_id: str, status: str, latency_ms: float):
     try:
-        conn = sqlite3.connect(DB_PATH, timeout=5.0)
+        conn = sqlite3.connect(DB_PATH, timeout=10.0)
         cur = conn.cursor()
         cur.execute("PRAGMA journal_mode=WAL;")
         cur.execute("INSERT INTO requests (client_id, status, latency_ms) VALUES (?, ?, ?)",
                     (client_id, status, latency_ms))
         conn.commit()
         conn.close()
-    except Exception as e:
-        print(f"Ledger Write Error: {e}")
+    except Exception:
+        pass
 
 def verify_signature(payload: bytes, signature: str) -> bool:
     if not signature:
@@ -96,7 +96,6 @@ class TollBridgeServer:
             path = parts[1] if len(parts) > 1 else "/"
 
             headers = {}
-            content_length = 0
             while True:
                 header_line = await reader.readline()
                 if header_line in (b'\r\n', b'\n', b''):
@@ -106,12 +105,14 @@ class TollBridgeServer:
                     k, v = header_str.split(':', 1)
                     headers[k.strip().lower()] = v.strip()
 
-            if 'content-length' in headers:
-                content_length = int(headers['content-length'])
-
-            body = b''
+            content_length = int(headers.get('content-length', 0))
             if content_length > 0:
-                body = await reader.readexactly(content_length)
+                try:
+                    body = await reader.readexactly(content_length)
+                except asyncio.IncompleteReadError as e:
+                    body = e.partial
+            else:
+                body = b''
 
             if path == '/metrics' and method == 'GET':
                 latencies = metrics["latencies_ms"]
@@ -179,8 +180,10 @@ class TollBridgeServer:
 
             asyncio.get_event_loop().run_in_executor(None, log_to_ledger, client_id, status_str, latency_ms)
 
-        except Exception as e:
-            pass
+        except Exception:
+            err_resp = b"HTTP/1.1 500 Internal Server Error\r\nContent-Length: 0\r\nConnection: close\r\n\r\n"
+            writer.write(err_resp)
+            await writer.drain()
         finally:
             writer.close()
 
