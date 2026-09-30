@@ -11,7 +11,7 @@ def hit_bridge(i):
     req = urllib.request.Request(URL, headers={"X-Client-Hex": client_hex})
     start = time.perf_counter()
     try:
-        with urllib.request.urlopen(req) as resp:
+        with urllib.request.urlopen(req, timeout=2.0) as resp:
             code = resp.status
     except urllib.error.HTTPError as e:
         code = e.code
