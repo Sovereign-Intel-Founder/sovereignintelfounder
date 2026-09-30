@@ -23,6 +23,8 @@ jobs:
         pip install pynacl pytest
         
     - name: Ensure Key Material Exists
+      env:
+        PYTHONPATH: .:sovereign-xdp-shield
       run: |
         python3 -c "
         from sip_remote_handoff.node_auth import SipHandoffNode
@@ -32,15 +34,15 @@ jobs:
         
     - name: Run Phase 1 Telemetry (Identity & Crypto)
       env:
-        PYTHONPATH: .
+        PYTHONPATH: .:sovereign-xdp-shield
       run: python3 adapters/sovereign_adapter_phase1.py
       
     - name: Run Phase 2 Telemetry (Residency & Sovereignty)
       env:
-        PYTHONPATH: .
+        PYTHONPATH: .:sovereign-xdp-shield
       run: python3 adapters/sovereign_adapter_phase2.py
       
     - name: Run Full Test Suite
       env:
-        PYTHONPATH: .
-      run: pytest -v || true
+        PYTHONPATH: .:sovereign-xdp-shield
+      run: pytest -v
