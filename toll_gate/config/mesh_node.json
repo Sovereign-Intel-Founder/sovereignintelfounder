@@ -6,7 +6,7 @@
   "entry_points": [
     {
       "transport": "tcp/ip",
-      "endpoint": "active-node.sovereign-intel.internal:9000",
+      "endpoint": "216.22.11.194:9000",
       "latency_target_ms": "<1.0",
       "auth_type": "sha256_canonical_envelope"
     }
