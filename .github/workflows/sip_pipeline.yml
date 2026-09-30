@@ -44,7 +44,7 @@ jobs:
         PYTHONPATH: .:sovereign-xdp-shield
       run: python3 adapters/sovereign_adapter_phase2.py
       
-    - name: Run Full Test Suite
+    - name: Run Makefile Test Suite
       env:
         PYTHONPATH: .:sovereign-xdp-shield
-      run: pytest -v
+      run: make test
