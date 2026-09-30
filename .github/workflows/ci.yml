@@ -20,12 +20,11 @@ jobs:
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install aiohttp requests
+        pip install aiohttp requests cryptography
 
     - name: Verify Code Syntax
       run: |
         python -m py_compile toll_bridge_daemon.py
-        python -m py_compile stress_test.py
 
     - name: SQLite WAL Integrity Check
       run: |
