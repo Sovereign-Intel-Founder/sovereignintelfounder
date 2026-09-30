@@ -22,21 +22,24 @@ metrics = {
 }
 
 def init_db():
-    conn = sqlite3.connect(DB_PATH)
-    cur = conn.cursor()
-    cur.execute("PRAGMA journal_mode=WAL;")
-    cur.execute("PRAGMA synchronous=NORMAL;")
-    cur.execute("""
-        CREATE TABLE IF NOT EXISTS requests (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            client_id TEXT,
-            status TEXT,
-            latency_ms REAL,
-            timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
-        )
-    """)
-    conn.commit()
-    conn.close()
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        cur = conn.cursor()
+        cur.execute("PRAGMA journal_mode=WAL;")
+        cur.execute("PRAGMA synchronous=NORMAL;")
+        cur.execute("""
+            CREATE TABLE IF NOT EXISTS requests (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                client_id TEXT,
+                status TEXT,
+                latency_ms REAL,
+                timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+            )
+        """)
+        conn.commit()
+        conn.close()
+    except Exception:
+        pass
 
 def log_to_ledger(client_id: str, status: str, latency_ms: float):
     try:
@@ -105,14 +108,19 @@ class TollBridgeServer:
                     k, v = header_str.split(':', 1)
                     headers[k.strip().lower()] = v.strip()
 
-            content_length = int(headers.get('content-length', 0))
+            content_length = 0
+            if 'content-length' in headers:
+                try:
+                    content_length = int(headers['content-length'])
+                except ValueError:
+                    content_length = 0
+
+            body = b''
             if content_length > 0:
                 try:
                     body = await reader.readexactly(content_length)
-                except asyncio.IncompleteReadError as e:
-                    body = e.partial
-            else:
-                body = b''
+                except Exception:
+                    body = b''
 
             if path == '/metrics' and method == 'GET':
                 latencies = metrics["latencies_ms"]
@@ -135,7 +143,7 @@ class TollBridgeServer:
                 response = (
                     b"HTTP/1.1 200 OK\r\n"
                     b"Content-Type: application/json\r\n"
-                    f"Content-Length: {len(resp_payload)}\r\n"
+                    b"Content-Length: " + str(len(resp_payload)).encode('ascii') + b"\r\n"
                     b"Connection: close\r\n\r\n" + resp_payload
                 )
                 writer.write(response)
@@ -155,7 +163,7 @@ class TollBridgeServer:
                 response = (
                     b"HTTP/1.1 200 OK\r\n"
                     b"Content-Type: text/plain\r\n"
-                    f"Content-Length: {len(body_out)}\r\n"
+                    b"Content-Length: " + str(len(body_out)).encode('ascii') + b"\r\n"
                     b"Connection: close\r\n\r\n" + body_out
                 )
             else:
@@ -166,7 +174,7 @@ class TollBridgeServer:
                 response = (
                     b"HTTP/1.1 402 Payment Required\r\n"
                     b"Content-Type: text/plain\r\n"
-                    f"Content-Length: {len(body_out)}\r\n"
+                    b"Content-Length: " + str(len(body_out)).encode('ascii') + b"\r\n"
                     b"Connection: close\r\n\r\n" + body_out
                 )
 
