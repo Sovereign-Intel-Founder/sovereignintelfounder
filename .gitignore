@@ -31,3 +31,13 @@ sovereign_intelligence_backup_*.tar.gz
 *.tar.gz
 sovereign_backups/
 vault/
+
+# Build outputs
+*.o
+sovereign_afxdp_engine
+
+# Temp/Backup directories
+sovereign_sandbox/
+sovereign_vital_backup/
+sovereign_workspace/
+clean-check/
