@@ -22,6 +22,7 @@ class SimulatedSettlementEngine:
         self.running = False
         self.processor_task = None
         self.settlement_count = 0
+        self.lock = asyncio.Lock()
 
     async def start(self):
         self.running = True
