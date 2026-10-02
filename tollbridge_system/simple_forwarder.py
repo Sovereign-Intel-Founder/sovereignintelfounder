@@ -38,7 +38,7 @@ class HighThroughputForwarder:
                 writer.close()
                 await writer.wait_closed()
             except Exception as e:
-                logger.error(f"Failed to close writer: {e}")
+                logger.error(f"Failed to close writer for peer {peer}: {e}")
             logger.info(f"Closed proxy tunnel for peer {peer}")
 
     async def start(self):
