@@ -3,6 +3,7 @@ Simple Forwarder: High-throughput asynchronous TCP/UDP proxy and stream forwarde
 """
 import asyncio
 import logging
+import threading
 
 logging.basicConfig(
     level=logging.INFO,
@@ -15,12 +16,14 @@ class HighThroughputForwarder:
         self.host = host
         self.port = port
         self.connections_handled = 0
+        self.lock = threading.Lock()
 
     async def handle_stream(self, reader: asyncio.StreamReader, writer: asyncio.StreamWriter):
         peer = writer.get_extra_info('peername')
-        self.connections_handled += 1
+        with self.lock:
+            self.connections_handled += 1
         logger.info(f"Established proxy tunnel for peer {peer} (Total: {self.connections_handled})")
-        
+    
         try:
             while True:
                 chunk = await reader.read(131072) # 128KB buffer chunks

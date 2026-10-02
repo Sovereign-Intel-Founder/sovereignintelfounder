@@ -37,26 +37,29 @@ class AdvancedStreamBuffer:
         self.capacity = capacity
         self.queue = asyncio.Queue(maxsize=capacity)
         self.dropped_packets = 0
+        self.lock = asyncio.Lock()
 
     async def push_packet(self, packet: Dict[str, Any]) -> bool:
-        if self.queue.full():
-            try:
-                self.queue.get_nowait()
-                self.dropped_packets += 1
-            except asyncio.QueueEmpty:
-                pass
-        await self.queue.put(packet)
-        return True
+        async with self.lock:
+            if self.queue.full():
+                try:
+                    self.queue.get_nowait()
+                    self.dropped_packets += 1
+                except asyncio.QueueEmpty:
+                    pass
+            await self.queue.put(packet)
+            return True
 
     async def drain_batch(self, batch_size: int = 100) -> List[Dict[str, Any]]:
-        batch = []
-        while len(batch) < batch_size and not self.queue.empty():
-            try:
-                item = self.queue.get_nowait()
-                batch.append(item)
-            except asyncio.QueueEmpty:
-                break
-        return batch
+        async with self.lock:
+            batch = []
+            while len(batch) < batch_size and not self.queue.empty():
+                try:
+                    item = self.queue.get_nowait()
+                    batch.append(item)
+                except asyncio.QueueEmpty:
+                    break
+            return batch
 
 stream_buffer = AdvancedStreamBuffer()
 
