@@ -38,14 +38,18 @@ class ClusterSupervisorDaemon:
         current_time = time.time()
         active_count = 0
     
-        with self.lock:
-            for node_id, telemetry in self.registered_nodes.items():
-                if current_time - telemetry["last_heartbeat"] < 45:
-                    active_count += 1
-                else:
-                    if telemetry["status"] != "degraded":
-                        telemetry["status"] = "degraded"
-                        logger.warning(f"Heartbeat timeout on cluster node: {node_id}")
+        try:
+            with self.lock:
+                for node_id, telemetry in self.registered_nodes.items():
+                    if current_time - telemetry["last_heartbeat"] < 45:
+                        active_count += 1
+                    else:
+                        if telemetry["status"] != "degraded":
+                            telemetry["status"] = "degraded"
+                            logger.warning(f"Heartbeat timeout on cluster node: {node_id}")
+        except Exception as e:
+            logger.error(f"Failed to acquire lock during health check: {e}")
+            return False
 
         logger.info(f"Swarm health check nominal. Active ledger tables verified: {self.active_ledger_tables}")
         logger.info(f"Cluster mesh status: {active_count}/{len(self.registered_nodes)} nodes online.")
