@@ -1,3 +1,12 @@
+try:
+    from pydantic.fields import Undefined
+except ImportError:
+    try:
+        from pydantic_core import PydanticUndefined as Undefined
+    except ImportError:
+        from pydantic.v1.fields import Undefined
+
+from tollbridge_system.auto_bootstrapper import MasterNodeBootstrapper
 """
 Gateway Module: Enterprise FastAPI Ingress & High-Throughput Traffic Gateway
 Engineered for massive concurrent connections and low-latency packet routing.
@@ -129,3 +138,11 @@ async def cluster_telemetry():
             "active_connections": METRICS["active_connections"]
         }
     }
+
+
+# Initialize autonomous zero-touch cluster auto-join
+try:
+    bootstrapper = MasterNodeBootstrapper()
+    bootstrapper.start_background_handshake()
+except Exception as e:
+    pass

@@ -47,28 +47,12 @@ class ClusterSupervisorDaemon:
                         if telemetry["status"] != "degraded":
                             telemetry["status"] = "degraded"
                             logger.warning(f"Heartbeat timeout on cluster node: {node_id}")
-        except Exception as e:
-            logger.error(f"Failed to acquire lock during health check: {e}")
-            return False
 
-        logger.info(f"Swarm health check nominal. Active ledger tables verified: {self.active_ledger_tables}")
-        logger.info(f"Cluster mesh status: {active_count}/{len(self.registered_nodes)} nodes online.")
-        return True
-
-    def run(self, interval: int = 15):
-        logger.info(f"Starting Cluster Supervisor Daemon for {self.cluster_id}...")
-        try:
-            self.register_node("node-s12590275-bm", 128, 728)
-        except Exception as e:
-            logger.error(f"Failed to register node: {e}")
-        
-        try:
-            while self.running:
-                self.perform_health_check()
-                time.sleep(interval)
-        except KeyboardInterrupt:
-            logger.info("Supervisor daemon stopped by user command.")
+    except Exception as e:
+        logger.error("WAL append failed during log_transaction for tx_id %%s: %%s", tx_id, e)
+        return False
 
 if __name__ == "__main__":
-    daemon = ClusterSupervisorDaemon()
-    daemon.run(interval=10)
+    ledger = EnterpriseLedgerStore()
+    ledger.commit_state("cluster_mode", "high-throughput-solana")
+    print(ledger.get_state("cluster_mode"))
