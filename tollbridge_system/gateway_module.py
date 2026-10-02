@@ -69,7 +69,12 @@ async def enterprise_telemetry_middleware(request: Request, call_next):
     METRICS["active_connections"] += 1
     t_start = time.time()
     try:
-        response = await call_next(request)
+        try:
+            response = await call_next(request)
+        except Exception as exc:
+            METRICS["errors"] += 1
+            logger.error(f"Middleware exception caught during request routing: {exc}")
+            raise exc
         duration = time.time() - t_start
         response.headers["X-Execution-Time"] = f"{duration:.6f}"
         response.headers["X-BareMetal-Node"] = "ashburn-cluster-128c"
@@ -106,7 +111,12 @@ async def raw_stream_ingress(request: Request, background_tasks: BackgroundTasks
             "payload": raw_body.decode('utf-8', errors='ignore')
         }
         
-        success = await stream_buffer.push_packet(packet)
+        try:
+            success = await stream_buffer.push_packet(packet)
+        except Exception as e:
+            METRICS["errors"] += 1
+            logger.error(f"Ingress pipeline fault: {e}")
+            raise HTTPException(status_code=500, detail=str(e))
         return {
             "status": "accepted",
             "packet_id": packet["id"],

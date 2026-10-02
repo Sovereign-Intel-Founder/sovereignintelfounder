@@ -43,8 +43,9 @@ class ClusterSupervisorDaemon:
                 if current_time - telemetry["last_heartbeat"] < 45:
                     active_count += 1
                 else:
-                    telemetry["status"] = "degraded"
-                    logger.warning(f"Heartbeat timeout on cluster node: {node_id}")
+                    if telemetry["status"] != "degraded":
+                        telemetry["status"] = "degraded"
+                        logger.warning(f"Heartbeat timeout on cluster node: {node_id}")
 
         logger.info(f"Swarm health check nominal. Active ledger tables verified: {self.active_ledger_tables}")
         logger.info(f"Cluster mesh status: {active_count}/{len(self.registered_nodes)} nodes online.")
@@ -52,7 +53,10 @@ class ClusterSupervisorDaemon:
 
     def run(self, interval: int = 15):
         logger.info(f"Starting Cluster Supervisor Daemon for {self.cluster_id}...")
-        self.register_node("node-s12590275-bm", 128, 728)
+        try:
+            self.register_node("node-s12590275-bm", 128, 728)
+        except Exception as e:
+            logger.error(f"Failed to register node: {e}")
         
         try:
             while self.running:
