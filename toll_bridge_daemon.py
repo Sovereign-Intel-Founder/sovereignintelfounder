@@ -9,7 +9,7 @@ import struct
 import time
 
 DB_PATH = "/home/joshua445/toll_gate/sip_ledger.db"
-SECRET_KEY = b"sovereign_intelligence_protocol_secret"
+SECRET_KEY = b"964ch584173f95bea118c098ccd11939da1dfd79526fd34927a76e5b422d40a8"
 SHM_NAME = "/dev/shm/sip_afxdp_ring"
 
 metrics = {
