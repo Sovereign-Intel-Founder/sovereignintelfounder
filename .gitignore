@@ -46,3 +46,4 @@ sovereign-seed-commons/
 # SQLite WAL runtime files
 *.db-shm
 *.db-wal
+.aider*

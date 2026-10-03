@@ -1,7 +1,7 @@
 import sqlite3
 import sys
 
-DB_PATH = "revenue_vault.db"
+DB_PATH = "/home/joshua445/bot_vault/revenue_vault.db"
 
 def show_status():
     conn = sqlite3.connect(DB_PATH)
