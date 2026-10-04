@@ -1,5 +1,4 @@
 #ifndef SIP_HANDOFF_VERIFY_H
-#ifndef SIP_HANDOFF_VERIFY_H
 #define SIP_HANDOFF_VERIFY_H
 
 #include <stdio.h>

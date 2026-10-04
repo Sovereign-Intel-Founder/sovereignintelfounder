@@ -10,6 +10,7 @@
 #include <fcntl.h>
 #include <errno.h>
 #include <sqlite3.h>
+#include "sip_handoff_verify.h"
 #include <pthread.h>
 #include <time.h>
 #include <stdatomic.h>
@@ -46,7 +47,7 @@ inline static int ring_push(const char* client_id, int status, double latency_ms
     }
 
     size_t index = current_head & RING_MASK;
-    strncpy(ring.buffer[index].client_id, client_id, 63);
+    snprintf(ring.buffer[index].client_id, sizeof(ring.buffer[index].client_id), "%s", client_id);
     ring.buffer[index].client_id[63] = '\0';
     ring.buffer[index].status = status;
     ring.buffer[index].latency_ms = latency_ms;
