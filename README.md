@@ -1,3 +1,6 @@
+# 🚨 ACTIVE LIVE STRESS TEST INGRESS
+- **Endpoint**: https://fluffy-spiders-find.loca.lt
+
 # Sovereign Intelligence Protocol — AF_XDP Native Kernel Bypass Engine
 
 High-throughput, ultra-low-latency packet ingestion pipeline built for bare-metal systems. Bypasses the Linux network stack entirely via native eBPF driver hooks and POSIX shared memory ring buffers.
