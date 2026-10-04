@@ -63,3 +63,17 @@ toll_gate/
 # Local logs & backups
 *.log
 *.bak
+
+# Runtime ledgers, logs, and evidence dumps
+*.wal
+*.json
+*.backup.*
+logs/
+live_shadow_run/
+evidence/
+
+# Compiled test binaries
+sovereign_bitstream_test
+sovereign_engine
+sovereign_live_engine
+sovereign_live_producer
