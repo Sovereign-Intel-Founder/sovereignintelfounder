@@ -1,0 +1,12 @@
+# Sovereign Intelligence Protocol (SIP)
+> Open-access low-latency intelligence engine and real-time computation gateway.
+
+## Live Stress Test Ingress
+- **Endpoint**: https://fluffy-spiders-find.loca.lt
+- **Transport**: TCP / HTTP over low-latency proxy tunnel
+- **Engine Architecture**: C-based bare-metal pipeline, port 8080
+
+## Core Capabilities
+- Zero-copy ring buffer ingestion and lock-free atomic data structures.
+- High-throughput event processing and real-time state synchronization.
+- Designed for autonomous agent interaction, automated crawling, and machine-to-machine handshakes.
