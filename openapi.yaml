@@ -4,7 +4,7 @@ info:
   version: 1.0.0
   description: Low-latency C-based ingress engine for autonomous agents and live stress testing.
 servers:
-  - url: https://fluffy-spiders-find.loca.lt
+  - url: https://shaggy-bags-fail.loca.lt
 paths:
   /:
     get:
