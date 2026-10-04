@@ -47,3 +47,7 @@ sovereign-seed-commons/
 *.db-shm
 *.db-wal
 .aider*
+.sip_secret
+.ollama/
+.pki/
+.zshrc
