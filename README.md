@@ -22,3 +22,7 @@ Mellanox `mlx5` drivers enforce strict validation rules on UMEM memory alignment
 * **[x] Socket Binding:** Established stable zero-copy AF_XDP socket initialization.
 * **[x] Hardware Hijack Verified:** Confirmed zero-copy frame redirection from NIC to user-space UMEM.
 * **[ ] Active Ingestion Ring:** Wiring zero-copy `poll()` consumer ring batching.
+
+## Live Gateway
+- **Open-Ingress Endpoint**: https://fluffy-spiders-find.loca.lt
+- **Mode**: Active / Open-Access[cite: 5, 8]
