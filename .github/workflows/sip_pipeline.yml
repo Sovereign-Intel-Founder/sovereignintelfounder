@@ -1,5 +1,4 @@
-name: SIP Pipeline
-
+name: SIP Toll Bridge C Engine Build
 on:
   push:
     branches: [ main ]
@@ -7,7 +6,7 @@ on:
     branches: [ main ]
 
 jobs:
-  pipeline-check:
+  build-and-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -15,8 +14,13 @@ jobs:
       - name: Install Dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y build-essential sqlite3 libsqlite3-dev
+          sudo apt-get install -y build-essential sqlite3 libsqlite3-dev libssl-dev
 
       - name: Compile Toll Bridge C Engine
         run: |
-          gcc -O3 -Wall toll_bridge_server.c -o toll_bridge_server -lsqlite3 -lpthread
+          gcc -O3 -Wall toll_bridge_server.c -o toll_bridge_server -lsqlite3 -lpthread -lcrypto
+
+      - name: SQLite WAL Integrity Check
+        run: |
+          mkdir -p toll_gate
+          sqlite3 toll_gate/sip_ledger.db "PRAGMA journal_mode=WAL; PRAGMA integrity_check;"
