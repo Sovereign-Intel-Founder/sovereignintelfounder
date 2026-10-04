@@ -51,3 +51,15 @@ sovereign-seed-commons/
 .ollama/
 .pki/
 .zshrc
+# Binary executables
+toll_bridge_server
+
+# SQLite runtime files
+*.db
+*.db-wal
+*.db-shm
+toll_gate/
+
+# Local logs & backups
+*.log
+*.bak
