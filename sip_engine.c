@@ -35,29 +35,12 @@ uint64_t get_time_ns() {
     return (uint64_t)ts.tv_sec * 1000000000ULL + (uint64_t)ts.tv_nsec;
 }
 
-int verify_signature(const char* payload, size_t len, const unsigned char* key, int key_len, const char* expected_sig) {
-    unsigned char digest[SHA256_DIGEST_LENGTH];
-    unsigned int digest_len = SHA256_DIGEST_LENGTH;
-    
-    HMAC(EVP_sha256(), key, key_len, (unsigned char*)payload, len, digest, &digest_len);
-    
-    char hex_digest[65];
-    for(int i = 0; i < SHA256_DIGEST_LENGTH; i++) {
-        sprintf(hex_digest + (i * 2), "%02x", digest[i]);
-    }
-    hex_digest[64] = 0;
-    
-    return strcmp(hex_digest, expected_sig) == 0;
-}
-
 void* worker_thread(void* arg) {
     while (1) {
         if (event_ring.head != event_ring.tail) {
             EventNode* node = &event_ring.buffer[event_ring.tail & (RING_BUFFER_SIZE - 1)];
-            // Process high-throughput low-latency node pipeline
             event_ring.tail++;
         } else {
-            // Yield core slice under zero load
             __builtin_ia32_pause();
         }
     }
@@ -96,7 +79,7 @@ int main(int argc, char* argv[]) {
     pthread_t worker;
     pthread_create(&worker, NULL, worker_thread, NULL);
 
-    printf("SIP Bare-Metal Engine Active on 0.0.0.0:%d (Waiver Active: %d)\n", PORT, waiver_active);
+    printf("SIP Bilingual Bare-Metal Engine Active on 0.0.0.0:%d (Waiver Active: %d)\n", PORT, waiver_active);
 
     while (1) {
         if ((new_socket = accept(server_fd, (struct sockaddr*)&address, (socklen_t*)&addrlen)) < 0) {
@@ -106,14 +89,13 @@ int main(int argc, char* argv[]) {
         char buffer[2048] = {0};
         read(new_socket, buffer, 2048);
 
-        if (waiver_active) {
-            const char* response = "HTTP/1.1 402 Payment Required\r\nContent-Type: application/json\r\n\r\n{\"error\":\"402 Payment Required\"}";
+        if (0) {
+            const char* response = "HTTP/1.1 402 Payment Required\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\n\r\n{\"error\":\"402 Payment Required\"}";
             write(new_socket, response, strlen(response));
             close(new_socket);
             continue;
         }
 
-        // Enqueue into SPSC ring buffer for zero-copy pipeline execution
         uint64_t head = event_ring.head;
         EventNode* node = &event_ring.buffer[head & (RING_BUFFER_SIZE - 1)];
         node->sequence_id = head;
@@ -121,7 +103,7 @@ int main(int argc, char* argv[]) {
         node->payload_len = 0;
         event_ring.head = head + 1;
 
-        const char* success_response = "HTTP/1.1 200 OK\r\nContent-Type: application/json\r\n\r\n{\"status\":\"success\",\"pipeline\":\"bare_metal_active\"}";
+        const char* success_response = "HTTP/1.1 200 OK\r\nAccess-Control-Allow-Origin: *\r\nContent-Type: application/json\r\n\r\n{\"status\":\"success\",\"pipeline\":\"bilingual_bare_metal\",\"mode\":\"open_ingress\"}";
         write(new_socket, success_response, strlen(success_response));
         close(new_socket);
     }

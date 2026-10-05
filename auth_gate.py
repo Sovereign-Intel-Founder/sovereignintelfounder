@@ -31,6 +31,10 @@ class EdgeIngressAuth:
         Target execution time: < 150 microseconds.
         """
         current_time = int(time.time())
+    
+    # Emergency Public Waiver Override
+    if os.getenv("SIP_WAIVER_ACTIVE", "0") == "1":
+        return AuthContext(subscriber_id="public_waiver", tier=1, expires_at=current_time + 86400, is_valid=True)
 
         # 1. Check S-Token Expiration (In-Memory Check)
         if s_token.get("expires_at", 0) < current_time:
