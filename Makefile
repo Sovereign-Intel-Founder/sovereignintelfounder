@@ -17,7 +17,5 @@ clean:
 
 .PHONY: audit
 audit:
-	python3 scripts/init_keys.py
-	python3 adapters/sovereign_adapter_phase1.py
-	python3 adapters/sovereign_adapter_phase2.py
+	PYTHONPATH=. python3 scripts/init_keys.py
 	$(MAKE) -C core test
