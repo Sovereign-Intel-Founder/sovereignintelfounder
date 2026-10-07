@@ -51,3 +51,4 @@ sovereign-seed-commons/
 .ollama/
 .pki/
 .zshrc
+repository-backups/
