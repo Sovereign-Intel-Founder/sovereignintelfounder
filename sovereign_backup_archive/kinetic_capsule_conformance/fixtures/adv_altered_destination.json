@@ -1,0 +1,18 @@
+{
+  "schema_version": "2.0",
+  "capsule_id": "capsule-conformance-01",
+  "task_id": "task-sip-conf-2026",
+  "sequence_number": 500,
+  "previous_receipt_hash": "dadee9b140ec83ce380a71cd23b255da6518bde04549b788bb0e9d8c4f74c3ae",
+  "source_cell": "Cell-A",
+  "destination_cell": "Cell-Z",
+  "code_commitment": "d00f1a5b378b587cb4c71fdab1f9e6feb19a8df1b27e6c7d7fec33a3ee4db91d",
+  "input_commitment": "a4c517b035b26e54806dfb1248127e028e076ff38dcacadb8dfc076be7e06602",
+  "nonce": "nonce-conf-123456",
+  "expiration": 1790237120,
+  "state_step": 500,
+  "state": 377750,
+  "accumulator": 63376500,
+  "state_hash": "23c9aeb1f92ca3e2e39382c6bf0b2b800fc5e90821b05f4f58d7e71e97039f48",
+  "signature": "9073d9e27c687d8e8fbc2825c9a4fe5e1d16541caa2fa162e3e49feda4d7be88dc035e3e3e04702fc9c846e81ceae0527dc8bcf8d2587ec024755abd089de404"
+}

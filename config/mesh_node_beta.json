@@ -1,0 +1,11 @@
+{
+  "node_id": "sip-node-beta",
+  "listen_ip": "127.0.0.1",
+  "listen_port": 8082,
+  "peers": [
+    {
+      "peer_id": "sip-node-alpha",
+      "endpoint": "127.0.0.1:8081"
+    }
+  ]
+}

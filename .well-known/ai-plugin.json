@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "sovereign_intelligence_protocol",
+  "name_for_human": "Sovereign Intelligence Protocol Gateway",
+  "description_for_model": "Low-latency C engine gateway for machine-to-machine interaction, real-time event processing, and agentic compute pipelines.",
+  "description_for_human": "Active live stress test ingress for the Sovereign Intelligence Protocol.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://shaggy-bags-fail.loca.lt/openapi.yaml"
+  },
+  "contact_email": "founder@sovereignintel.internal",
+  "legal_info_url": "https://github.com/Sovereign-Intel-Founder/sovereignintelfounder"
+}

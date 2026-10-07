@@ -1,22 +1,79 @@
+# Environment & Virtualenvs
+venv/
+target/
 __pycache__/
 *.pyc
-*.pyo
-*.swp
-.DS_Store
-*.log
-/tmp/
-.env
-*.env.*
-*.key
-*.pem
-*.hex
-local_signing_key.hex
 *.db
-*.sqlite3
-venv/
-.venv/
-core/spsc_ring_test
-core/spsc_ring_test_sanitize
-spsc_ring_test
-spsc_ring_test_sanitize
-core/lockfree_spsc_ring
+
+# Home directory clutter & credentials
+.bash_history
+.bashrc
+.cache/
+.cargo/
+.config/
+.git-credentials
+.gitconfig
+.gitignore_global
+.lesshst
+.local/
+.profile
+.rustup/
+.sudo_as_admin_successful
+
+# Backups & Logs
+*.log
+archive/
+archive_bak/
+private-repository-cleanup-backup-*/
+sovereign_intelligence_backup_*.tar.gz
+
+# Large Archives & Backups
+*.tar.gz
+sovereign_backups/
+vault/
+
+# Build outputs
+*.o
+sovereign_afxdp_engine
+
+# Temp/Backup directories
+sovereign_sandbox/
+sovereign_vital_backup/
+sovereign_workspace/
+clean-check/
+sovereign-seed-commons/
+
+# SQLite WAL runtime files
+*.db-shm
+*.db-wal
+.aider*
+.sip_secret
+.ollama/
+.pki/
+.zshrc
+# Binary executables
+toll_bridge_server
+
+# SQLite runtime files
+*.db
+*.db-wal
+*.db-shm
+toll_gate/
+
+# Local logs & backups
+*.log
+*.bak
+
+# Runtime ledgers, logs, and evidence dumps
+*.wal
+*.json
+*.backup.*
+logs/
+live_shadow_run/
+evidence/
+
+# Compiled test binaries
+sovereign_bitstream_test
+sovereign_engine
+sovereign_live_engine
+sovereign_live_producer

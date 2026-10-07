@@ -1,0 +1,14 @@
+openapi: 3.0.3
+info:
+  title: Sovereign Intelligence Protocol Gateway
+  version: 1.0.0
+  description: Low-latency C-based ingress engine for autonomous agents and live stress testing.
+servers:
+  - url: https://shaggy-bags-fail.loca.lt
+paths:
+  /:
+    get:
+      summary: Root Ingress Handshake
+      responses:
+        '200':
+          description: Successful connection to the SIP gateway.

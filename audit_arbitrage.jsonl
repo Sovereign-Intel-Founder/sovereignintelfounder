@@ -1,0 +1,663 @@
+{"timestamp": 1790535074.9769409, "spread_bps": 3.7153374669152086, "status": "LOSS", "latency_us": 337}
+{"timestamp": 1790535075.9774947, "spread_bps": 10.170345481194458, "status": "WIN", "latency_us": 143}
+{"timestamp": 1790535076.977929, "spread_bps": 12.870533707970113, "status": "WIN", "latency_us": 332}
+{"timestamp": 1790535077.9783652, "spread_bps": 11.921500329284976, "status": "WIN", "latency_us": 151}
+{"timestamp": 1790535078.9787908, "spread_bps": 6.908250654755667, "status": "WIN", "latency_us": 196}
+{"timestamp": 1790535079.9793174, "spread_bps": 12.325322511826574, "status": "WIN", "latency_us": 430}
+{"timestamp": 1790535080.9797316, "spread_bps": 2.654509209898041, "status": "LOSS", "latency_us": 348}
+{"timestamp": 1790535081.9801536, "spread_bps": 11.922938087814835, "status": "WIN", "latency_us": 287}
+{"timestamp": 1790535082.9805598, "spread_bps": 8.025516057798125, "status": "WIN", "latency_us": 246}
+{"timestamp": 1790535083.980926, "spread_bps": 10.009941119704374, "status": "WIN", "latency_us": 270}
+{"timestamp": 1790535084.9813168, "spread_bps": 11.539245243583348, "status": "WIN", "latency_us": 153}
+{"timestamp": 1790535085.9816775, "spread_bps": 6.325680344154412, "status": "WIN", "latency_us": 381}
+{"timestamp": 1790535086.9820783, "spread_bps": 3.447827858693265, "status": "LOSS", "latency_us": 433}
+{"timestamp": 1790535087.9824889, "spread_bps": 7.046646647498149, "status": "WIN", "latency_us": 183}
+{"timestamp": 1790535088.9828918, "spread_bps": 2.476034152380408, "status": "LOSS", "latency_us": 283}
+{"timestamp": 1790535089.9833307, "spread_bps": 11.6720347937737, "status": "WIN", "latency_us": 379}
+{"timestamp": 1790535090.9837253, "spread_bps": 9.900266694521015, "status": "WIN", "latency_us": 268}
+{"timestamp": 1790535091.984115, "spread_bps": 13.466115744589008, "status": "WIN", "latency_us": 252}
+{"timestamp": 1790535092.9845283, "spread_bps": 13.0841568119059, "status": "WIN", "latency_us": 224}
+{"timestamp": 1790535093.9849396, "spread_bps": 10.149366514051017, "status": "WIN", "latency_us": 428}
+{"timestamp": 1790535094.9853415, "spread_bps": 10.893447286884147, "status": "WIN", "latency_us": 385}
+{"timestamp": 1790535095.9857566, "spread_bps": 8.860720334264593, "status": "WIN", "latency_us": 365}
+{"timestamp": 1790535096.9861336, "spread_bps": 12.484843264423912, "status": "WIN", "latency_us": 389}
+{"timestamp": 1790535097.9865386, "spread_bps": 7.96985336747528, "status": "WIN", "latency_us": 318}
+{"timestamp": 1790535098.9869406, "spread_bps": 10.2439460416579, "status": "WIN", "latency_us": 247}
+{"timestamp": 1790535099.9873402, "spread_bps": 6.904486601991975, "status": "WIN", "latency_us": 420}
+{"timestamp": 1790535100.987743, "spread_bps": 13.14251785744821, "status": "WIN", "latency_us": 403}
+{"timestamp": 1790535101.9881473, "spread_bps": 9.904503928329131, "status": "WIN", "latency_us": 229}
+{"timestamp": 1790535102.9885466, "spread_bps": 4.610753984547661, "status": "LOSS", "latency_us": 123}
+{"timestamp": 1790535103.9889402, "spread_bps": 13.751564762484914, "status": "WIN", "latency_us": 276}
+{"timestamp": 1790535104.9893417, "spread_bps": 7.666220482569003, "status": "WIN", "latency_us": 236}
+{"timestamp": 1790535105.9897351, "spread_bps": 9.273242013766392, "status": "WIN", "latency_us": 243}
+{"timestamp": 1790535106.9901278, "spread_bps": 3.3195413147039052, "status": "LOSS", "latency_us": 128}
+{"timestamp": 1790535107.9905207, "spread_bps": 7.828458857600164, "status": "WIN", "latency_us": 421}
+{"timestamp": 1790535108.9908946, "spread_bps": 4.705621160137223, "status": "LOSS", "latency_us": 297}
+{"timestamp": 1790535109.9912488, "spread_bps": 2.8767921570669737, "status": "LOSS", "latency_us": 121}
+{"timestamp": 1790535110.9915683, "spread_bps": 13.275880965584756, "status": "WIN", "latency_us": 195}
+{"timestamp": 1790535111.991924, "spread_bps": 13.616553571760786, "status": "WIN", "latency_us": 412}
+{"timestamp": 1790535112.9923148, "spread_bps": 11.05022189588819, "status": "WIN", "latency_us": 369}
+{"timestamp": 1790535113.9927132, "spread_bps": 10.301259528969558, "status": "WIN", "latency_us": 311}
+{"timestamp": 1790535114.9931316, "spread_bps": 14.499564040216905, "status": "WIN", "latency_us": 218}
+{"timestamp": 1790535115.9935017, "spread_bps": 6.082214024848431, "status": "WIN", "latency_us": 415}
+{"timestamp": 1790535116.9938648, "spread_bps": 6.017842832715025, "status": "WIN", "latency_us": 369}
+{"timestamp": 1790535117.9942482, "spread_bps": 13.379398231730079, "status": "WIN", "latency_us": 248}
+{"timestamp": 1790535118.9946465, "spread_bps": 6.820234431325739, "status": "WIN", "latency_us": 203}
+{"timestamp": 1790535119.9950595, "spread_bps": 12.086319032208129, "status": "WIN", "latency_us": 390}
+{"timestamp": 1790535120.9954793, "spread_bps": 3.8946958725539003, "status": "LOSS", "latency_us": 366}
+{"timestamp": 1790535121.9958847, "spread_bps": 3.374533166413154, "status": "LOSS", "latency_us": 166}
+{"timestamp": 1790535122.9962857, "spread_bps": 8.98905657082451, "status": "WIN", "latency_us": 331}
+{"timestamp": 1790535123.996691, "spread_bps": 5.78030493956077, "status": "WIN", "latency_us": 242}
+{"timestamp": 1790535124.9970896, "spread_bps": 9.844664934874508, "status": "WIN", "latency_us": 396}
+{"timestamp": 1790535125.9975064, "spread_bps": 7.917163386972272, "status": "WIN", "latency_us": 330}
+{"timestamp": 1790535126.9979029, "spread_bps": 7.86755564112044, "status": "WIN", "latency_us": 375}
+{"timestamp": 1790535127.998299, "spread_bps": 3.411888009174706, "status": "LOSS", "latency_us": 315}
+{"timestamp": 1790535128.9986713, "spread_bps": 12.603762201256963, "status": "WIN", "latency_us": 318}
+{"timestamp": 1790535129.9990513, "spread_bps": 2.470322336890368, "status": "LOSS", "latency_us": 323}
+{"timestamp": 1790535130.9994628, "spread_bps": 6.83177143385649, "status": "WIN", "latency_us": 273}
+{"timestamp": 1790535131.999867, "spread_bps": 10.222810164902286, "status": "WIN", "latency_us": 326}
+{"timestamp": 1790535133.0002456, "spread_bps": 12.232280986778854, "status": "WIN", "latency_us": 269}
+{"timestamp": 1790535134.0006504, "spread_bps": 13.168779476839813, "status": "WIN", "latency_us": 250}
+{"timestamp": 1790535135.001051, "spread_bps": 3.105744792551511, "status": "LOSS", "latency_us": 352}
+{"timestamp": 1790535136.001448, "spread_bps": 2.719173637560577, "status": "LOSS", "latency_us": 247}
+{"timestamp": 1790535137.0019596, "spread_bps": 11.04145223294694, "status": "WIN", "latency_us": 449}
+{"timestamp": 1790535138.002375, "spread_bps": 7.082119574676529, "status": "WIN", "latency_us": 268}
+{"timestamp": 1790535139.00278, "spread_bps": 7.686327663342743, "status": "WIN", "latency_us": 283}
+{"timestamp": 1790535140.0031834, "spread_bps": 13.155311541153571, "status": "WIN", "latency_us": 392}
+{"timestamp": 1790535141.0035906, "spread_bps": 7.617935675311655, "status": "WIN", "latency_us": 137}
+{"timestamp": 1790535142.003999, "spread_bps": 7.976771120379981, "status": "WIN", "latency_us": 290}
+{"timestamp": 1790535143.0044067, "spread_bps": 5.052575979496893, "status": "WIN", "latency_us": 375}
+{"timestamp": 1790535144.0048218, "spread_bps": 6.042148387439323, "status": "WIN", "latency_us": 181}
+{"timestamp": 1790536050.9085438, "spread_bps": -2.5621, "net_spread_bps": -6.0621, "status": "LOSS", "latency_ns": 28253}
+{"timestamp": 1790536051.158908, "spread_bps": 0.6143, "net_spread_bps": -2.8857, "status": "LOSS", "latency_ns": 85470}
+{"timestamp": 1790536051.4093375, "spread_bps": -2.2045, "net_spread_bps": -5.7045, "status": "LOSS", "latency_ns": 71959}
+{"timestamp": 1790536051.659747, "spread_bps": -2.7746, "net_spread_bps": -6.2746, "status": "LOSS", "latency_ns": 80351}
+{"timestamp": 1790536051.910191, "spread_bps": 0.8512, "net_spread_bps": -2.6488, "status": "LOSS", "latency_ns": 81844}
+{"timestamp": 1790536052.1606505, "spread_bps": 1.6912, "net_spread_bps": -1.8088, "status": "LOSS", "latency_ns": 82555}
+{"timestamp": 1790536052.411091, "spread_bps": 1.4132, "net_spread_bps": -2.0868, "status": "LOSS", "latency_ns": 74492}
+{"timestamp": 1790536052.6615336, "spread_bps": -2.9582, "net_spread_bps": -6.4582, "status": "LOSS", "latency_ns": 85169}
+{"timestamp": 1790536052.9120023, "spread_bps": 0.697, "net_spread_bps": -2.803, "status": "LOSS", "latency_ns": 75354}
+{"timestamp": 1790536053.1624448, "spread_bps": 1.8323, "net_spread_bps": -1.6677, "status": "LOSS", "latency_ns": 77617}
+{"timestamp": 1790536053.4128797, "spread_bps": -2.1849, "net_spread_bps": -5.6849, "status": "LOSS", "latency_ns": 75765}
+{"timestamp": 1790536053.6633377, "spread_bps": 1.5286, "net_spread_bps": -1.9714, "status": "LOSS", "latency_ns": 93712}
+{"timestamp": 1790536053.9137702, "spread_bps": -1.9319, "net_spread_bps": -5.4319, "status": "LOSS", "latency_ns": 76475}
+{"timestamp": 1790536054.1642091, "spread_bps": -2.3911, "net_spread_bps": -5.8911, "status": "LOSS", "latency_ns": 77117}
+{"timestamp": 1790536054.414644, "spread_bps": -0.0306, "net_spread_bps": -3.5306, "status": "LOSS", "latency_ns": 77848}
+{"timestamp": 1790536054.665056, "spread_bps": 1.678, "net_spread_bps": -1.822, "status": "LOSS", "latency_ns": 77708}
+{"timestamp": 1790536054.915495, "spread_bps": -0.0422, "net_spread_bps": -3.5422, "status": "LOSS", "latency_ns": 77077}
+{"timestamp": 1790536055.1659424, "spread_bps": 0.8978, "net_spread_bps": -2.6022, "status": "LOSS", "latency_ns": 76686}
+{"timestamp": 1790536055.4163795, "spread_bps": 1.0388, "net_spread_bps": -2.4612, "status": "LOSS", "latency_ns": 76156}
+{"timestamp": 1790536055.66683, "spread_bps": -2.6871, "net_spread_bps": -6.1871, "status": "LOSS", "latency_ns": 78439}
+{"timestamp": 1790536055.917221, "spread_bps": -0.4032, "net_spread_bps": -3.9032, "status": "LOSS", "latency_ns": 63206}
+{"timestamp": 1790536056.167641, "spread_bps": -2.7041, "net_spread_bps": -6.2041, "status": "LOSS", "latency_ns": 76355}
+{"timestamp": 1790536056.4180768, "spread_bps": -2.8313, "net_spread_bps": -6.3313, "status": "LOSS", "latency_ns": 74853}
+{"timestamp": 1790536056.6685226, "spread_bps": 2.3681, "net_spread_bps": -1.1319, "status": "LOSS", "latency_ns": 75394}
+{"timestamp": 1790536056.9189599, "spread_bps": -0.0738, "net_spread_bps": -3.5738, "status": "LOSS", "latency_ns": 76165}
+{"timestamp": 1790536057.1694067, "spread_bps": -1.3859, "net_spread_bps": -4.8859, "status": "LOSS", "latency_ns": 75924}
+{"timestamp": 1790536057.4198194, "spread_bps": 1.8605, "net_spread_bps": -1.6395, "status": "LOSS", "latency_ns": 77537}
+{"timestamp": 1790536057.6702654, "spread_bps": -1.1848, "net_spread_bps": -4.6848, "status": "LOSS", "latency_ns": 78058}
+{"timestamp": 1790536057.9206755, "spread_bps": 1.1009, "net_spread_bps": -2.3991, "status": "LOSS", "latency_ns": 74583}
+{"timestamp": 1790536058.171123, "spread_bps": 1.7884, "net_spread_bps": -1.7116, "status": "LOSS", "latency_ns": 76646}
+{"timestamp": 1790536058.4215815, "spread_bps": -0.1321, "net_spread_bps": -3.6321, "status": "LOSS", "latency_ns": 77877}
+{"timestamp": 1790536058.6720333, "spread_bps": 0.5469, "net_spread_bps": -2.9531, "status": "LOSS", "latency_ns": 77377}
+{"timestamp": 1790536058.922473, "spread_bps": 2.0496, "net_spread_bps": -1.4504, "status": "LOSS", "latency_ns": 77397}
+{"timestamp": 1790536059.172922, "spread_bps": 2.2241, "net_spread_bps": -1.2759, "status": "LOSS", "latency_ns": 76866}
+{"timestamp": 1790536059.42336, "spread_bps": -1.4304, "net_spread_bps": -4.9304, "status": "LOSS", "latency_ns": 76596}
+{"timestamp": 1790536059.6738086, "spread_bps": -1.9, "net_spread_bps": -5.4, "status": "LOSS", "latency_ns": 75995}
+{"timestamp": 1790536059.9242492, "spread_bps": -1.2079, "net_spread_bps": -4.7079, "status": "LOSS", "latency_ns": 75324}
+{"timestamp": 1790536060.1746972, "spread_bps": 2.4066, "net_spread_bps": -1.0934, "status": "LOSS", "latency_ns": 77518}
+{"timestamp": 1790536060.425138, "spread_bps": 0.9449, "net_spread_bps": -2.5551, "status": "LOSS", "latency_ns": 77297}
+{"timestamp": 1790536060.6755893, "spread_bps": -0.0447, "net_spread_bps": -3.5447, "status": "LOSS", "latency_ns": 76385}
+{"timestamp": 1790536060.9260118, "spread_bps": 0.7331, "net_spread_bps": -2.7669, "status": "LOSS", "latency_ns": 67562}
+{"timestamp": 1790536061.1764345, "spread_bps": 1.9336, "net_spread_bps": -1.5664, "status": "LOSS", "latency_ns": 76986}
+{"timestamp": 1790536061.4268928, "spread_bps": -1.6252, "net_spread_bps": -5.1252, "status": "LOSS", "latency_ns": 75965}
+{"timestamp": 1790536061.6773145, "spread_bps": 0.8651, "net_spread_bps": -2.6349, "status": "LOSS", "latency_ns": 72319}
+{"timestamp": 1790536061.9277265, "spread_bps": 1.4602, "net_spread_bps": -2.0398, "status": "LOSS", "latency_ns": 78068}
+{"timestamp": 1790536062.178159, "spread_bps": -1.1746, "net_spread_bps": -4.6746, "status": "LOSS", "latency_ns": 76816}
+{"timestamp": 1790536062.428568, "spread_bps": -1.4205, "net_spread_bps": -4.9205, "status": "LOSS", "latency_ns": 76656}
+{"timestamp": 1790536062.6790035, "spread_bps": -0.0811, "net_spread_bps": -3.5811, "status": "LOSS", "latency_ns": 77597}
+{"timestamp": 1790536062.9294329, "spread_bps": -1.1193, "net_spread_bps": -4.6193, "status": "LOSS", "latency_ns": 76356}
+{"timestamp": 1790536063.1798723, "spread_bps": 1.6053, "net_spread_bps": -1.8947, "status": "LOSS", "latency_ns": 75113}
+{"timestamp": 1790536063.4303026, "spread_bps": -0.9247, "net_spread_bps": -4.4247, "status": "LOSS", "latency_ns": 75764}
+{"timestamp": 1790536063.6807446, "spread_bps": -2.5134, "net_spread_bps": -6.0134, "status": "LOSS", "latency_ns": 76325}
+{"timestamp": 1790536063.9311802, "spread_bps": -1.1433, "net_spread_bps": -4.6433, "status": "LOSS", "latency_ns": 76756}
+{"timestamp": 1790536064.181634, "spread_bps": 2.3097, "net_spread_bps": -1.1903, "status": "LOSS", "latency_ns": 76776}
+{"timestamp": 1790536064.4320676, "spread_bps": 0.164, "net_spread_bps": -3.336, "status": "LOSS", "latency_ns": 75604}
+{"timestamp": 1790536064.6825104, "spread_bps": -1.6992, "net_spread_bps": -5.1992, "status": "LOSS", "latency_ns": 77377}
+{"timestamp": 1790536064.9329472, "spread_bps": -2.284, "net_spread_bps": -5.784, "status": "LOSS", "latency_ns": 77567}
+{"timestamp": 1790536065.1833913, "spread_bps": 0.2785, "net_spread_bps": -3.2215, "status": "LOSS", "latency_ns": 75003}
+{"timestamp": 1790536065.4338126, "spread_bps": 0.3019, "net_spread_bps": -3.1981, "status": "LOSS", "latency_ns": 75384}
+{"timestamp": 1790536065.6842585, "spread_bps": 2.0815, "net_spread_bps": -1.4185, "status": "LOSS", "latency_ns": 76726}
+{"timestamp": 1790536065.93468, "spread_bps": -0.0023, "net_spread_bps": -3.5023, "status": "LOSS", "latency_ns": 66671}
+{"timestamp": 1790536066.1850767, "spread_bps": -2.3267, "net_spread_bps": -5.8267, "status": "LOSS", "latency_ns": 75735}
+{"timestamp": 1790536066.4354901, "spread_bps": -2.8261, "net_spread_bps": -6.3261, "status": "LOSS", "latency_ns": 77107}
+{"timestamp": 1790536066.6859367, "spread_bps": -1.2923, "net_spread_bps": -4.7923, "status": "LOSS", "latency_ns": 76065}
+{"timestamp": 1790536066.9363587, "spread_bps": 0.1017, "net_spread_bps": -3.3983, "status": "LOSS", "latency_ns": 75434}
+{"timestamp": 1790536067.186805, "spread_bps": -2.8548, "net_spread_bps": -6.3548, "status": "LOSS", "latency_ns": 79149}
+{"timestamp": 1790536067.4372191, "spread_bps": 1.3126, "net_spread_bps": -2.1874, "status": "LOSS", "latency_ns": 79691}
+{"timestamp": 1790536067.6876588, "spread_bps": -2.8326, "net_spread_bps": -6.3326, "status": "LOSS", "latency_ns": 76226}
+{"timestamp": 1790536067.938089, "spread_bps": -2.0461, "net_spread_bps": -5.5461, "status": "LOSS", "latency_ns": 75695}
+{"timestamp": 1790536068.188539, "spread_bps": 0.4465, "net_spread_bps": -3.0535, "status": "LOSS", "latency_ns": 77327}
+{"timestamp": 1790536068.4389741, "spread_bps": -0.5331, "net_spread_bps": -4.0331, "status": "LOSS", "latency_ns": 76286}
+{"timestamp": 1790536068.6894166, "spread_bps": -1.4657, "net_spread_bps": -4.9657, "status": "LOSS", "latency_ns": 76976}
+{"timestamp": 1790536068.9398518, "spread_bps": 0.9742, "net_spread_bps": -2.5258, "status": "LOSS", "latency_ns": 76966}
+{"timestamp": 1790536069.1903014, "spread_bps": -2.3306, "net_spread_bps": -5.8306, "status": "LOSS", "latency_ns": 77357}
+{"timestamp": 1790536069.440714, "spread_bps": 1.4818, "net_spread_bps": -2.0182, "status": "LOSS", "latency_ns": 76145}
+{"timestamp": 1790536069.691164, "spread_bps": -0.3048, "net_spread_bps": -3.8048, "status": "LOSS", "latency_ns": 76706}
+{"timestamp": 1790536069.9416397, "spread_bps": 0.5206, "net_spread_bps": -2.9794, "status": "LOSS", "latency_ns": 75364}
+{"timestamp": 1790536070.1920748, "spread_bps": -0.9856, "net_spread_bps": -4.4856, "status": "LOSS", "latency_ns": 75504}
+{"timestamp": 1790536070.442504, "spread_bps": -2.2272, "net_spread_bps": -5.7272, "status": "LOSS", "latency_ns": 76305}
+{"timestamp": 1790536070.6929474, "spread_bps": 0.8034, "net_spread_bps": -2.6966, "status": "LOSS", "latency_ns": 76946}
+{"timestamp": 1790536070.9433782, "spread_bps": -2.2717, "net_spread_bps": -5.7717, "status": "LOSS", "latency_ns": 67522}
+{"timestamp": 1790536071.1938071, "spread_bps": -1.6924, "net_spread_bps": -5.1924, "status": "LOSS", "latency_ns": 76266}
+{"timestamp": 1790536071.4442172, "spread_bps": 0.6794, "net_spread_bps": -2.8206, "status": "LOSS", "latency_ns": 76225}
+{"timestamp": 1790536071.6946676, "spread_bps": 2.1493, "net_spread_bps": -1.3507, "status": "LOSS", "latency_ns": 75805}
+{"timestamp": 1790536071.945103, "spread_bps": -1.8397, "net_spread_bps": -5.3397, "status": "LOSS", "latency_ns": 75474}
+{"timestamp": 1790536072.1955507, "spread_bps": -1.037, "net_spread_bps": -4.537, "status": "LOSS", "latency_ns": 77297}
+{"timestamp": 1790536072.4459796, "spread_bps": -1.3832, "net_spread_bps": -4.8832, "status": "LOSS", "latency_ns": 71218}
+{"timestamp": 1790536072.696417, "spread_bps": -2.8124, "net_spread_bps": -6.3124, "status": "LOSS", "latency_ns": 76906}
+{"timestamp": 1790536072.9468515, "spread_bps": -1.6259, "net_spread_bps": -5.1259, "status": "LOSS", "latency_ns": 76376}
+{"timestamp": 1790536073.1973035, "spread_bps": -0.8209, "net_spread_bps": -4.3209, "status": "LOSS", "latency_ns": 76245}
+{"timestamp": 1790536073.4477437, "spread_bps": 0.8299, "net_spread_bps": -2.6701, "status": "LOSS", "latency_ns": 76465}
+{"timestamp": 1790536073.6981802, "spread_bps": -1.3476, "net_spread_bps": -4.8476, "status": "LOSS", "latency_ns": 77017}
+{"timestamp": 1790536073.9486127, "spread_bps": 1.6249, "net_spread_bps": -1.8751, "status": "LOSS", "latency_ns": 77167}
+{"timestamp": 1790536074.1990445, "spread_bps": 1.6506, "net_spread_bps": -1.8494, "status": "LOSS", "latency_ns": 77096}
+{"timestamp": 1790536074.4494908, "spread_bps": -0.2957, "net_spread_bps": -3.7957, "status": "LOSS", "latency_ns": 77107}
+{"timestamp": 1790536074.699926, "spread_bps": 0.613, "net_spread_bps": -2.887, "status": "LOSS", "latency_ns": 76446}
+{"timestamp": 1790536074.9503622, "spread_bps": -1.6659, "net_spread_bps": -5.1659, "status": "LOSS", "latency_ns": 76065}
+{"timestamp": 1790536075.2008016, "spread_bps": -0.4402, "net_spread_bps": -3.9402, "status": "LOSS", "latency_ns": 77397}
+{"timestamp": 1790536075.4512374, "spread_bps": 1.6084, "net_spread_bps": -1.8916, "status": "LOSS", "latency_ns": 75514}
+{"timestamp": 1790536075.7016983, "spread_bps": -2.1148, "net_spread_bps": -5.6148, "status": "LOSS", "latency_ns": 76055}
+{"timestamp": 1790536075.952123, "spread_bps": 0.5223, "net_spread_bps": -2.9777, "status": "LOSS", "latency_ns": 67482}
+{"timestamp": 1790536076.2025394, "spread_bps": 1.1917, "net_spread_bps": -2.3083, "status": "LOSS", "latency_ns": 77307}
+{"timestamp": 1790536076.452971, "spread_bps": -2.8252, "net_spread_bps": -6.3252, "status": "LOSS", "latency_ns": 76776}
+{"timestamp": 1790536076.703407, "spread_bps": 0.7908, "net_spread_bps": -2.7092, "status": "LOSS", "latency_ns": 75925}
+{"timestamp": 1790536076.9538405, "spread_bps": 2.3803, "net_spread_bps": -1.1197, "status": "LOSS", "latency_ns": 74563}
+{"timestamp": 1790536077.2042723, "spread_bps": -0.4669, "net_spread_bps": -3.9669, "status": "LOSS", "latency_ns": 76416}
+{"timestamp": 1790536077.4547155, "spread_bps": 0.8448, "net_spread_bps": -2.6552, "status": "LOSS", "latency_ns": 76626}
+{"timestamp": 1790536077.7051263, "spread_bps": -1.2878, "net_spread_bps": -4.7878, "status": "LOSS", "latency_ns": 77066}
+{"timestamp": 1790536077.9555304, "spread_bps": -2.0527, "net_spread_bps": -5.5527, "status": "LOSS", "latency_ns": 65078}
+{"timestamp": 1790536078.2059617, "spread_bps": 0.4647, "net_spread_bps": -3.0353, "status": "LOSS", "latency_ns": 76555}
+{"timestamp": 1790536078.4564075, "spread_bps": -1.0308, "net_spread_bps": -4.5308, "status": "LOSS", "latency_ns": 76686}
+{"timestamp": 1790536078.7068496, "spread_bps": 1.7017, "net_spread_bps": -1.7983, "status": "LOSS", "latency_ns": 76586}
+{"timestamp": 1790536078.9572861, "spread_bps": -0.4293, "net_spread_bps": -3.9293, "status": "LOSS", "latency_ns": 76596}
+{"timestamp": 1790536079.2077332, "spread_bps": 0.7144, "net_spread_bps": -2.7856, "status": "LOSS", "latency_ns": 77066}
+{"timestamp": 1790536079.4581757, "spread_bps": -1.3795, "net_spread_bps": -4.8795, "status": "LOSS", "latency_ns": 77547}
+{"timestamp": 1790536079.7086236, "spread_bps": 0.1244, "net_spread_bps": -3.3756, "status": "LOSS", "latency_ns": 77107}
+{"timestamp": 1790536079.9590626, "spread_bps": 1.0996, "net_spread_bps": -2.4004, "status": "LOSS", "latency_ns": 78419}
+{"timestamp": 1790536080.2095313, "spread_bps": -0.0267, "net_spread_bps": -3.5267, "status": "LOSS", "latency_ns": 77848}
+{"timestamp": 1790536080.459976, "spread_bps": 1.8748, "net_spread_bps": -1.6252, "status": "LOSS", "latency_ns": 78559}
+{"timestamp": 1790536080.710425, "spread_bps": -0.3413, "net_spread_bps": -3.8413, "status": "LOSS", "latency_ns": 76496}
+{"timestamp": 1790536080.9608502, "spread_bps": -2.8121, "net_spread_bps": -6.3121, "status": "LOSS", "latency_ns": 67412}
+{"timestamp": 1790536081.2112656, "spread_bps": 1.4113, "net_spread_bps": -2.0887, "status": "LOSS", "latency_ns": 69425}
+{"timestamp": 1790536081.4616768, "spread_bps": 1.5202, "net_spread_bps": -1.9798, "status": "LOSS", "latency_ns": 76306}
+{"timestamp": 1790536081.7121303, "spread_bps": -2.1428, "net_spread_bps": -5.6428, "status": "LOSS", "latency_ns": 77197}
+{"timestamp": 1790536081.9625676, "spread_bps": -0.5047, "net_spread_bps": -4.0047, "status": "LOSS", "latency_ns": 76916}
+{"timestamp": 1790536082.2130017, "spread_bps": 0.1576, "net_spread_bps": -3.3424, "status": "LOSS", "latency_ns": 70236}
+{"timestamp": 1790536082.4634073, "spread_bps": -1.9868, "net_spread_bps": -5.4868, "status": "LOSS", "latency_ns": 77297}
+{"timestamp": 1790536082.7138147, "spread_bps": -0.825, "net_spread_bps": -4.325, "status": "LOSS", "latency_ns": 70817}
+{"timestamp": 1790536082.964249, "spread_bps": 0.2719, "net_spread_bps": -3.2281, "status": "LOSS", "latency_ns": 76726}
+{"timestamp": 1790536083.214673, "spread_bps": 2.3381, "net_spread_bps": -1.1619, "status": "LOSS", "latency_ns": 68955}
+{"timestamp": 1790536083.465087, "spread_bps": 2.2246, "net_spread_bps": -1.2754, "status": "LOSS", "latency_ns": 76686}
+{"timestamp": 1790536083.7155294, "spread_bps": 1.8285, "net_spread_bps": -1.6715, "status": "LOSS", "latency_ns": 76977}
+{"timestamp": 1790536083.9659643, "spread_bps": 0.4318, "net_spread_bps": -3.0682, "status": "LOSS", "latency_ns": 75545}
+{"timestamp": 1790536084.2164147, "spread_bps": 1.2915, "net_spread_bps": -2.2085, "status": "LOSS", "latency_ns": 78419}
+{"timestamp": 1790536084.4668438, "spread_bps": -0.1324, "net_spread_bps": -3.6324, "status": "LOSS", "latency_ns": 69835}
+{"timestamp": 1790536084.7172716, "spread_bps": 1.4155, "net_spread_bps": -2.0845, "status": "LOSS", "latency_ns": 77066}
+{"timestamp": 1790536084.9677067, "spread_bps": -0.4935, "net_spread_bps": -3.9935, "status": "LOSS", "latency_ns": 75915}
+{"timestamp": 1790536085.2181566, "spread_bps": -0.3075, "net_spread_bps": -3.8075, "status": "LOSS", "latency_ns": 76676}
+{"timestamp": 1790536085.4685984, "spread_bps": -1.8812, "net_spread_bps": -5.3812, "status": "LOSS", "latency_ns": 79059}
+{"timestamp": 1790536085.7190516, "spread_bps": 0.2765, "net_spread_bps": -3.2235, "status": "LOSS", "latency_ns": 76035}
+{"timestamp": 1790536085.96947, "spread_bps": 0.6961, "net_spread_bps": -2.8039, "status": "LOSS", "latency_ns": 67563}
+{"timestamp": 1790536086.2198873, "spread_bps": -2.3336, "net_spread_bps": -5.8336, "status": "LOSS", "latency_ns": 77166}
+{"timestamp": 1790536086.4703174, "spread_bps": 2.4369, "net_spread_bps": -1.0631, "status": "LOSS", "latency_ns": 77677}
+{"timestamp": 1790536086.7207782, "spread_bps": 1.2639, "net_spread_bps": -2.2361, "status": "LOSS", "latency_ns": 76666}
+{"timestamp": 1790536086.9711988, "spread_bps": -1.4218, "net_spread_bps": -4.9218, "status": "LOSS", "latency_ns": 65719}
+{"timestamp": 1790536087.221631, "spread_bps": 2.2685, "net_spread_bps": -1.2315, "status": "LOSS", "latency_ns": 76216}
+{"timestamp": 1790536087.4720542, "spread_bps": -0.2172, "net_spread_bps": -3.7172, "status": "LOSS", "latency_ns": 70938}
+{"timestamp": 1790536087.7224796, "spread_bps": 0.8863, "net_spread_bps": -2.6137, "status": "LOSS", "latency_ns": 74302}
+{"timestamp": 1790536087.9729214, "spread_bps": 2.0354, "net_spread_bps": -1.4646, "status": "LOSS", "latency_ns": 75334}
+{"timestamp": 1790536088.2233737, "spread_bps": -2.2535, "net_spread_bps": -5.7535, "status": "LOSS", "latency_ns": 77147}
+{"timestamp": 1790536088.4738047, "spread_bps": -0.8954, "net_spread_bps": -4.3954, "status": "LOSS", "latency_ns": 76125}
+{"timestamp": 1790536088.7242482, "spread_bps": -2.082, "net_spread_bps": -5.582, "status": "LOSS", "latency_ns": 77667}
+{"timestamp": 1790536088.9746792, "spread_bps": 0.5203, "net_spread_bps": -2.9797, "status": "LOSS", "latency_ns": 76055}
+{"timestamp": 1790536089.225121, "spread_bps": -2.9225, "net_spread_bps": -6.4225, "status": "LOSS", "latency_ns": 75034}
+{"timestamp": 1790536089.4755635, "spread_bps": -1.8319, "net_spread_bps": -5.3319, "status": "LOSS", "latency_ns": 76515}
+{"timestamp": 1790536089.7260087, "spread_bps": 2.4429, "net_spread_bps": -1.0571, "status": "LOSS", "latency_ns": 77497}
+{"timestamp": 1790536089.9764478, "spread_bps": -2.511, "net_spread_bps": -6.011, "status": "LOSS", "latency_ns": 77267}
+{"timestamp": 1790536090.2268915, "spread_bps": 0.6365, "net_spread_bps": -2.8635, "status": "LOSS", "latency_ns": 76826}
+{"timestamp": 1790536090.477333, "spread_bps": 2.4955, "net_spread_bps": -1.0045, "status": "LOSS", "latency_ns": 76936}
+{"timestamp": 1790536090.7277772, "spread_bps": -1.545, "net_spread_bps": -5.045, "status": "LOSS", "latency_ns": 76767}
+{"timestamp": 1790536090.9781988, "spread_bps": 1.902, "net_spread_bps": -1.598, "status": "LOSS", "latency_ns": 66590}
+{"timestamp": 1790536091.2285793, "spread_bps": 0.0784, "net_spread_bps": -3.4216, "status": "LOSS", "latency_ns": 73271}
+{"timestamp": 1790536091.4790058, "spread_bps": -2.435, "net_spread_bps": -5.935, "status": "LOSS", "latency_ns": 75825}
+{"timestamp": 1790536091.7294576, "spread_bps": -0.0447, "net_spread_bps": -3.5447, "status": "LOSS", "latency_ns": 72560}
+{"timestamp": 1790536091.9798865, "spread_bps": 1.6777, "net_spread_bps": -1.8223, "status": "LOSS", "latency_ns": 75094}
+{"timestamp": 1790536092.230333, "spread_bps": -2.6863, "net_spread_bps": -6.1863, "status": "LOSS", "latency_ns": 76175}
+{"timestamp": 1790536092.4807696, "spread_bps": -1.4251, "net_spread_bps": -4.9251, "status": "LOSS", "latency_ns": 75935}
+{"timestamp": 1790536092.7311954, "spread_bps": -0.3982, "net_spread_bps": -3.8982, "status": "LOSS", "latency_ns": 67883}
+{"timestamp": 1790536092.9816234, "spread_bps": 1.7972, "net_spread_bps": -1.7028, "status": "LOSS", "latency_ns": 76516}
+{"timestamp": 1790536093.232068, "spread_bps": 0.0826, "net_spread_bps": -3.4174, "status": "LOSS", "latency_ns": 77907}
+{"timestamp": 1790536093.4825048, "spread_bps": 1.1949, "net_spread_bps": -2.3051, "status": "LOSS", "latency_ns": 77046}
+{"timestamp": 1790536093.7329557, "spread_bps": -2.1292, "net_spread_bps": -5.6292, "status": "LOSS", "latency_ns": 76626}
+{"timestamp": 1790536093.9833894, "spread_bps": -1.2498, "net_spread_bps": -4.7498, "status": "LOSS", "latency_ns": 76215}
+{"timestamp": 1790536094.233828, "spread_bps": 0.8285, "net_spread_bps": -2.6715, "status": "LOSS", "latency_ns": 77267}
+{"timestamp": 1790536094.4842355, "spread_bps": 0.4842, "net_spread_bps": -3.0158, "status": "LOSS", "latency_ns": 73321}
+{"timestamp": 1790536094.7347274, "spread_bps": -1.3932, "net_spread_bps": -4.8932, "status": "LOSS", "latency_ns": 68474}
+{"timestamp": 1790536094.9851334, "spread_bps": -1.4427, "net_spread_bps": -4.9427, "status": "LOSS", "latency_ns": 69145}
+{"timestamp": 1790536095.2355342, "spread_bps": -2.3068, "net_spread_bps": -5.8068, "status": "LOSS", "latency_ns": 74082}
+{"timestamp": 1790536095.485926, "spread_bps": 1.87, "net_spread_bps": -1.63, "status": "LOSS", "latency_ns": 65188}
+{"timestamp": 1790536095.736319, "spread_bps": 1.1513, "net_spread_bps": -2.3487, "status": "LOSS", "latency_ns": 70797}
+{"timestamp": 1790536095.986706, "spread_bps": -2.5265, "net_spread_bps": -6.0265, "status": "LOSS", "latency_ns": 62394}
+{"timestamp": 1790536096.2370708, "spread_bps": 1.5144, "net_spread_bps": -1.9856, "status": "LOSS", "latency_ns": 69144}
+{"timestamp": 1790536096.487485, "spread_bps": 1.8863, "net_spread_bps": -1.6137, "status": "LOSS", "latency_ns": 72520}
+{"timestamp": 1790536096.7379274, "spread_bps": 2.1543, "net_spread_bps": -1.3457, "status": "LOSS", "latency_ns": 76275}
+{"timestamp": 1790536096.9883378, "spread_bps": -1.3258, "net_spread_bps": -4.8258, "status": "LOSS", "latency_ns": 69866}
+{"timestamp": 1790536097.2387824, "spread_bps": -2.3852, "net_spread_bps": -5.8852, "status": "LOSS", "latency_ns": 67412}
+{"timestamp": 1790536097.4891968, "spread_bps": -2.1006, "net_spread_bps": -5.6006, "status": "LOSS", "latency_ns": 72019}
+{"timestamp": 1790536097.7396376, "spread_bps": 0.0911, "net_spread_bps": -3.4089, "status": "LOSS", "latency_ns": 78929}
+{"timestamp": 1790536097.9900715, "spread_bps": -2.8708, "net_spread_bps": -6.3708, "status": "LOSS", "latency_ns": 74853}
+{"timestamp": 1790536098.240486, "spread_bps": -1.9452, "net_spread_bps": -5.4452, "status": "LOSS", "latency_ns": 75915}
+{"timestamp": 1790536098.4909234, "spread_bps": -2.952, "net_spread_bps": -6.452, "status": "LOSS", "latency_ns": 76215}
+{"timestamp": 1790536098.741361, "spread_bps": -1.5721, "net_spread_bps": -5.0721, "status": "LOSS", "latency_ns": 76987}
+{"timestamp": 1790536098.9917965, "spread_bps": 2.2591, "net_spread_bps": -1.2409, "status": "LOSS", "latency_ns": 76887}
+{"timestamp": 1790536099.242238, "spread_bps": 1.5748, "net_spread_bps": -1.9252, "status": "LOSS", "latency_ns": 76816}
+{"timestamp": 1790536099.4926775, "spread_bps": -1.5641, "net_spread_bps": -5.0641, "status": "LOSS", "latency_ns": 77768}
+{"timestamp": 1790536099.7431204, "spread_bps": -1.0278, "net_spread_bps": -4.5278, "status": "LOSS", "latency_ns": 77217}
+{"timestamp": 1790536099.993573, "spread_bps": 1.5857, "net_spread_bps": -1.9143, "status": "LOSS", "latency_ns": 74803}
+{"timestamp": 1790536100.2439852, "spread_bps": 1.0961, "net_spread_bps": -2.4039, "status": "LOSS", "latency_ns": 77117}
+{"timestamp": 1790536100.49442, "spread_bps": 0.8857, "net_spread_bps": -2.6143, "status": "LOSS", "latency_ns": 78028}
+{"timestamp": 1790536100.7448232, "spread_bps": 0.9438, "net_spread_bps": -2.5562, "status": "LOSS", "latency_ns": 69415}
+{"timestamp": 1790536100.9952762, "spread_bps": -0.8307, "net_spread_bps": -4.3307, "status": "LOSS", "latency_ns": 85950}
+{"timestamp": 1790536101.2457142, "spread_bps": 2.3718, "net_spread_bps": -1.1282, "status": "LOSS", "latency_ns": 76446}
+{"timestamp": 1790536101.4961498, "spread_bps": 1.245, "net_spread_bps": -2.255, "status": "LOSS", "latency_ns": 75304}
+{"timestamp": 1790536101.7465844, "spread_bps": -1.2815, "net_spread_bps": -4.7815, "status": "LOSS", "latency_ns": 72139}
+{"timestamp": 1790536101.9969943, "spread_bps": -1.1722, "net_spread_bps": -4.6722, "status": "LOSS", "latency_ns": 72499}
+{"timestamp": 1790536102.2474234, "spread_bps": -1.6542, "net_spread_bps": -5.1542, "status": "LOSS", "latency_ns": 72310}
+{"timestamp": 1790536102.4978526, "spread_bps": 1.4826, "net_spread_bps": -2.0174, "status": "LOSS", "latency_ns": 75814}
+{"timestamp": 1790536102.7482953, "spread_bps": -1.5872, "net_spread_bps": -5.0872, "status": "LOSS", "latency_ns": 73231}
+{"timestamp": 1790536102.9987211, "spread_bps": 1.9889, "net_spread_bps": -1.5111, "status": "LOSS", "latency_ns": 72780}
+{"timestamp": 1790536103.2491326, "spread_bps": 0.5163, "net_spread_bps": -2.9837, "status": "LOSS", "latency_ns": 68373}
+{"timestamp": 1790536103.4995582, "spread_bps": -1.3274, "net_spread_bps": -4.8274, "status": "LOSS", "latency_ns": 71979}
+{"timestamp": 1790536103.7499807, "spread_bps": -0.1863, "net_spread_bps": -3.6863, "status": "LOSS", "latency_ns": 75254}
+{"timestamp": 1790536104.000415, "spread_bps": 0.8393, "net_spread_bps": -2.6607, "status": "LOSS", "latency_ns": 76446}
+{"timestamp": 1790536104.250856, "spread_bps": -0.2828, "net_spread_bps": -3.7828, "status": "LOSS", "latency_ns": 76205}
+{"timestamp": 1790536104.5012934, "spread_bps": 2.2146, "net_spread_bps": -1.2854, "status": "LOSS", "latency_ns": 77347}
+{"timestamp": 1790536104.7517374, "spread_bps": 1.5381, "net_spread_bps": -1.9619, "status": "LOSS", "latency_ns": 77337}
+{"timestamp": 1790536105.0021741, "spread_bps": -2.5697, "net_spread_bps": -6.0697, "status": "LOSS", "latency_ns": 76836}
+{"timestamp": 1790536105.2526207, "spread_bps": -2.8414, "net_spread_bps": -6.3414, "status": "LOSS", "latency_ns": 76826}
+{"timestamp": 1790536105.5030577, "spread_bps": 1.4083, "net_spread_bps": -2.0917, "status": "LOSS", "latency_ns": 76746}
+{"timestamp": 1790536105.7535224, "spread_bps": 0.7403, "net_spread_bps": -2.7597, "status": "LOSS", "latency_ns": 77847}
+{"timestamp": 1790536106.0039542, "spread_bps": 1.5973, "net_spread_bps": -1.9027, "status": "LOSS", "latency_ns": 68974}
+{"timestamp": 1790536106.254382, "spread_bps": 1.3265, "net_spread_bps": -2.1735, "status": "LOSS", "latency_ns": 75955}
+{"timestamp": 1790536106.504837, "spread_bps": 2.3794, "net_spread_bps": -1.1206, "status": "LOSS", "latency_ns": 77036}
+{"timestamp": 1790536106.7553027, "spread_bps": 1.3427, "net_spread_bps": -2.1573, "status": "LOSS", "latency_ns": 95254}
+{"timestamp": 1790536107.005725, "spread_bps": -0.594, "net_spread_bps": -4.094, "status": "LOSS", "latency_ns": 67932}
+{"timestamp": 1790536107.2561219, "spread_bps": 1.2806, "net_spread_bps": -2.2194, "status": "LOSS", "latency_ns": 71278}
+{"timestamp": 1790536107.506541, "spread_bps": 1.6507, "net_spread_bps": -1.8493, "status": "LOSS", "latency_ns": 74372}
+{"timestamp": 1790536107.7569568, "spread_bps": -1.0499, "net_spread_bps": -4.5499, "status": "LOSS", "latency_ns": 77697}
+{"timestamp": 1790536108.0073977, "spread_bps": 2.4975, "net_spread_bps": -1.0025, "status": "LOSS", "latency_ns": 76826}
+{"timestamp": 1790536108.2578218, "spread_bps": 0.6008, "net_spread_bps": -2.8992, "status": "LOSS", "latency_ns": 67723}
+{"timestamp": 1790536108.508224, "spread_bps": 1.8096, "net_spread_bps": -1.6904, "status": "LOSS", "latency_ns": 77097}
+{"timestamp": 1790536108.7586534, "spread_bps": 0.6841, "net_spread_bps": -2.8159, "status": "LOSS", "latency_ns": 71729}
+{"timestamp": 1790536109.009072, "spread_bps": -2.0455, "net_spread_bps": -5.5455, "status": "LOSS", "latency_ns": 77067}
+{"timestamp": 1790536109.2595024, "spread_bps": -0.3016, "net_spread_bps": -3.8016, "status": "LOSS", "latency_ns": 71368}
+{"timestamp": 1790536109.50992, "spread_bps": -1.6732, "net_spread_bps": -5.1732, "status": "LOSS", "latency_ns": 72199}
+{"timestamp": 1790536109.7603538, "spread_bps": -1.6277, "net_spread_bps": -5.1277, "status": "LOSS", "latency_ns": 76917}
+{"timestamp": 1790536110.0107894, "spread_bps": -0.4579, "net_spread_bps": -3.9579, "status": "LOSS", "latency_ns": 75544}
+{"timestamp": 1790536110.2612193, "spread_bps": -1.7876, "net_spread_bps": -5.2876, "status": "LOSS", "latency_ns": 71378}
+{"timestamp": 1790536110.5116346, "spread_bps": -1.3629, "net_spread_bps": -4.8629, "status": "LOSS", "latency_ns": 76175}
+{"timestamp": 1790536110.7620687, "spread_bps": 1.0822, "net_spread_bps": -2.4178, "status": "LOSS", "latency_ns": 75825}
+{"timestamp": 1790536111.012493, "spread_bps": 0.9587, "net_spread_bps": -2.5413, "status": "LOSS", "latency_ns": 69795}
+{"timestamp": 1790536111.2629123, "spread_bps": -1.0912, "net_spread_bps": -4.5912, "status": "LOSS", "latency_ns": 77427}
+{"timestamp": 1790536111.5133507, "spread_bps": 0.8968, "net_spread_bps": -2.6032, "status": "LOSS", "latency_ns": 76937}
+{"timestamp": 1790536111.7638156, "spread_bps": 1.3984, "net_spread_bps": -2.1016, "status": "LOSS", "latency_ns": 76446}
+{"timestamp": 1790536112.0142405, "spread_bps": -2.2239, "net_spread_bps": -5.7239, "status": "LOSS", "latency_ns": 67552}
+{"timestamp": 1790536112.2646582, "spread_bps": -1.8535, "net_spread_bps": -5.3535, "status": "LOSS", "latency_ns": 71908}
+{"timestamp": 1790536112.5150878, "spread_bps": 0.5699, "net_spread_bps": -2.9301, "status": "LOSS", "latency_ns": 74022}
+{"timestamp": 1790536112.7655494, "spread_bps": -1.3288, "net_spread_bps": -4.8288, "status": "LOSS", "latency_ns": 77106}
+{"timestamp": 1790536113.0159817, "spread_bps": -1.8595, "net_spread_bps": -5.3595, "status": "LOSS", "latency_ns": 75514}
+{"timestamp": 1790536113.2664304, "spread_bps": 0.1214, "net_spread_bps": -3.3786, "status": "LOSS", "latency_ns": 75995}
+{"timestamp": 1790536113.5168583, "spread_bps": 2.2601, "net_spread_bps": -1.2399, "status": "LOSS", "latency_ns": 69796}
+{"timestamp": 1790536113.7673051, "spread_bps": -0.9907, "net_spread_bps": -4.4907, "status": "LOSS", "latency_ns": 99400}
+{"timestamp": 1790536114.0177388, "spread_bps": -1.8365, "net_spread_bps": -5.3365, "status": "LOSS", "latency_ns": 76165}
+{"timestamp": 1790536114.2681859, "spread_bps": 0.1648, "net_spread_bps": -3.3352, "status": "LOSS", "latency_ns": 77247}
+{"timestamp": 1790536114.5186212, "spread_bps": -2.2373, "net_spread_bps": -5.7373, "status": "LOSS", "latency_ns": 76306}
+{"timestamp": 1790536114.7690656, "spread_bps": -2.2147, "net_spread_bps": -5.7147, "status": "LOSS", "latency_ns": 76766}
+{"timestamp": 1790536115.019503, "spread_bps": -2.7766, "net_spread_bps": -6.2766, "status": "LOSS", "latency_ns": 78929}
+{"timestamp": 1790536115.2699466, "spread_bps": -0.895, "net_spread_bps": -4.395, "status": "LOSS", "latency_ns": 77347}
+{"timestamp": 1790536115.520379, "spread_bps": -1.5392, "net_spread_bps": -5.0392, "status": "LOSS", "latency_ns": 75985}
+{"timestamp": 1790536115.7708237, "spread_bps": 2.1353, "net_spread_bps": -1.3647, "status": "LOSS", "latency_ns": 77217}
+{"timestamp": 1790536116.0212526, "spread_bps": -1.5052, "net_spread_bps": -5.0052, "status": "LOSS", "latency_ns": 70497}
+{"timestamp": 1790536116.271682, "spread_bps": 0.5446, "net_spread_bps": -2.9554, "status": "LOSS", "latency_ns": 77638}
+{"timestamp": 1790536116.5221343, "spread_bps": -2.8509, "net_spread_bps": -6.3509, "status": "LOSS", "latency_ns": 76706}
+{"timestamp": 1790536116.772566, "spread_bps": -1.4333, "net_spread_bps": -4.9333, "status": "LOSS", "latency_ns": 72509}
+{"timestamp": 1790536117.0229945, "spread_bps": -0.9495, "net_spread_bps": -4.4495, "status": "LOSS", "latency_ns": 77617}
+{"timestamp": 1790536117.2734413, "spread_bps": -1.2311, "net_spread_bps": -4.7311, "status": "LOSS", "latency_ns": 77717}
+{"timestamp": 1790536117.5238876, "spread_bps": -1.8066, "net_spread_bps": -5.3066, "status": "LOSS", "latency_ns": 78068}
+{"timestamp": 1790536117.774326, "spread_bps": -2.1862, "net_spread_bps": -5.6862, "status": "LOSS", "latency_ns": 72810}
+{"timestamp": 1790536118.0247598, "spread_bps": -1.6638, "net_spread_bps": -5.1638, "status": "LOSS", "latency_ns": 79520}
+{"timestamp": 1790536118.2752018, "spread_bps": -1.6177, "net_spread_bps": -5.1177, "status": "LOSS", "latency_ns": 76526}
+{"timestamp": 1790536118.525639, "spread_bps": -1.4279, "net_spread_bps": -4.9279, "status": "LOSS", "latency_ns": 68623}
+{"timestamp": 1790536118.7760565, "spread_bps": -1.2489, "net_spread_bps": -4.7489, "status": "LOSS", "latency_ns": 77357}
+{"timestamp": 1790536119.0264926, "spread_bps": -0.0661, "net_spread_bps": -3.5661, "status": "LOSS", "latency_ns": 77116}
+{"timestamp": 1790536119.2769403, "spread_bps": -2.2291, "net_spread_bps": -5.7291, "status": "LOSS", "latency_ns": 77858}
+{"timestamp": 1790536119.52738, "spread_bps": 0.743, "net_spread_bps": -2.757, "status": "LOSS", "latency_ns": 75634}
+{"timestamp": 1790536119.7778277, "spread_bps": -0.718, "net_spread_bps": -4.218, "status": "LOSS", "latency_ns": 77347}
+{"timestamp": 1790536120.0282571, "spread_bps": 0.4663, "net_spread_bps": -3.0337, "status": "LOSS", "latency_ns": 71398}
+{"timestamp": 1790536120.2787042, "spread_bps": -0.3611, "net_spread_bps": -3.8611, "status": "LOSS", "latency_ns": 77287}
+{"timestamp": 1790536120.5291417, "spread_bps": 0.7016, "net_spread_bps": -2.7984, "status": "LOSS", "latency_ns": 77176}
+{"timestamp": 1790536120.7795866, "spread_bps": 1.7253, "net_spread_bps": -1.7747, "status": "LOSS", "latency_ns": 75645}
+{"timestamp": 1790536121.0300183, "spread_bps": 1.2571, "net_spread_bps": -2.2429, "status": "LOSS", "latency_ns": 71558}
+{"timestamp": 1790536121.280449, "spread_bps": -0.7855, "net_spread_bps": -4.2855, "status": "LOSS", "latency_ns": 78779}
+{"timestamp": 1790536121.5309043, "spread_bps": -2.5529, "net_spread_bps": -6.0529, "status": "LOSS", "latency_ns": 76846}
+{"timestamp": 1790536121.7813437, "spread_bps": -1.2711, "net_spread_bps": -4.7711, "status": "LOSS", "latency_ns": 76525}
+{"timestamp": 1790536122.031787, "spread_bps": 0.3728, "net_spread_bps": -3.1272, "status": "LOSS", "latency_ns": 75554}
+{"timestamp": 1790536122.28223, "spread_bps": -1.4086, "net_spread_bps": -4.9086, "status": "LOSS", "latency_ns": 77467}
+{"timestamp": 1790536122.5326707, "spread_bps": 0.6677, "net_spread_bps": -2.8323, "status": "LOSS", "latency_ns": 75694}
+{"timestamp": 1790536122.7830982, "spread_bps": 0.6247, "net_spread_bps": -2.8753, "status": "LOSS", "latency_ns": 67703}
+{"timestamp": 1790536123.0335164, "spread_bps": 0.1984, "net_spread_bps": -3.3016, "status": "LOSS", "latency_ns": 74212}
+{"timestamp": 1790536123.2839398, "spread_bps": 1.5008, "net_spread_bps": -1.9992, "status": "LOSS", "latency_ns": 72340}
+{"timestamp": 1790536123.5343597, "spread_bps": -0.3997, "net_spread_bps": -3.8997, "status": "LOSS", "latency_ns": 72720}
+{"timestamp": 1790536123.7847745, "spread_bps": 2.424, "net_spread_bps": -1.076, "status": "LOSS", "latency_ns": 76866}
+{"timestamp": 1790536124.0351982, "spread_bps": -0.127, "net_spread_bps": -3.627, "status": "LOSS", "latency_ns": 76025}
+{"timestamp": 1790536124.2856574, "spread_bps": 0.0742, "net_spread_bps": -3.4258, "status": "LOSS", "latency_ns": 77286}
+{"timestamp": 1790536124.536086, "spread_bps": 1.2267, "net_spread_bps": -2.2733, "status": "LOSS", "latency_ns": 69054}
+{"timestamp": 1790536124.7864997, "spread_bps": 0.8573, "net_spread_bps": -2.6427, "status": "LOSS", "latency_ns": 76215}
+{"timestamp": 1790536125.036939, "spread_bps": -1.8224, "net_spread_bps": -5.3224, "status": "LOSS", "latency_ns": 77567}
+{"timestamp": 1790536125.2873886, "spread_bps": 1.684, "net_spread_bps": -1.816, "status": "LOSS", "latency_ns": 77167}
+{"timestamp": 1790536125.5378246, "spread_bps": 1.9282, "net_spread_bps": -1.5718, "status": "LOSS", "latency_ns": 77147}
+{"timestamp": 1790536125.788273, "spread_bps": 1.4227, "net_spread_bps": -2.0773, "status": "LOSS", "latency_ns": 76325}
+{"timestamp": 1790536126.038706, "spread_bps": -1.0685, "net_spread_bps": -4.5685, "status": "LOSS", "latency_ns": 71969}
+{"timestamp": 1790536126.289124, "spread_bps": -0.1195, "net_spread_bps": -3.6195, "status": "LOSS", "latency_ns": 72530}
+{"timestamp": 1790536126.539554, "spread_bps": 0.6962, "net_spread_bps": -2.8038, "status": "LOSS", "latency_ns": 76115}
+{"timestamp": 1790536126.7899923, "spread_bps": 1.5271, "net_spread_bps": -1.9729, "status": "LOSS", "latency_ns": 76035}
+{"timestamp": 1790536127.0404434, "spread_bps": 2.1328, "net_spread_bps": -1.3672, "status": "LOSS", "latency_ns": 77317}
+{"timestamp": 1790536127.2908857, "spread_bps": 1.7347, "net_spread_bps": -1.7653, "status": "LOSS", "latency_ns": 77267}
+{"timestamp": 1790536127.5413392, "spread_bps": 0.089, "net_spread_bps": -3.411, "status": "LOSS", "latency_ns": 77978}
+{"timestamp": 1790536127.7917795, "spread_bps": 0.0241, "net_spread_bps": -3.4759, "status": "LOSS", "latency_ns": 76556}
+{"timestamp": 1790536128.0422177, "spread_bps": 2.4185, "net_spread_bps": -1.0815, "status": "LOSS", "latency_ns": 73291}
+{"timestamp": 1790536128.292648, "spread_bps": 2.3821, "net_spread_bps": -1.1179, "status": "LOSS", "latency_ns": 77006}
+{"timestamp": 1790536128.543128, "spread_bps": 0.3285, "net_spread_bps": -3.1715, "status": "LOSS", "latency_ns": 77497}
+{"timestamp": 1790536128.7935932, "spread_bps": -0.7639, "net_spread_bps": -4.2639, "status": "LOSS", "latency_ns": 73301}
+{"timestamp": 1790536129.0440223, "spread_bps": -0.4116, "net_spread_bps": -3.9116, "status": "LOSS", "latency_ns": 79229}
+{"timestamp": 1790536129.2944667, "spread_bps": 2.3189, "net_spread_bps": -1.1811, "status": "LOSS", "latency_ns": 77988}
+{"timestamp": 1790536129.5449011, "spread_bps": -1.0053, "net_spread_bps": -4.5053, "status": "LOSS", "latency_ns": 76034}
+{"timestamp": 1790536129.795355, "spread_bps": -2.7705, "net_spread_bps": -6.2705, "status": "LOSS", "latency_ns": 76105}
+{"timestamp": 1790536130.0457885, "spread_bps": 0.5481, "net_spread_bps": -2.9519, "status": "LOSS", "latency_ns": 76726}
+{"timestamp": 1790536130.2962308, "spread_bps": -0.9495, "net_spread_bps": -4.4495, "status": "LOSS", "latency_ns": 77588}
+{"timestamp": 1790536130.546666, "spread_bps": 0.5346, "net_spread_bps": -2.9654, "status": "LOSS", "latency_ns": 76585}
+{"timestamp": 1790536130.7971113, "spread_bps": 0.9896, "net_spread_bps": -2.5104, "status": "LOSS", "latency_ns": 77627}
+{"timestamp": 1790536131.0475433, "spread_bps": -0.4556, "net_spread_bps": -3.9556, "status": "LOSS", "latency_ns": 71518}
+{"timestamp": 1790536131.2979689, "spread_bps": 2.2521, "net_spread_bps": -1.2479, "status": "LOSS", "latency_ns": 75694}
+{"timestamp": 1790536131.548419, "spread_bps": -1.0745, "net_spread_bps": -4.5745, "status": "LOSS", "latency_ns": 75885}
+{"timestamp": 1790536131.798864, "spread_bps": -2.9499, "net_spread_bps": -6.4499, "status": "LOSS", "latency_ns": 78249}
+{"timestamp": 1790536132.0493157, "spread_bps": -0.907, "net_spread_bps": -4.407, "status": "LOSS", "latency_ns": 76565}
+{"timestamp": 1790536132.2997603, "spread_bps": -0.1898, "net_spread_bps": -3.6898, "status": "LOSS", "latency_ns": 76286}
+{"timestamp": 1790536132.55023, "spread_bps": -1.4634, "net_spread_bps": -4.9634, "status": "LOSS", "latency_ns": 78348}
+{"timestamp": 1790536132.8006775, "spread_bps": 1.5373, "net_spread_bps": -1.9627, "status": "LOSS", "latency_ns": 76776}
+{"timestamp": 1790536133.0511262, "spread_bps": 2.4537, "net_spread_bps": -1.0463, "status": "LOSS", "latency_ns": 77828}
+{"timestamp": 1790536133.301585, "spread_bps": 1.6104, "net_spread_bps": -1.8896, "status": "LOSS", "latency_ns": 76015}
+{"timestamp": 1790536133.5520287, "spread_bps": 2.0336, "net_spread_bps": -1.4664, "status": "LOSS", "latency_ns": 77336}
+{"timestamp": 1790536133.80246, "spread_bps": -1.1831, "net_spread_bps": -4.6831, "status": "LOSS", "latency_ns": 71569}
+{"timestamp": 1790536134.0528874, "spread_bps": 0.415, "net_spread_bps": -3.085, "status": "LOSS", "latency_ns": 77076}
+{"timestamp": 1790536134.303447, "spread_bps": -2.105, "net_spread_bps": -5.605, "status": "LOSS", "latency_ns": 72210}
+{"timestamp": 1790536134.553869, "spread_bps": -1.7301, "net_spread_bps": -5.2301, "status": "LOSS", "latency_ns": 73521}
+{"timestamp": 1790536134.8043053, "spread_bps": -2.0261, "net_spread_bps": -5.5261, "status": "LOSS", "latency_ns": 77117}
+{"timestamp": 1790536135.0547385, "spread_bps": 2.0836, "net_spread_bps": -1.4164, "status": "LOSS", "latency_ns": 76906}
+{"timestamp": 1790536135.3051643, "spread_bps": -2.2781, "net_spread_bps": -5.7781, "status": "LOSS", "latency_ns": 68834}
+{"timestamp": 1790536135.5555685, "spread_bps": -1.0972, "net_spread_bps": -4.5972, "status": "LOSS", "latency_ns": 69274}
+{"timestamp": 1790536135.8059795, "spread_bps": -0.9703, "net_spread_bps": -4.4703, "status": "LOSS", "latency_ns": 75764}
+{"timestamp": 1790536136.0564063, "spread_bps": -1.5339, "net_spread_bps": -5.0339, "status": "LOSS", "latency_ns": 70697}
+{"timestamp": 1790536136.306827, "spread_bps": -2.8323, "net_spread_bps": -6.3323, "status": "LOSS", "latency_ns": 76796}
+{"timestamp": 1790536136.5572693, "spread_bps": -1.5586, "net_spread_bps": -5.0586, "status": "LOSS", "latency_ns": 75974}
+{"timestamp": 1790536136.807695, "spread_bps": -0.9041, "net_spread_bps": -4.4041, "status": "LOSS", "latency_ns": 69135}
+{"timestamp": 1790536137.0581234, "spread_bps": -0.326, "net_spread_bps": -3.826, "status": "LOSS", "latency_ns": 72089}
+{"timestamp": 1790536137.3085368, "spread_bps": 2.0296, "net_spread_bps": -1.4704, "status": "LOSS", "latency_ns": 71127}
+{"timestamp": 1790536137.5589652, "spread_bps": -2.3253, "net_spread_bps": -5.8253, "status": "LOSS", "latency_ns": 75224}
+{"timestamp": 1790536137.809399, "spread_bps": 0.3769, "net_spread_bps": -3.1231, "status": "LOSS", "latency_ns": 75865}
+{"timestamp": 1790536138.059849, "spread_bps": -0.5637, "net_spread_bps": -4.0637, "status": "LOSS", "latency_ns": 76626}
+{"timestamp": 1790536138.3102999, "spread_bps": 2.3996, "net_spread_bps": -1.1004, "status": "LOSS", "latency_ns": 76837}
+{"timestamp": 1790536138.56074, "spread_bps": -2.0346, "net_spread_bps": -5.5346, "status": "LOSS", "latency_ns": 76836}
+{"timestamp": 1790536138.8111846, "spread_bps": 1.7935, "net_spread_bps": -1.7065, "status": "LOSS", "latency_ns": 76566}
+{"timestamp": 1790536139.0616357, "spread_bps": 2.1709, "net_spread_bps": -1.3291, "status": "LOSS", "latency_ns": 74272}
+{"timestamp": 1790536139.3120563, "spread_bps": -0.9824, "net_spread_bps": -4.4824, "status": "LOSS", "latency_ns": 74253}
+{"timestamp": 1790536139.5624797, "spread_bps": -1.154, "net_spread_bps": -4.654, "status": "LOSS", "latency_ns": 71879}
+{"timestamp": 1790536139.812875, "spread_bps": 0.0526, "net_spread_bps": -3.4474, "status": "LOSS", "latency_ns": 66931}
+{"timestamp": 1790536140.0633028, "spread_bps": 2.0666, "net_spread_bps": -1.4334, "status": "LOSS", "latency_ns": 93622}
+{"timestamp": 1790536140.3137434, "spread_bps": -1.3961, "net_spread_bps": -4.8961, "status": "LOSS", "latency_ns": 76045}
+{"timestamp": 1790536140.56418, "spread_bps": -0.5675, "net_spread_bps": -4.0675, "status": "LOSS", "latency_ns": 78098}
+{"timestamp": 1790536140.8146262, "spread_bps": -2.1474, "net_spread_bps": -5.6474, "status": "LOSS", "latency_ns": 76906}
+{"timestamp": 1790536141.0650501, "spread_bps": -2.169, "net_spread_bps": -5.669, "status": "LOSS", "latency_ns": 68644}
+{"timestamp": 1790536141.3154411, "spread_bps": -1.9416, "net_spread_bps": -5.4416, "status": "LOSS", "latency_ns": 73401}
+{"timestamp": 1790536141.5658662, "spread_bps": 2.0411, "net_spread_bps": -1.4589, "status": "LOSS", "latency_ns": 75534}
+{"timestamp": 1790536141.8163106, "spread_bps": -1.6867, "net_spread_bps": -5.1867, "status": "LOSS", "latency_ns": 77166}
+{"timestamp": 1790536142.066773, "spread_bps": -1.2833, "net_spread_bps": -4.7833, "status": "LOSS", "latency_ns": 76235}
+{"timestamp": 1790536142.3172193, "spread_bps": 1.526, "net_spread_bps": -1.974, "status": "LOSS", "latency_ns": 77497}
+{"timestamp": 1790536142.5676749, "spread_bps": 1.673, "net_spread_bps": -1.827, "status": "LOSS", "latency_ns": 77938}
+{"timestamp": 1790536142.8181162, "spread_bps": -0.496, "net_spread_bps": -3.996, "status": "LOSS", "latency_ns": 75975}
+{"timestamp": 1790536143.0685658, "spread_bps": -2.0957, "net_spread_bps": -5.5957, "status": "LOSS", "latency_ns": 78078}
+{"timestamp": 1790536143.31899, "spread_bps": 0.9924, "net_spread_bps": -2.5076, "status": "LOSS", "latency_ns": 67592}
+{"timestamp": 1790536143.5693922, "spread_bps": 1.046, "net_spread_bps": -2.454, "status": "LOSS", "latency_ns": 76335}
+{"timestamp": 1790536143.819823, "spread_bps": 1.5379, "net_spread_bps": -1.9621, "status": "LOSS", "latency_ns": 74894}
+{"timestamp": 1790536144.0702631, "spread_bps": 0.9124, "net_spread_bps": -2.5876, "status": "LOSS", "latency_ns": 77447}
+{"timestamp": 1790536144.320695, "spread_bps": 2.3792, "net_spread_bps": -1.1208, "status": "LOSS", "latency_ns": 70436}
+{"timestamp": 1790536144.5711098, "spread_bps": -2.2495, "net_spread_bps": -5.7495, "status": "LOSS", "latency_ns": 74343}
+{"timestamp": 1790536144.8215685, "spread_bps": -0.6352, "net_spread_bps": -4.1352, "status": "LOSS", "latency_ns": 78248}
+{"timestamp": 1790536145.0720112, "spread_bps": -1.6231, "net_spread_bps": -5.1231, "status": "LOSS", "latency_ns": 76636}
+{"timestamp": 1790536145.3224535, "spread_bps": -1.337, "net_spread_bps": -4.837, "status": "LOSS", "latency_ns": 77657}
+{"timestamp": 1790536145.5729096, "spread_bps": -2.4403, "net_spread_bps": -5.9403, "status": "LOSS", "latency_ns": 76956}
+{"timestamp": 1790536145.8233619, "spread_bps": -2.9598, "net_spread_bps": -6.4598, "status": "LOSS", "latency_ns": 79000}
+{"timestamp": 1790536146.0737925, "spread_bps": 2.382, "net_spread_bps": -1.118, "status": "LOSS", "latency_ns": 71599}
+{"timestamp": 1790536146.324213, "spread_bps": 1.5343, "net_spread_bps": -1.9657, "status": "LOSS", "latency_ns": 78339}
+{"timestamp": 1790536146.574661, "spread_bps": 0.5443, "net_spread_bps": -2.9557, "status": "LOSS", "latency_ns": 76165}
+{"timestamp": 1790536146.8250723, "spread_bps": 2.2817, "net_spread_bps": -1.2183, "status": "LOSS", "latency_ns": 77127}
+{"timestamp": 1790536147.075506, "spread_bps": -1.5537, "net_spread_bps": -5.0537, "status": "LOSS", "latency_ns": 75885}
+{"timestamp": 1790536147.3259435, "spread_bps": -1.5581, "net_spread_bps": -5.0581, "status": "LOSS", "latency_ns": 76215}
+{"timestamp": 1790536147.5763805, "spread_bps": 1.6154, "net_spread_bps": -1.8846, "status": "LOSS", "latency_ns": 74423}
+{"timestamp": 1790536147.8268058, "spread_bps": -1.2573, "net_spread_bps": -4.7573, "status": "LOSS", "latency_ns": 76555}
+{"timestamp": 1790536148.0772414, "spread_bps": -2.6522, "net_spread_bps": -6.1522, "status": "LOSS", "latency_ns": 77006}
+{"timestamp": 1790536148.3276732, "spread_bps": 1.5891, "net_spread_bps": -1.9109, "status": "LOSS", "latency_ns": 75043}
+{"timestamp": 1790536148.5781083, "spread_bps": 0.9209, "net_spread_bps": -2.5791, "status": "LOSS", "latency_ns": 77297}
+{"timestamp": 1790536148.8285534, "spread_bps": -2.1874, "net_spread_bps": -5.6874, "status": "LOSS", "latency_ns": 77347}
+{"timestamp": 1790536149.0789876, "spread_bps": 1.7197, "net_spread_bps": -1.7803, "status": "LOSS", "latency_ns": 73441}
+{"timestamp": 1790536149.3294177, "spread_bps": 0.0408, "net_spread_bps": -3.4592, "status": "LOSS", "latency_ns": 77758}
+{"timestamp": 1790536149.5798616, "spread_bps": 1.434, "net_spread_bps": -2.066, "status": "LOSS", "latency_ns": 76396}
+{"timestamp": 1790536149.83031, "spread_bps": -0.5315, "net_spread_bps": -4.0315, "status": "LOSS", "latency_ns": 75905}
+{"timestamp": 1790536150.0807664, "spread_bps": 1.627, "net_spread_bps": -1.873, "status": "LOSS", "latency_ns": 77848}
+{"timestamp": 1790536150.3312137, "spread_bps": -1.5226, "net_spread_bps": -5.0226, "status": "LOSS", "latency_ns": 76355}
+{"timestamp": 1790536150.5816772, "spread_bps": -0.8476, "net_spread_bps": -4.3476, "status": "LOSS", "latency_ns": 77417}
+{"timestamp": 1790536150.8321297, "spread_bps": -2.2957, "net_spread_bps": -5.7957, "status": "LOSS", "latency_ns": 76225}
+{"timestamp": 1790536151.0825658, "spread_bps": 1.9568, "net_spread_bps": -1.5432, "status": "LOSS", "latency_ns": 72560}
+{"timestamp": 1790536151.332999, "spread_bps": -0.2074, "net_spread_bps": -3.7074, "status": "LOSS", "latency_ns": 77667}
+{"timestamp": 1790536151.5834517, "spread_bps": -2.0413, "net_spread_bps": -5.5413, "status": "LOSS", "latency_ns": 77247}
+{"timestamp": 1790536151.8338966, "spread_bps": -2.609, "net_spread_bps": -6.109, "status": "LOSS", "latency_ns": 75915}
+{"timestamp": 1790536152.0843499, "spread_bps": -1.9946, "net_spread_bps": -5.4946, "status": "LOSS", "latency_ns": 78228}
+{"timestamp": 1790536152.3347955, "spread_bps": 0.0123, "net_spread_bps": -3.4877, "status": "LOSS", "latency_ns": 76706}
+{"timestamp": 1790536152.585256, "spread_bps": 2.1379, "net_spread_bps": -1.3621, "status": "LOSS", "latency_ns": 77978}
+{"timestamp": 1790536152.8357022, "spread_bps": -0.7307, "net_spread_bps": -4.2307, "status": "LOSS", "latency_ns": 76406}
+{"timestamp": 1790536153.0861404, "spread_bps": -0.1017, "net_spread_bps": -3.6017, "status": "LOSS", "latency_ns": 75855}
+{"timestamp": 1790536153.3365865, "spread_bps": 0.0917, "net_spread_bps": -3.4083, "status": "LOSS", "latency_ns": 77067}
+{"timestamp": 1790536153.5870292, "spread_bps": 0.8997, "net_spread_bps": -2.6003, "status": "LOSS", "latency_ns": 77337}
+{"timestamp": 1790536153.8375144, "spread_bps": -0.14, "net_spread_bps": -3.64, "status": "LOSS", "latency_ns": 77567}
+{"timestamp": 1790536154.0879524, "spread_bps": 0.1644, "net_spread_bps": -3.3356, "status": "LOSS", "latency_ns": 76957}
+{"timestamp": 1790536154.3383899, "spread_bps": -1.1894, "net_spread_bps": -4.6894, "status": "LOSS", "latency_ns": 76676}
+{"timestamp": 1790536154.5888236, "spread_bps": -0.2421, "net_spread_bps": -3.7421, "status": "LOSS", "latency_ns": 74183}
+{"timestamp": 1790536154.8392763, "spread_bps": -2.3331, "net_spread_bps": -5.8331, "status": "LOSS", "latency_ns": 91869}
+{"timestamp": 1790536155.0897217, "spread_bps": 2.4469, "net_spread_bps": -1.0531, "status": "LOSS", "latency_ns": 78558}
+{"timestamp": 1790536155.3401742, "spread_bps": -0.5485, "net_spread_bps": -4.0485, "status": "LOSS", "latency_ns": 77427}
+{"timestamp": 1790536155.5906193, "spread_bps": -0.8889, "net_spread_bps": -4.3889, "status": "LOSS", "latency_ns": 76176}
+{"timestamp": 1790536155.841062, "spread_bps": -2.1775, "net_spread_bps": -5.6775, "status": "LOSS", "latency_ns": 76936}
+{"timestamp": 1790536156.091499, "spread_bps": -2.9192, "net_spread_bps": -6.4192, "status": "LOSS", "latency_ns": 71498}
+{"timestamp": 1790536156.341929, "spread_bps": 2.4011, "net_spread_bps": -1.0989, "status": "LOSS", "latency_ns": 79059}
+{"timestamp": 1790536156.5923624, "spread_bps": 0.0697, "net_spread_bps": -3.4303, "status": "LOSS", "latency_ns": 71147}
+{"timestamp": 1790536156.8427925, "spread_bps": -1.7593, "net_spread_bps": -5.2593, "status": "LOSS", "latency_ns": 77568}
+{"timestamp": 1790536157.0932002, "spread_bps": 1.1765, "net_spread_bps": -2.3235, "status": "LOSS", "latency_ns": 66200}
+{"timestamp": 1790536157.3436224, "spread_bps": 1.6386, "net_spread_bps": -1.8614, "status": "LOSS", "latency_ns": 57618}
+{"timestamp": 1790536157.593965, "spread_bps": 0.4028, "net_spread_bps": -3.0972, "status": "LOSS", "latency_ns": 66210}
+{"timestamp": 1790536157.8443382, "spread_bps": 0.2659, "net_spread_bps": -3.2341, "status": "LOSS", "latency_ns": 63616}
+{"timestamp": 1790536158.0946984, "spread_bps": 1.4146, "net_spread_bps": -2.0854, "status": "LOSS", "latency_ns": 66140}
+{"timestamp": 1790536158.3450558, "spread_bps": 1.4877, "net_spread_bps": -2.0123, "status": "LOSS", "latency_ns": 65499}
+{"timestamp": 1790536158.5954375, "spread_bps": -1.5375, "net_spread_bps": -5.0375, "status": "LOSS", "latency_ns": 70386}
+{"timestamp": 1790536158.84586, "spread_bps": -0.6524, "net_spread_bps": -4.1524, "status": "LOSS", "latency_ns": 71058}
+{"timestamp": 1790536159.0962853, "spread_bps": -0.5737, "net_spread_bps": -4.0737, "status": "LOSS", "latency_ns": 77428}
+{"timestamp": 1790536159.3466895, "spread_bps": 2.2036, "net_spread_bps": -1.2964, "status": "LOSS", "latency_ns": 72770}
+{"timestamp": 1790536159.5971115, "spread_bps": -0.5958, "net_spread_bps": -4.0958, "status": "LOSS", "latency_ns": 69836}
+{"timestamp": 1790536159.8475006, "spread_bps": -2.3764, "net_spread_bps": -5.8764, "status": "LOSS", "latency_ns": 68593}
+{"timestamp": 1790536160.0979688, "spread_bps": -0.1027, "net_spread_bps": -3.6027, "status": "LOSS", "latency_ns": 66811}
+{"timestamp": 1790536160.3483727, "spread_bps": 0.4785, "net_spread_bps": -3.0215, "status": "LOSS", "latency_ns": 71308}
+{"timestamp": 1790536160.5987947, "spread_bps": 1.5274, "net_spread_bps": -1.9726, "status": "LOSS", "latency_ns": 71848}
+{"timestamp": 1790536160.8492084, "spread_bps": -1.2121, "net_spread_bps": -4.7121, "status": "LOSS", "latency_ns": 70797}
+{"timestamp": 1790536161.0995936, "spread_bps": -1.8332, "net_spread_bps": -5.3332, "status": "LOSS", "latency_ns": 70056}
+{"timestamp": 1790536161.3500075, "spread_bps": -2.7546, "net_spread_bps": -6.2546, "status": "LOSS", "latency_ns": 72390}
+{"timestamp": 1790536161.6004317, "spread_bps": 0.1787, "net_spread_bps": -3.3213, "status": "LOSS", "latency_ns": 71088}
+{"timestamp": 1790536161.850847, "spread_bps": -1.2851, "net_spread_bps": -4.7851, "status": "LOSS", "latency_ns": 75505}
+{"timestamp": 1790536162.1013014, "spread_bps": 1.4323, "net_spread_bps": -2.0677, "status": "LOSS", "latency_ns": 75965}
+{"timestamp": 1790536162.3517628, "spread_bps": 1.7475, "net_spread_bps": -1.7525, "status": "LOSS", "latency_ns": 77037}
+{"timestamp": 1790536162.6022155, "spread_bps": -1.262, "net_spread_bps": -4.762, "status": "LOSS", "latency_ns": 78639}
+{"timestamp": 1790536162.85266, "spread_bps": 1.1765, "net_spread_bps": -2.3235, "status": "LOSS", "latency_ns": 76135}
+{"timestamp": 1790536163.1031096, "spread_bps": 0.6, "net_spread_bps": -2.9, "status": "LOSS", "latency_ns": 77788}
+{"timestamp": 1790536163.353584, "spread_bps": 0.2669, "net_spread_bps": -3.2331, "status": "LOSS", "latency_ns": 76716}
+{"timestamp": 1790536163.6040237, "spread_bps": 1.3998, "net_spread_bps": -2.1002, "status": "LOSS", "latency_ns": 75183}
+{"timestamp": 1790536163.8544705, "spread_bps": -2.7807, "net_spread_bps": -6.2807, "status": "LOSS", "latency_ns": 78659}
+{"timestamp": 1790536164.1049187, "spread_bps": -0.0148, "net_spread_bps": -3.5148, "status": "LOSS", "latency_ns": 76756}
+{"timestamp": 1790536164.3553705, "spread_bps": 1.5497, "net_spread_bps": -1.9503, "status": "LOSS", "latency_ns": 77888}
+{"timestamp": 1790536164.6058495, "spread_bps": -2.7332, "net_spread_bps": -6.2332, "status": "LOSS", "latency_ns": 75605}
+{"timestamp": 1790536164.8562992, "spread_bps": -1.108, "net_spread_bps": -4.608, "status": "LOSS", "latency_ns": 77077}
+{"timestamp": 1790536165.1067505, "spread_bps": 2.2247, "net_spread_bps": -1.2753, "status": "LOSS", "latency_ns": 78249}
+{"timestamp": 1790536165.357191, "spread_bps": 0.8706, "net_spread_bps": -2.6294, "status": "LOSS", "latency_ns": 76486}
+{"timestamp": 1790536165.60765, "spread_bps": 1.2642, "net_spread_bps": -2.2358, "status": "LOSS", "latency_ns": 78108}
+{"timestamp": 1790536165.858095, "spread_bps": 0.2333, "net_spread_bps": -3.2667, "status": "LOSS", "latency_ns": 76305}
+{"timestamp": 1790536166.1085477, "spread_bps": 0.0797, "net_spread_bps": -3.4203, "status": "LOSS", "latency_ns": 77267}
+{"timestamp": 1790536166.35897, "spread_bps": 1.7035, "net_spread_bps": -1.7965, "status": "LOSS", "latency_ns": 78028}
+{"timestamp": 1790536166.6094217, "spread_bps": -2.0819, "net_spread_bps": -5.5819, "status": "LOSS", "latency_ns": 77397}
+{"timestamp": 1790536166.859866, "spread_bps": -0.1654, "net_spread_bps": -3.6654, "status": "LOSS", "latency_ns": 77777}
+{"timestamp": 1790536167.1103115, "spread_bps": 2.2588, "net_spread_bps": -1.2412, "status": "LOSS", "latency_ns": 77457}
+{"timestamp": 1790536167.360767, "spread_bps": 1.0128, "net_spread_bps": -2.4872, "status": "LOSS", "latency_ns": 78899}
+{"timestamp": 1790536167.611218, "spread_bps": 1.0233, "net_spread_bps": -2.4767, "status": "LOSS", "latency_ns": 77016}
+{"timestamp": 1790536167.8617036, "spread_bps": 2.2058, "net_spread_bps": -1.2942, "status": "LOSS", "latency_ns": 78539}
+{"timestamp": 1790536168.1121557, "spread_bps": 0.5955, "net_spread_bps": -2.9045, "status": "LOSS", "latency_ns": 78939}
+{"timestamp": 1790536168.3626006, "spread_bps": 1.7458, "net_spread_bps": -1.7542, "status": "LOSS", "latency_ns": 78279}
+{"timestamp": 1790536168.6130514, "spread_bps": -1.013, "net_spread_bps": -4.513, "status": "LOSS", "latency_ns": 77337}
+{"timestamp": 1790536168.8634906, "spread_bps": -2.095, "net_spread_bps": -5.595, "status": "LOSS", "latency_ns": 76546}
+{"timestamp": 1790536169.1139362, "spread_bps": 1.5559, "net_spread_bps": -1.9441, "status": "LOSS", "latency_ns": 78199}
+{"timestamp": 1790536169.3643749, "spread_bps": 1.8371, "net_spread_bps": -1.6629, "status": "LOSS", "latency_ns": 77177}
+{"timestamp": 1790536169.6148262, "spread_bps": 0.1952, "net_spread_bps": -3.3048, "status": "LOSS", "latency_ns": 79330}
+{"timestamp": 1790536169.8652704, "spread_bps": -1.1336, "net_spread_bps": -4.6336, "status": "LOSS", "latency_ns": 76005}
+{"timestamp": 1790536170.1157227, "spread_bps": 0.0287, "net_spread_bps": -3.4713, "status": "LOSS", "latency_ns": 78749}
+{"timestamp": 1790536170.366168, "spread_bps": -1.3869, "net_spread_bps": -4.8869, "status": "LOSS", "latency_ns": 76596}
+{"timestamp": 1790536170.6166432, "spread_bps": -1.4172, "net_spread_bps": -4.9172, "status": "LOSS", "latency_ns": 79270}
+{"timestamp": 1790536170.8670936, "spread_bps": -2.0027, "net_spread_bps": -5.5027, "status": "LOSS", "latency_ns": 77638}
+{"timestamp": 1790536171.117558, "spread_bps": -0.4827, "net_spread_bps": -3.9827, "status": "LOSS", "latency_ns": 76606}
+{"timestamp": 1790536171.3679993, "spread_bps": -0.283, "net_spread_bps": -3.783, "status": "LOSS", "latency_ns": 77407}
+{"timestamp": 1790536171.61845, "spread_bps": -2.2789, "net_spread_bps": -5.7789, "status": "LOSS", "latency_ns": 77497}
+{"timestamp": 1790536171.8688967, "spread_bps": 2.2524, "net_spread_bps": -1.2476, "status": "LOSS", "latency_ns": 77196}
+{"timestamp": 1790536172.1193466, "spread_bps": 1.5932, "net_spread_bps": -1.9068, "status": "LOSS", "latency_ns": 91238}
+{"timestamp": 1790536172.369774, "spread_bps": -1.0736, "net_spread_bps": -4.5736, "status": "LOSS", "latency_ns": 77677}
+{"timestamp": 1790536172.620227, "spread_bps": -2.7991, "net_spread_bps": -6.2991, "status": "LOSS", "latency_ns": 78849}
+{"timestamp": 1790536172.8706756, "spread_bps": 0.4534, "net_spread_bps": -3.0466, "status": "LOSS", "latency_ns": 77748}
+{"timestamp": 1790536173.1211169, "spread_bps": -0.1829, "net_spread_bps": -3.6829, "status": "LOSS", "latency_ns": 77757}
+{"timestamp": 1790536173.3715632, "spread_bps": -1.1188, "net_spread_bps": -4.6188, "status": "LOSS", "latency_ns": 77297}
+{"timestamp": 1790536173.6220143, "spread_bps": 0.4697, "net_spread_bps": -3.0303, "status": "LOSS", "latency_ns": 78008}
+{"timestamp": 1790536173.8724594, "spread_bps": -0.5711, "net_spread_bps": -4.0711, "status": "LOSS", "latency_ns": 77317}
+{"timestamp": 1790536174.122911, "spread_bps": 1.3918, "net_spread_bps": -2.1082, "status": "LOSS", "latency_ns": 76796}
+{"timestamp": 1790536174.3733509, "spread_bps": -1.9135, "net_spread_bps": -5.4135, "status": "LOSS", "latency_ns": 76887}
+{"timestamp": 1790536174.623805, "spread_bps": -1.3906, "net_spread_bps": -4.8906, "status": "LOSS", "latency_ns": 78068}
+{"timestamp": 1790536174.8742516, "spread_bps": -1.4717, "net_spread_bps": -4.9717, "status": "LOSS", "latency_ns": 77567}
+{"timestamp": 1790536175.1246998, "spread_bps": 0.2674, "net_spread_bps": -3.2326, "status": "LOSS", "latency_ns": 77337}
+{"timestamp": 1790536175.37513, "spread_bps": 0.0169, "net_spread_bps": -3.4831, "status": "LOSS", "latency_ns": 70877}
+{"timestamp": 1790536175.625583, "spread_bps": 1.8572, "net_spread_bps": -1.6428, "status": "LOSS", "latency_ns": 77918}
+{"timestamp": 1790536175.8760252, "spread_bps": -2.6448, "net_spread_bps": -6.1448, "status": "LOSS", "latency_ns": 78098}
+{"timestamp": 1790536176.1264827, "spread_bps": -0.7731, "net_spread_bps": -4.2731, "status": "LOSS", "latency_ns": 78048}
+{"timestamp": 1790536176.3769307, "spread_bps": 2.3316, "net_spread_bps": -1.1684, "status": "LOSS", "latency_ns": 76445}
+{"timestamp": 1790536176.6273837, "spread_bps": -2.465, "net_spread_bps": -5.965, "status": "LOSS", "latency_ns": 77407}
+{"timestamp": 1790536176.877831, "spread_bps": -0.241, "net_spread_bps": -3.741, "status": "LOSS", "latency_ns": 76706}
+{"timestamp": 1790536177.12827, "spread_bps": 1.7899, "net_spread_bps": -1.7101, "status": "LOSS", "latency_ns": 77457}
+{"timestamp": 1790536177.3787148, "spread_bps": 0.7166, "net_spread_bps": -2.7834, "status": "LOSS", "latency_ns": 76776}
+{"timestamp": 1790536177.6291692, "spread_bps": 2.1744, "net_spread_bps": -1.3256, "status": "LOSS", "latency_ns": 76786}
+{"timestamp": 1790536177.8796175, "spread_bps": -1.9655, "net_spread_bps": -5.4655, "status": "LOSS", "latency_ns": 77357}
+{"timestamp": 1790536178.1300688, "spread_bps": -1.9711, "net_spread_bps": -5.4711, "status": "LOSS", "latency_ns": 76665}
+{"timestamp": 1790536178.380518, "spread_bps": 0.0187, "net_spread_bps": -3.4813, "status": "LOSS", "latency_ns": 79580}
+{"timestamp": 1790536178.6309712, "spread_bps": -1.9482, "net_spread_bps": -5.4482, "status": "LOSS", "latency_ns": 78569}
+{"timestamp": 1790536178.8814173, "spread_bps": 1.1902, "net_spread_bps": -2.3098, "status": "LOSS", "latency_ns": 76545}
+{"timestamp": 1790536179.1318848, "spread_bps": -1.9933, "net_spread_bps": -5.4933, "status": "LOSS", "latency_ns": 78869}
+{"timestamp": 1790536179.3823278, "spread_bps": -0.227, "net_spread_bps": -3.727, "status": "LOSS", "latency_ns": 78298}
+{"timestamp": 1790536179.6327739, "spread_bps": -2.1281, "net_spread_bps": -5.6281, "status": "LOSS", "latency_ns": 77767}
+{"timestamp": 1790536179.8832176, "spread_bps": 0.2996, "net_spread_bps": -3.2004, "status": "LOSS", "latency_ns": 76615}
+{"timestamp": 1790536337.8216782, "spread_bps": 3.8865, "net_spread_bps": 1.8865, "status": "WIN", "latency_ns": 843084}
+{"timestamp": 1790536338.0729609, "spread_bps": 0.5557, "net_spread_bps": -1.4443, "status": "LOSS", "latency_ns": 942115}
+{"timestamp": 1790536338.324529, "spread_bps": 1.6677, "net_spread_bps": -0.3323, "status": "LOSS", "latency_ns": 1283069}
+{"timestamp": 1790536338.5758727, "spread_bps": 0.5553, "net_spread_bps": -1.4447, "status": "LOSS", "latency_ns": 1034303}
+{"timestamp": 1790536338.8273365, "spread_bps": 3.3357, "net_spread_bps": 1.3357, "status": "WIN", "latency_ns": 1150660}
+{"timestamp": 1790536339.0788007, "spread_bps": 1.1106, "net_spread_bps": -0.8894, "status": "LOSS", "latency_ns": 1155577}
+{"timestamp": 1790536339.3303227, "spread_bps": 3.8911, "net_spread_bps": 1.8911, "status": "WIN", "latency_ns": 1199303}
+{"timestamp": 1790536339.5818596, "spread_bps": 1.1113, "net_spread_bps": -0.8887, "status": "LOSS", "latency_ns": 1215137}
+{"timestamp": 1790536339.8333762, "spread_bps": 3.8878, "net_spread_bps": 1.8878, "status": "WIN", "latency_ns": 1191401}
+{"timestamp": 1790536340.084864, "spread_bps": 3.8893, "net_spread_bps": 1.8893, "status": "WIN", "latency_ns": 1179092}
+{"timestamp": 1790536340.33636, "spread_bps": 1.1106, "net_spread_bps": -0.8894, "status": "LOSS", "latency_ns": 1193464}
+{"timestamp": 1790536340.5878408, "spread_bps": 2.2216, "net_spread_bps": 0.2216, "status": "WIN", "latency_ns": 1181266}
+{"timestamp": 1790536340.8393314, "spread_bps": 3.3359, "net_spread_bps": 1.3359, "status": "WIN", "latency_ns": 1188777}
+{"timestamp": 1790536341.0907788, "spread_bps": 1.1103, "net_spread_bps": -0.8897, "status": "LOSS", "latency_ns": 1150018}
+{"timestamp": 1790536341.3422513, "spread_bps": 2.7765, "net_spread_bps": 0.7765, "status": "WIN", "latency_ns": 1173083}
+{"timestamp": 1790536341.5937614, "spread_bps": 3.3319, "net_spread_bps": 1.3319, "status": "WIN", "latency_ns": 1208457}
+{"timestamp": 1790536341.8452592, "spread_bps": 1.6677, "net_spread_bps": -0.3323, "status": "LOSS", "latency_ns": 1197480}
+{"timestamp": 1790536342.0967884, "spread_bps": 2.2211, "net_spread_bps": 0.2211, "status": "WIN", "latency_ns": 1215367}
+{"timestamp": 1790536342.348293, "spread_bps": 3.8887, "net_spread_bps": 1.8887, "status": "WIN", "latency_ns": 1204571}
+{"timestamp": 1790536342.5998008, "spread_bps": 1.6656, "net_spread_bps": -0.3344, "status": "LOSS", "latency_ns": 1208366}
+{"timestamp": 1790536342.8512816, "spread_bps": 0.5553, "net_spread_bps": -1.4447, "status": "LOSS", "latency_ns": 1178191}
+{"timestamp": 1790536343.1027546, "spread_bps": 2.7781, "net_spread_bps": 0.7781, "status": "WIN", "latency_ns": 1169208}
+{"timestamp": 1790536343.3542867, "spread_bps": 3.3317, "net_spread_bps": 1.3317, "status": "WIN", "latency_ns": 1237290}
+{"timestamp": 1790536343.6058047, "spread_bps": 3.3322, "net_spread_bps": 1.3322, "status": "WIN", "latency_ns": 1214035}
+{"timestamp": 1790536343.8573298, "spread_bps": 2.7761, "net_spread_bps": 0.7761, "status": "WIN", "latency_ns": 1219053}
+{"timestamp": 1790536344.1088371, "spread_bps": 3.3348, "net_spread_bps": 1.3348, "status": "WIN", "latency_ns": 1207114}
+{"timestamp": 1790536344.3603952, "spread_bps": 3.8908, "net_spread_bps": 1.8908, "status": "WIN", "latency_ns": 1258242}
+{"timestamp": 1790536344.611898, "spread_bps": 1.111, "net_spread_bps": -0.889, "status": "LOSS", "latency_ns": 1204521}
+{"timestamp": 1790536344.8634083, "spread_bps": 3.3339, "net_spread_bps": 1.3339, "status": "WIN", "latency_ns": 1210901}
+{"timestamp": 1790536345.1148992, "spread_bps": 2.7793, "net_spread_bps": 0.7793, "status": "WIN", "latency_ns": 1174446}
+{"timestamp": 1790536345.3663795, "spread_bps": 3.3359, "net_spread_bps": 1.3359, "status": "WIN", "latency_ns": 1181055}
+{"timestamp": 1790536345.6179218, "spread_bps": 1.6664, "net_spread_bps": -0.3336, "status": "LOSS", "latency_ns": 1239544}
+{"timestamp": 1790536345.8691611, "spread_bps": 2.7775, "net_spread_bps": 0.7775, "status": "WIN", "latency_ns": 948574}
+{"timestamp": 1790536346.1203873, "spread_bps": 2.7782, "net_spread_bps": 0.7782, "status": "WIN", "latency_ns": 970668}
+{"timestamp": 1790536346.3718872, "spread_bps": 1.6677, "net_spread_bps": -0.3323, "status": "LOSS", "latency_ns": 1235358}
+{"timestamp": 1790536346.623471, "spread_bps": 3.8904, "net_spread_bps": 1.8904, "status": "WIN", "latency_ns": 1282549}
+{"timestamp": 1790536346.8749719, "spread_bps": 2.7764, "net_spread_bps": 0.7764, "status": "WIN", "latency_ns": 1203429}
+{"timestamp": 1790536347.126408, "spread_bps": 2.2238, "net_spread_bps": 0.2238, "status": "WIN", "latency_ns": 1144039}
+{"timestamp": 1790536347.3788621, "spread_bps": 2.2221, "net_spread_bps": 0.2221, "status": "WIN", "latency_ns": 2200006}
+{"timestamp": 1790536347.630434, "spread_bps": 2.2214, "net_spread_bps": 0.2214, "status": "WIN", "latency_ns": 1304021}
+{"timestamp": 1790536347.8819854, "spread_bps": 1.1118, "net_spread_bps": -0.8882, "status": "LOSS", "latency_ns": 1245433}
+{"timestamp": 1790536348.1335328, "spread_bps": 1.1105, "net_spread_bps": -0.8895, "status": "LOSS", "latency_ns": 1240335}
+{"timestamp": 1790536348.3850596, "spread_bps": 2.2211, "net_spread_bps": 0.2211, "status": "WIN", "latency_ns": 1222898}
+{"timestamp": 1790536348.6365948, "spread_bps": 2.7761, "net_spread_bps": 0.7761, "status": "WIN", "latency_ns": 1213675}
+{"timestamp": 1790536348.8881357, "spread_bps": 2.7799, "net_spread_bps": 0.7799, "status": "WIN", "latency_ns": 1243169}
+{"timestamp": 1790536349.1397467, "spread_bps": 3.3333, "net_spread_bps": 1.3333, "status": "WIN", "latency_ns": 1304512}
+{"timestamp": 1790536349.3913472, "spread_bps": 3.3333, "net_spread_bps": 1.3333, "status": "WIN", "latency_ns": 1289870}
+{"timestamp": 1790536349.6429136, "spread_bps": 3.8917, "net_spread_bps": 1.8917, "status": "WIN", "latency_ns": 1253014}
+{"timestamp": 1790536349.8944707, "spread_bps": 3.3328, "net_spread_bps": 1.3328, "status": "WIN", "latency_ns": 1254417}
+{"timestamp": 1790536350.146007, "spread_bps": 0.5559, "net_spread_bps": -1.4441, "status": "LOSS", "latency_ns": 1257841}
+{"timestamp": 1790536350.3975477, "spread_bps": 3.3331, "net_spread_bps": 1.3331, "status": "WIN", "latency_ns": 1243870}
+{"timestamp": 1790536350.6490657, "spread_bps": 3.3315, "net_spread_bps": 1.3315, "status": "WIN", "latency_ns": 1222879}
+{"timestamp": 1790536350.9038897, "spread_bps": 4.4444, "net_spread_bps": 2.4444, "status": "WIN", "latency_ns": 4521234}
+{"timestamp": 1790536351.1555686, "spread_bps": 1.1106, "net_spread_bps": -0.8894, "status": "LOSS", "latency_ns": 1370552}
+{"timestamp": 1790536351.4071832, "spread_bps": 3.8919, "net_spread_bps": 1.8919, "status": "WIN", "latency_ns": 1302910}
+{"timestamp": 1790536351.6588051, "spread_bps": 1.668, "net_spread_bps": -0.332, "status": "LOSS", "latency_ns": 1288007}
+{"timestamp": 1790536351.9103916, "spread_bps": 2.2212, "net_spread_bps": 0.2212, "status": "WIN", "latency_ns": 1286295}
+{"timestamp": 1790536352.1619546, "spread_bps": 4.4449, "net_spread_bps": 2.4449, "status": "WIN", "latency_ns": 1261677}
+{"timestamp": 1790536352.4134946, "spread_bps": 1.1117, "net_spread_bps": -0.8883, "status": "LOSS", "latency_ns": 1244421}
+{"timestamp": 1790536352.6650314, "spread_bps": 1.6673, "net_spread_bps": -0.3327, "status": "LOSS", "latency_ns": 1238713}
+{"timestamp": 1790536352.9165816, "spread_bps": 2.2226, "net_spread_bps": 0.2226, "status": "WIN", "latency_ns": 1243189}
+{"timestamp": 1790536353.1682198, "spread_bps": 2.2238, "net_spread_bps": 0.2238, "status": "WIN", "latency_ns": 1337112}
+{"timestamp": 1790536353.4198723, "spread_bps": 1.6655, "net_spread_bps": -0.3345, "status": "LOSS", "latency_ns": 1336240}
+{"timestamp": 1790536353.6715093, "spread_bps": 2.7772, "net_spread_bps": 0.7772, "status": "WIN", "latency_ns": 1311111}
+{"timestamp": 1790536353.9231038, "spread_bps": 2.2215, "net_spread_bps": 0.2215, "status": "WIN", "latency_ns": 1288618}
+{"timestamp": 1790536354.1768384, "spread_bps": 4.4425, "net_spread_bps": 2.4425, "status": "WIN", "latency_ns": 3402504}
+{"timestamp": 1790536354.4282923, "spread_bps": 1.1107, "net_spread_bps": -0.8893, "status": "LOSS", "latency_ns": 1146553}
+{"timestamp": 1790536354.6797495, "spread_bps": 4.4417, "net_spread_bps": 2.4417, "status": "WIN", "latency_ns": 1158101}
+{"timestamp": 1790536354.9311762, "spread_bps": 3.8865, "net_spread_bps": 1.8865, "status": "WIN", "latency_ns": 1133433}
+{"timestamp": 1790536355.182681, "spread_bps": 3.8882, "net_spread_bps": 1.8882, "status": "WIN", "latency_ns": 1186544}
+{"timestamp": 1790536355.4341679, "spread_bps": 3.335, "net_spread_bps": 1.335, "status": "WIN", "latency_ns": 1178531}
+{"timestamp": 1790536355.6856253, "spread_bps": 1.1105, "net_spread_bps": -0.8895, "status": "LOSS", "latency_ns": 1154125}
+{"timestamp": 1790536355.937056, "spread_bps": 1.1104, "net_spread_bps": -0.8896, "status": "LOSS", "latency_ns": 1154725}
+{"timestamp": 1790536356.188507, "spread_bps": 2.7793, "net_spread_bps": 0.7793, "status": "WIN", "latency_ns": 1153073}
+{"timestamp": 1790536356.4399652, "spread_bps": 4.4422, "net_spread_bps": 2.4422, "status": "WIN", "latency_ns": 1161255}
+{"timestamp": 1790536356.6914165, "spread_bps": 1.6654, "net_spread_bps": -0.3346, "status": "LOSS", "latency_ns": 1156158}
+{"timestamp": 1790536356.9428356, "spread_bps": 2.7759, "net_spread_bps": 0.7759, "status": "WIN", "latency_ns": 1120884}
