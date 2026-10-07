@@ -77,3 +77,7 @@ sovereign_bitstream_test
 sovereign_engine
 sovereign_live_engine
 sovereign_live_producer
+node_key.bin
+*.db
+*.db-wal
+*.db-shm
