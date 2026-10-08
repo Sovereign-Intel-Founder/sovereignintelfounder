@@ -1,4 +1,13 @@
-.sip_node_state/
-Processed/
-*.json
-*.log
+# Binaries and compiled objects
+sovereign_*
+*.o
+
+# Local databases and runtime shards
+*.db
+databases/sqlite_shards/*.db
+tollbridge_system/*.db
+
+# IDE and OS artifacts
+.DS_Store
+venv/
+__pycache__/
