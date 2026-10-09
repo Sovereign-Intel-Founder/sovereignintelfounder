@@ -1,0 +1,1 @@
+{"benchmark_id": "avx512-state-mutation-v1", "version": "v1", "run_id": "2026-10-09-run-180803", "timestamp": "2026-m-09T18:08:03Z", "source_commit": "9b7decef83b89ee0f562d36df6ab32c642f37569", "workload_type": "bare_metal_avx512", "metrics": {"vector_ops_per_sec": 48200000000, "register_saturation_pct": 99.4, "p1_latency_ns": 18}}

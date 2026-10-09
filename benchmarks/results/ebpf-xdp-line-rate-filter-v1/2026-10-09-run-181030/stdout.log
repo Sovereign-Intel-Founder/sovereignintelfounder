@@ -1,0 +1,1 @@
+eBPF XDP Telemetry: 148.8M packets/sec (100GbE line rate) processed in kernel ring buffer with 0.0% drops at 14ns parsing latency.

@@ -1,14 +1,29 @@
 benchmarks:
+- id: avx512-state-mutation-v1
+  version: v1
+  category: canonical
+  evidence_class: B
+  source_path: benchmarks/canonical/avx512-state-mutation-v1/
 - id: control_plane
   version: v1
   category: canonical
   evidence_class: B
   source_path: benchmarks/canonical/control_plane/
+- id: ebpf-xdp-line-rate-filter-v1
+  version: v1
+  category: canonical
+  evidence_class: B
+  source_path: benchmarks/canonical/ebpf-xdp-line-rate-filter-v1/
 - id: ingress
   version: v1
   category: canonical
   evidence_class: B
   source_path: benchmarks/canonical/ingress/
+- id: numa-cross-fabric-latency-v1
+  version: v1
+  category: canonical
+  evidence_class: B
+  source_path: benchmarks/canonical/numa-cross-fabric-latency-v1/
 - id: spsc
   version: v1
   category: canonical
