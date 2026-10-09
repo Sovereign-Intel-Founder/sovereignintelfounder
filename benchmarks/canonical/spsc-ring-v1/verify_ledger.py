@@ -16,7 +16,7 @@ def verify_chain():
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     cursor.execute("""
-        SELECT sequence_id, event_id, request_id, received_at, auth_result, 
+        SELECT sequence_id, event_id, request_id, user_id, actor_role, received_at, auth_result, 
                processing_status, receipt_id, payload_sha256, attempt, 
                error_code, previous_log_hash, record_hash 
         FROM sip_authoritative_ledger ORDER BY sequence_id ASC;
@@ -28,11 +28,11 @@ def verify_chain():
         print("[!] SIP Notice: Ledger is empty. No blocks to audit.")
         return
 
-    print(f"[*] SIP Auditing authoritative ledger: {len(rows)} events recorded.")
+    print(f"[*] SIP Auditing authoritative ledger: {len(rows)} events recorded (including user telemetry).")
     expected_prev_hash = "0" * 64
 
     for row in rows:
-        (seq_id, event_id, request_id, received_at, auth_result, 
+        (seq_id, event_id, request_id, user_id, actor_role, received_at, auth_result, 
          processing_status, receipt_id, payload_sha256, attempt, 
          error_code, prev_hash, stored_hash) = row
 
@@ -40,7 +40,7 @@ def verify_chain():
             print(f"[X] SIP INTEGRITY BREACH: Chain broken at sequence {seq_id}!")
             sys.exit(1)
 
-        raw_record = f"SIP|{event_id}|{request_id}|{received_at}|{auth_result}|{processing_status}|{receipt_id or ''}|{payload_sha256}|{attempt}|{error_code or ''}|{prev_hash}"
+        raw_record = f"SIP|{event_id}|{request_id}|{user_id or ''}|{actor_role or ''}|{received_at}|{auth_result}|{processing_status}|{receipt_id or ''}|{payload_sha256}|{attempt}|{error_code or ''}|{prev_hash}"
         computed_hash = hashlib.sha256(raw_record.encode('utf-8')).hexdigest()
 
         if computed_hash != stored_hash:
@@ -49,7 +49,7 @@ def verify_chain():
 
         expected_prev_hash = stored_hash
 
-    print("[+] SIP AUDIT COMPLETE: Cryptographic chain integrity is 100% verified.")
+    print("[+] SIP AUDIT COMPLETE: Full telemetry cryptographic chain integrity is 100% verified.")
 
 if __name__ == "__main__":
     verify_chain()

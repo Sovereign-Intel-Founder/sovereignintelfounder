@@ -1,6 +1,6 @@
 """
 Sovereign Intelligence Protocol (SIP) - Authoritative Ledger Core
-Provides cryptographic hash-chained, SQLite WAL-backed durable event logging.
+Provides cryptographic hash-chained, SQLite WAL-backed durable event logging with full actor/user telemetry.
 """
 
 import sqlite3
@@ -20,6 +20,8 @@ def init_ledger():
             sequence_id INTEGER PRIMARY KEY AUTOINCREMENT,
             event_id TEXT UNIQUE NOT NULL,
             request_id TEXT NOT NULL,
+            user_id TEXT,
+            actor_role TEXT,
             received_at TEXT NOT NULL,
             auth_result TEXT NOT NULL,
             processing_status TEXT NOT NULL,
@@ -49,7 +51,7 @@ def get_last_hash():
     conn.close()
     return row[0] if row else "0" * 64
 
-def record_event(event_id, request_id, auth_result, processing_status, receipt_id, payload, attempt=1, error_code=None):
+def record_event(event_id, request_id, auth_result, processing_status, receipt_id, payload, user_id=None, actor_role=None, attempt=1, error_code=None):
     init_ledger()
     received_at = datetime.now(timezone.utc).isoformat()
     payload_str = json.dumps(payload, sort_keys=True)
@@ -57,7 +59,8 @@ def record_event(event_id, request_id, auth_result, processing_status, receipt_i
     
     prev_hash = get_last_hash()
     
-    raw_record = f"SIP|{event_id}|{request_id}|{received_at}|{auth_result}|{processing_status}|{receipt_id or ''}|{payload_sha256}|{attempt}|{error_code or ''}|{prev_hash}"
+    # Expanded SIP canonical hash serialization including user and actor telemetry
+    raw_record = f"SIP|{event_id}|{request_id}|{user_id or ''}|{actor_role or ''}|{received_at}|{auth_result}|{processing_status}|{receipt_id or ''}|{payload_sha256}|{attempt}|{error_code or ''}|{prev_hash}"
     record_hash = hashlib.sha256(raw_record.encode('utf-8')).hexdigest()
 
     conn = sqlite3.connect(DB_PATH)
@@ -65,11 +68,11 @@ def record_event(event_id, request_id, auth_result, processing_status, receipt_i
         conn.execute("PRAGMA synchronous=FULL;")
         conn.execute("""
             INSERT INTO sip_authoritative_ledger (
-                event_id, request_id, received_at, auth_result, processing_status,
+                event_id, request_id, user_id, actor_role, received_at, auth_result, processing_status,
                 receipt_id, payload_sha256, attempt, error_code, previous_log_hash, record_hash, protocol_tag
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SIP-v1');
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 'SIP-v1');
         """, (
-            event_id, request_id, received_at, auth_result, processing_status,
+            event_id, request_id, user_id, actor_role, received_at, auth_result, processing_status,
             receipt_id, payload_sha256, attempt, error_code, prev_hash, record_hash
         ))
         conn.commit()
