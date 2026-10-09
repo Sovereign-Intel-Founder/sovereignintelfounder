@@ -33,10 +33,17 @@ def main():
     manifest_data = {"benchmarks": []}
     if os.path.exists(manifest_path):
         with open(manifest_path, "r") as f:
-            try: manifest_data = yaml.safe_load(f) or {"benchmarks": []}
-            except Exception: pass
+            try:
+                loaded = yaml.safe_load(f)
+                if isinstance(loaded, dict):
+                    manifest_data = loaded
+            except Exception:
+                pass
 
-    if not any(b.get("id") == bench_id for b in manifest_data.get("benchmarks", [])):
+    if "benchmarks" not in manifest_data or not isinstance(manifest_data["benchmarks"], list):
+        manifest_data["benchmarks"] = []
+
+    if not any(b.get("id") == bench_id for b in manifest_data["benchmarks"]):
         manifest_data["benchmarks"].append({
             "id": bench_id, "version": "v1", "category": category,
             "evidence_class": "B" if category == "canonical" else "C",
@@ -44,6 +51,7 @@ def main():
         })
         with open(manifest_path, "w") as f:
             yaml.dump(manifest_data, f, sort_keys=False)
+            
     print(f"Created benchmark '{bench_id}' successfully.")
 
 if __name__ == "__main__":
