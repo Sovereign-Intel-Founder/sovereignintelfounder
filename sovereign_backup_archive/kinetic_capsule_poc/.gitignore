@@ -1,9 +1,0 @@
-__pycache__/
-*.pyc
-*.key
-*.pem
-.env
-runtime/
-cell_a/runtime/
-cell_b/runtime/
-*.log

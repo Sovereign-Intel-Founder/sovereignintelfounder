@@ -1,7 +1,0 @@
-target/
-__pycache__/
-*.pyc
-*.key
-*.pem
-.env
-target/

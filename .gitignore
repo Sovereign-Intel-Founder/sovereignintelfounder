@@ -11,3 +11,8 @@ tollbridge_system/*.db
 .DS_Store
 venv/
 __pycache__/
+
+# Rust build artifacts and target directories
+target/
+**/target/
+sip-verifier/target/

@@ -1,1 +1,0 @@
-# STATUS: Structural stub / configuration-shape prototype. Creates no real AF_XDP socket, UMEM, or BPF map.\n

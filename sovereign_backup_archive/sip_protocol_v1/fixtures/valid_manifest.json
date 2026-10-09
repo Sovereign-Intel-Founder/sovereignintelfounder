@@ -1,7 +1,0 @@
-{
-  "created_at": "2026-09-24T02:00:00.000Z",
-  "input_commitment": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-  "schema": "sip.task_manifest.v1",
-  "task_id": "12345678-1234-5678-1234-567812345678",
-  "task_type": "file_hash_verification"
-}

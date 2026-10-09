@@ -1,8 +1,0 @@
-metric,value
-throughput_eps,361240.239
-total_events,12800000
-p50_ms,0.002
-p95_ms,0.002
-p99_ms,0.004
-p999_ms,0.009
-p9999_ms,15.228

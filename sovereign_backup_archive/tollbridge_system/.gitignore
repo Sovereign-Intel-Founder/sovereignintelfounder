@@ -1,5 +1,0 @@
-.rustup/
-.ssh/
-*.db
-*.json
-node_modules/
