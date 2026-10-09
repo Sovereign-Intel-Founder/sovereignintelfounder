@@ -1,0 +1,1 @@
+{"benchmark_id": "sqlite-wal-concurrency-v1", "version": "v1", "run_id": "2026-10-09-run-175521", "timestamp": "2026-m-09T17:55:21Z", "source_commit": "064396dc203dfe3636a26ae5cb47c9b9f3210a28", "workload_type": "bare_metal", "metrics": {"events_processed": 12800000, "wal_sync_latency_us": 45}}

@@ -1,5 +1,66 @@
-version: "1.0"
-structure:
-  canonical: "Production-grade, verified benchmark runs"
-  experiments: "Research primitives and unverified optimizations"
-  archive: "Historical data and prior host telemetry"
+benchmarks:
+- id: control_plane
+  version: v1
+  category: canonical
+  evidence_class: B
+  source_path: benchmarks/canonical/control_plane/
+- id: ingress
+  version: v1
+  category: canonical
+  evidence_class: B
+  source_path: benchmarks/canonical/ingress/
+- id: spsc
+  version: v1
+  category: canonical
+  evidence_class: B
+  source_path: benchmarks/canonical/spsc/
+- id: spsc-bounded-v1
+  version: v1
+  category: canonical
+  evidence_class: B
+  source_path: benchmarks/canonical/spsc-bounded-v1/
+- id: sqlite-wal-concurrency-v1
+  version: v1
+  category: canonical
+  evidence_class: B
+  source_path: benchmarks/canonical/sqlite-wal-concurrency-v1/
+- id: sqlite_wal
+  version: v1
+  category: canonical
+  evidence_class: B
+  source_path: benchmarks/canonical/sqlite_wal/
+- id: avx512_state_mutation
+  version: v1
+  category: experiments
+  evidence_class: C
+  source_path: benchmarks/experiments/avx512_state_mutation/
+- id: backpressure
+  version: v1
+  category: experiments
+  evidence_class: C
+  source_path: benchmarks/experiments/backpressure/
+- id: failure_injection
+  version: v1
+  category: experiments
+  evidence_class: C
+  source_path: benchmarks/experiments/failure_injection/
+- id: numa_locality
+  version: v1
+  category: experiments
+  evidence_class: C
+  source_path: benchmarks/experiments/numa_locality/
+- id: shared_memory_ipc
+  version: v1
+  category: experiments
+  evidence_class: C
+  source_path: benchmarks/experiments/shared_memory_ipc/
+- id: speculative_vector
+  version: v1
+  category: experiments
+  evidence_class: C
+  source_path: benchmarks/experiments/speculative_vector/
+- id: state_recovery
+  version: v1
+  category: experiments
+  evidence_class: C
+  source_path: benchmarks/experiments/state_recovery/
