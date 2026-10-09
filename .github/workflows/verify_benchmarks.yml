@@ -1,0 +1,26 @@
+name: Sovereign Benchmark Verification
+
+on:
+  push:
+    branches: [ "*" ]
+  pull_request:
+    branches: [ "*" ]
+
+jobs:
+  verify-proofs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up build environment
+        run: sudo apt-get update && sudo apt-get install -y build-essential python3-yaml
+
+      - name: Compile SPSC Ring Buffer Binary
+        run: gcc -O3 -pthread benchmarks/canonical/spsc-bounded-v1/benchmark.c -o benchmarks/canonical/spsc-bounded-v1/bench_exec
+
+      - name: Execute Benchmark Harness
+        run: bash benchmarks/canonical/spsc-bounded-v1/run.sh
+
+      - name: Enforce Strict Result Validation
+        run: python3 benchmarks/tools/validate_results.py
