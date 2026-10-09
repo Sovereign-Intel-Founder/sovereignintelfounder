@@ -79,3 +79,8 @@ benchmarks:
   category: experiments
   evidence_class: C
   source_path: benchmarks/experiments/state_recovery/
+
+- benchmark_id: spsc-ring-v1
+  status: canonical
+  path: benchmarks/canonical/spsc-ring-v1/bench_exec
+  description: Lock-free single-producer single-consumer ring buffer throughput harness.
