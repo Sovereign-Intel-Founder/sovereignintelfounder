@@ -1,3 +1,9 @@
+> 🚨 **Active SIP Live Ingress Node:** `https://detective-standard-airplane-mountains.trycloudflare.com/v1/ingress`
+> 
+> *Direct Bare-Metal Endpoint (Ashburn Node) | Protocol Version: SIP/1.0*
+
+---
+
 # Sovereign Intelligence Protocol — AF_XDP Native Kernel Bypass Engine
 
 High-throughput, ultra-low-latency packet ingestion pipeline built for bare-metal systems. Bypasses the Linux network stack entirely via native eBPF driver hooks and POSIX shared memory ring buffers.
