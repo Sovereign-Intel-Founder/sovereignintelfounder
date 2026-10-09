@@ -51,7 +51,6 @@ def record_event(event_id, request_id, auth_result, processing_status, receipt_i
     
     prev_hash = get_last_hash()
     
-    # Construct canonical string for record hashing
     raw_record = f"{event_id}|{request_id}|{received_at}|{auth_result}|{processing_status}|{receipt_id or ''}|{payload_sha256}|{attempt}|{error_code or ''}|{prev_hash}"
     record_hash = hashlib.sha256(raw_record.encode('utf-8')).hexdigest()
 
@@ -70,7 +69,6 @@ def record_event(event_id, request_id, auth_result, processing_status, receipt_i
         conn.commit()
     except Exception as e:
         conn.rollback()
-        # Force hard failure propagation instead of silent discard
         raise RuntimeError(f"Durable ledger write failed critically: {e}")
     finally:
         conn.close()
