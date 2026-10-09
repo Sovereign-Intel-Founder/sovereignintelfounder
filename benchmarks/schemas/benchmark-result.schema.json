@@ -3,9 +3,13 @@
   "title": "BenchmarkResult",
   "type": "object",
   "properties": {
+    "benchmark_id": { "type": "string" },
+    "version": { "type": "string" },
+    "run_id": { "type": "string" },
     "timestamp": { "type": "string" },
+    "source_commit": { "type": "string" },
     "workload_type": { "type": "string", "enum": ["synthetic", "live_loopback", "bare_metal"] },
     "metrics": { "type": "object" }
   },
-  "required": ["timestamp", "workload_type", "metrics"]
+  "required": ["benchmark_id", "version", "run_id", "timestamp", "source_commit", "workload_type", "metrics"]
 }

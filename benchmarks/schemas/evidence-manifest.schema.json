@@ -3,9 +3,20 @@
   "title": "EvidenceManifest",
   "type": "object",
   "properties": {
-    "evidence_class": { "type": "string", "enum": ["A", "B", "C", "D", "E"] },
-    "source_path": { "type": "string" },
-    "verified": { "type": "boolean" }
+    "benchmarks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "version": { "type": "string" },
+          "category": { "type": "string", "enum": ["canonical", "experiments", "historical"] },
+          "evidence_class": { "type": "string", "enum": ["A", "B", "C", "D", "E"] },
+          "source_path": { "type": "string" }
+        },
+        "required": ["id", "version", "category", "evidence_class", "source_path"]
+      }
+    }
   },
-  "required": ["evidence_class", "source_path", "verified"]
+  "required": ["benchmarks"]
 }
