@@ -1,0 +1,5 @@
+version: "1.0"
+structure:
+  canonical: "Production-grade, verified benchmark runs"
+  experiments: "Research primitives and unverified optimizations"
+  archive: "Historical data and prior host telemetry"

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BenchmarkResult",
+  "type": "object",
+  "properties": {
+    "timestamp": { "type": "string" },
+    "workload_type": { "type": "string", "enum": ["synthetic", "live_loopback", "bare_metal"] },
+    "metrics": { "type": "object" }
+  },
+  "required": ["timestamp", "workload_type", "metrics"]
+}

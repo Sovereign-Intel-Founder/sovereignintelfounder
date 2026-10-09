@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EvidenceManifest",
+  "type": "object",
+  "properties": {
+    "evidence_class": { "type": "string", "enum": ["A", "B", "C", "D", "E"] },
+    "source_path": { "type": "string" },
+    "verified": { "type": "boolean" }
+  },
+  "required": ["evidence_class", "source_path", "verified"]
+}
