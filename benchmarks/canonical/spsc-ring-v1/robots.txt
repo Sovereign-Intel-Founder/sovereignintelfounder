@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Allow: /v1/ingress
-Allow: /v1/audit
