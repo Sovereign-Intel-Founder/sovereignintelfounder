@@ -17,7 +17,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y build-essential python3-yaml
 
       - name: Compile SPSC Ring Buffer Binary
-        run: gcc -O3 -pthread benchmarks/canonical/spsc-bounded-v1/benchmark.c -o benchmarks/canonical/spsc-bounded-v1/bench_exec
+        run: g++ -O3 -pthread benchmarks/canonical/spsc-bounded-v1/benchmark.cpp -o benchmarks/canonical/spsc-bounded-v1/bench_exec
 
       - name: Execute Benchmark Harness
         run: bash benchmarks/canonical/spsc-bounded-v1/run.sh
