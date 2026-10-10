@@ -3,6 +3,7 @@
 #include <sched.h>
 #include <pthread.h>
 #include <sys/mman.h>
+#include <cstdint>
 
 struct FlatLOB {
     uint64_t bids[1024];
