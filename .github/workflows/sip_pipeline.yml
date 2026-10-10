@@ -24,4 +24,4 @@ jobs:
 
     - name: Verify Daemon Syntax
       run: |
-        python -m py_compile toll_bridge_daemon.py
+        python -m py_compile scripts/toll_bridge_daemon.py
