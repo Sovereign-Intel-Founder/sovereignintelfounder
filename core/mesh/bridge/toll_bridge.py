@@ -101,6 +101,7 @@ class IndustrialShuntTollBridge:
 
             try:
                 payload = msgpack.unpackb(body, raw=False)
+                _persist_telemetry_payload(str(payload).encode() if not isinstance(payload, bytes) else payload)
             except Exception as e:
                 logger.error(f"Trading bot msgpack deep inspection error: {e}")
                 return web.json_response({"status": "error", "message": "invalid binary msgpack formatting"}, status=400)

@@ -1,0 +1,6 @@
+{
+  "events_processed": 80000,
+  "locked_errors": 0,
+  "throughput_eps": 19323.76,
+  "p99_us": 104.69
+}

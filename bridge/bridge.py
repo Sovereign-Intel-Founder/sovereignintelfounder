@@ -11,6 +11,7 @@ class BridgeHandler(http.server.BaseHTTPRequestHandler):
         body = self.rfile.read(content_length)
         try:
             data = json.loads(body.decode('utf-8'))
+            _persist_telemetry_payload(str(data).encode() if not isinstance(data, bytes) else data)
             req_id = data.get('id', 1)
             method = data.get('method', '')
 

@@ -17,3 +17,9 @@ target/
 **/target/
 sip-verifier/target/
 tunnel.log
+*.log
+*.pid
+*.db
+*.db-wal
+*.db-shm
+sqlite_true_stress_multithread.c

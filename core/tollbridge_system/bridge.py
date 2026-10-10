@@ -43,6 +43,7 @@ def main():
             conn, addr = s.accept()
             try:
                 data = conn.recv(1024)
+                _persist_telemetry_payload(str(data).encode() if not isinstance(data, bytes) else data)
                 if data:
                     logger.debug(f"Received stream payload from {addr}")
                     conn.sendall(b"HTTP/1.1 200 OK\r\nContent-Length: 2\r\n\r\nOK")

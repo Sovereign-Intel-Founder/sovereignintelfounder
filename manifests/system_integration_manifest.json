@@ -1,0 +1,7 @@
+{
+  "status": "fully_integrated",
+  "primary_listener": "0.0.0.0:8080",
+  "persistence_engine": "SQLite WAL",
+  "total_lanes": 128,
+  "routing_policy": "centralized_single_producer"
+}
