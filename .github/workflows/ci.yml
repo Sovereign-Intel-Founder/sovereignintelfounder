@@ -24,7 +24,7 @@ jobs:
 
     - name: Verify Code Syntax
       run: |
-        python -m py_compile scripts/scripts/toll_bridge_daemon.py
+        python -m py_compile scripts/toll_bridge_daemon.py
 
     - name: SQLite WAL Integrity Check
       run: |
