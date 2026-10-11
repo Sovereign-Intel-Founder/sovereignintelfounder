@@ -1,0 +1,20 @@
+{
+  "node_id": "ashburn-baremetal",
+  "endpoint": "https://detective-standard-airplane-mountains.trycloudflare.com/v1/ingress",
+  "protocol_version": "SIP",
+  "tier": "free",
+  "git_commit": "d002eb2",
+  "hardware_profile": {
+    "architecture": "AMD EPYC",
+    "cores": 128,
+    "ram_gb": 728,
+    "location": "Ashburn, VA"
+  },
+  "os_kernel": "Linux bare-metal",
+  "service_start_timestamp": "2026-10-06T00:00:00Z",
+  "heartbeat_timestamp": "2026-10-11T18:38:00Z",
+  "public_signing_key": "c2cb553af1827ef2a55ec7549a0304d2e89641147c26a48de2e0d0a9d30bdba3",
+  "evidence_manifest_hash": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "expiration_time": "2026-11-06T00:00:00Z",
+  "signature": "a4f7084cd59be7d5bdd8dde0580e73a2155b2e9ffad4ee3c95234808f4ef4b60b1842349dcd2bc3929e8abdaadb7d217675764c92ccf3c20efc44e7ab5474a0f"
+}
