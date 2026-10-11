@@ -81,3 +81,7 @@ node_key.bin
 *.db
 *.db-wal
 *.db-shm
+*.pcap
+ACTIVE_*.txt
+*.egg-info/
+active_gateway.txt

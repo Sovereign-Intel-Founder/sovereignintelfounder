@@ -1,0 +1,8 @@
+
+# Environment & AI Tooling Debris
+.aider*
+.npm/
+*.log
+*.pcap
+ACTIVE_*.txt
+*.egg-info/
