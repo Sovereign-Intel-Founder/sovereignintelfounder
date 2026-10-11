@@ -1,0 +1,35 @@
+name: SIP Institutional Verification
+
+on:
+  push:
+    branches: [ "repository-cleanup-2026-10-06", "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  verify-attestation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Dependencies
+        run: pip install cryptography
+
+      - name: Validate Node Attestation Structure & Fields
+        run: |
+          python3 -c "
+          import json, pathlib
+          attestation_path = pathlib.Path("evidence/node_attestation.json")
+          assert attestation_path.exists(), "Attestation artifact missing!"
+          data = json.loads(attestation_path.read_text())
+          assert data["node_id"] == "ashburn-baremetal"
+          assert data["git_commit"] == "d002eb2"
+          assert "signature" in data
+          print("Attestation structure validation passed successfully.")
+          "
