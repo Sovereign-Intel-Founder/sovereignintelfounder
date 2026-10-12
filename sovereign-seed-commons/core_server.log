@@ -1,0 +1,5 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/home/joshua445/sovereign_workspace/sovereign-seed-commons/commons_bridge/core_server.py", line 5, in <module>
+    from commons_bridge.adapters.json_rpc_adapter import LocalloopbackJsonRpcAdapter
+ModuleNotFoundError: No module named 'commons_bridge'
