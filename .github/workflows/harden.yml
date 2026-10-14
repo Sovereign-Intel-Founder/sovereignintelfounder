@@ -1,0 +1,28 @@
+name: SIP Hardened Binary Pipeline
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Initialize Build Directory
+        run: mkdir -p build
+
+      - name: Execute Hardening & Verification Suite
+        run: |
+          chmod +x validate_hardening.sh
+          ./validate_hardening.sh
+
+      - name: Upload Hardened Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: core_hardened
+          path: build/core_hardened
