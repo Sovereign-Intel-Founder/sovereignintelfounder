@@ -1,0 +1,49 @@
+<<<<<<< HEAD
+name: SIP Pipeline Verify
+=======
+name: SIP Pipeline
+>>>>>>> 6d96890 (refactor: properly organize core engines, ebpfs, tools, and archives for production)
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+<<<<<<< HEAD
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install System Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential gcc sqlite3 libssl-dev
+
+      - name: Execute Unified Local/Remote Pipeline
+        run: |
+          export PYTHONPATH="$PWD/core:$PYTHONPATH"
+          make verify-pipeline
+          ./core/run_benchmarks.sh
+=======
+  pipeline-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install aiohttp requests cryptography
+
+    - name: Verify Daemon Syntax
+      run: |
+        python -m py_compile toll_bridge_daemon.py
+>>>>>>> 6d96890 (refactor: properly organize core engines, ebpfs, tools, and archives for production)
