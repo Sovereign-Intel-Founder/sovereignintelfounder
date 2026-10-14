@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-name: SIP Toll Bridge C Engine Build
-=======
 name: Sovereign Intelligence Protocol CI/CD
 
->>>>>>> 6d96890 (refactor: properly organize core engines, ebpfs, tools, and archives for production)
 on:
   push:
     branches: [ main ]
@@ -14,50 +10,13 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
     steps:
-<<<<<<< HEAD
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Install Dependencies
+      - name: Build and Validate
         run: |
-          sudo apt-get update
-          sudo apt-get install -y build-essential sqlite3 libsqlite3-dev libssl-dev
-
-      - name: Compile Toll Bridge C Engine
-        run: |
-          gcc -O3 -Wall toll_bridge_server.c -o toll_bridge_server -lsqlite3 -lpthread -lcrypto
-
-<<<<<<< HEAD
-      - name: SQLite WAL Integrity Check
-        run: |
-          mkdir -p toll_gate
-          sqlite3 toll_gate/sip_ledger.db "PRAGMA journal_mode=WAL; PRAGMA integrity_check;"
-=======
-    - name: Verify Code Syntax
-      run: |
-        python -m py_compile scripts/toll_bridge_daemon.py
-=======
-    - uses: actions/checkout@v3
-
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-
-    - name: Install Dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install aiohttp requests cryptography
-
-    - name: Verify Code Syntax
-      run: |
-        python -m py_compile toll_bridge_daemon.py
->>>>>>> 6d96890 (refactor: properly organize core engines, ebpfs, tools, and archives for production)
-
-    - name: SQLite WAL Integrity Check
-      run: |
-        mkdir -p toll_gate
-        sqlite3 toll_gate/sip_ledger.db "PRAGMA journal_mode=WAL; PRAGMA integrity_check;"
-<<<<<<< HEAD
->>>>>>> ff73a0555df75888daa6157a5e3f4c25a3accae2
-=======
->>>>>>> 6d96890 (refactor: properly organize core engines, ebpfs, tools, and archives for production)
+          mkdir -p build
+          gcc -O3 -std=c11 -I. -fPIE -pie -fvisibility=hidden -fno-stack-protector -flto core_logic.c -o build/core_hardened
+          strip --strip-all --remove-section=.comment --remove-section=.note.gnu.build-id build/core_hardened
+          chmod +x ./build/core_hardened
+          ./validate_hardening.sh
