@@ -1,0 +1,67 @@
+{
+  "status": "success",
+  "metrics": {
+    "total_components": 7,
+    "active": 0,
+    "stopped": 7
+  },
+  "components": [
+    {
+      "id": 1,
+      "component_name": "gateway_module.py",
+      "file_path": "/home/joshua445/tollbridge_system/gateway_module.py",
+      "file_hash": null,
+      "status": "STOPPED",
+      "last_seen": "2026-08-12 04:22:20"
+    },
+    {
+      "id": 2,
+      "component_name": "payouts_module.py",
+      "file_path": "/home/joshua445/tollbridge_system/payouts_module.py",
+      "file_hash": null,
+      "status": "STOPPED",
+      "last_seen": "2026-08-12 04:22:20"
+    },
+    {
+      "id": 3,
+      "component_name": "master_cluster.py",
+      "file_path": "/home/joshua445/tollbridge_system/master_cluster.py",
+      "file_hash": null,
+      "status": "STOPPED",
+      "last_seen": "2026-08-12 04:22:20"
+    },
+    {
+      "id": 4,
+      "component_name": "ledger_module.py",
+      "file_path": "/home/joshua445/tollbridge_system/ledger_module.py",
+      "file_hash": null,
+      "status": "STOPPED",
+      "last_seen": "2026-08-11 17:39:04"
+    },
+    {
+      "id": 5,
+      "component_name": "bridge.py",
+      "file_path": "/home/joshua445/tollbridge_system/bridge.py",
+      "file_hash": null,
+      "status": "STOPPED",
+      "last_seen": "2026-08-12 04:22:20"
+    },
+    {
+      "id": 6,
+      "component_name": "bridge_mesh.py",
+      "file_path": "/home/joshua445/tollbridge_system/bridge_mesh.py",
+      "file_hash": null,
+      "status": "STOPPED",
+      "last_seen": "2026-08-11 17:39:04"
+    },
+    {
+      "id": 7,
+      "component_name": "deep_swarm_auditor.py",
+      "file_path": "/home/joshua445/tollbridge_system/deep_swarm_auditor.py",
+      "file_hash": null,
+      "status": "STOPPED",
+      "last_seen": "2026-08-11 17:39:04"
+    }
+  ],
+  "recent_logs": []
+}
