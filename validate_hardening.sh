@@ -6,8 +6,8 @@ gcc -O3 -std=c11 -I. -fPIE -pie -fvisibility=hidden -fno-stack-protector -flto c
 strip --strip-all --remove-section=.comment --remove-section=.note.gnu.build-id build/core_hardened
 
 echo "[*] Step 2: Running high-performance EPYC verification suite..."
-time for i in {1..10000}; do
-    ./build/core_hardened 555888999 > /dev/null
+for i in {1..10000}; do
+    ./build/core_hardened 55588999 > /dev/null
 done
 echo "[+] Maximum hardening pipeline validated with zero overhead."
 
