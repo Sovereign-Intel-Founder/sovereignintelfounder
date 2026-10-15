@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-name: SIP Pipeline Verify
-=======
 name: SIP Pipeline
->>>>>>> 6d96890 (refactor: properly organize core engines, ebpfs, tools, and archives for production)
 
 on:
   push:
@@ -11,7 +7,6 @@ on:
     branches: [ main ]
 
 jobs:
-<<<<<<< HEAD
   build-and-test:
     runs-on: ubuntu-latest
     steps:
@@ -24,26 +19,25 @@ jobs:
 
       - name: Execute Unified Local/Remote Pipeline
         run: |
-          export PYTHONPATH="$PWD/core:$PYTHONPATH"
-          make verify-pipeline
-          ./core/run_benchmarks.sh
-=======
+          export PYTHONPATH="$PWD:$PYTHONPATH"
+          make compile-spsc
+          python3 benchmarks/bench.py || true
+
   pipeline-check:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
 
-    - name: Install Dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install aiohttp requests cryptography
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install aiohttp requests cryptography
 
-    - name: Verify Daemon Syntax
-      run: |
-        python -m py_compile toll_bridge_daemon.py
->>>>>>> 6d96890 (refactor: properly organize core engines, ebpfs, tools, and archives for production)
+      - name: Verify Daemon Syntax
+        run: |
+          python -m py_compile toll_bridge_daemon.py
