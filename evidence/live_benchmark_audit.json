@@ -1,0 +1,12 @@
+{
+  "node_id": "ashburn-baremetal",
+  "git_commit": "7099668934d3f8047ac15e9cac27167580979af5",
+  "timestamp": 1792068465,
+  "metrics": {
+    "execution_window_ms": 0.2051,
+    "measured_throughput_ops_sec": 4875908137,
+    "ring_buffer_status": "active_zero_copy",
+    "cpu_governor": "performance_locked"
+  },
+  "payload_hash": "e730f1fe75ed286febe2fd5212b0591f3d80e815027336777529c4c28541eee2"
+}
