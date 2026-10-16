@@ -22,3 +22,13 @@ target/
 sip-verifier/target/
 tunnel.log
 >>>>>>> benchmark-reorganization-2026-10-09
+
+# Curation & Security Hygiene - Never track local vaults or configs
+.ssh/
+.npm/
+bot_vault/
+secure_vault/
+repository-backups/
+bin/
+*.bin
+.aider*
