@@ -13,3 +13,7 @@ A high-performance, low-latency systems infrastructure architecture featuring ba
 ```bash
 make
 ```
+
+## Quick Navigation & Project Map
+* **[Bridge (`bridge/`)](bridge/README.md):** Operational event ingestion and toll bridge routing.
+* **[Component Status Index (`docs/COMPONENT_STATUS.md`)](docs/COMPONENT_STATUS.md):** Detailed maturity breakdown of all subsystems.
