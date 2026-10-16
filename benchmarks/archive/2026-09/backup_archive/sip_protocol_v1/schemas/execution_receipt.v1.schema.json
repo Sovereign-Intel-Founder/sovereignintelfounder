@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sip.execution_receipt.v1",
+  "title": "SIP Execution Receipt v1",
+  "type": "object",
+  "required": [
+    "schema",
+    "receipt_id",
+    "capsule_id",
+    "sequence_number",
+    "source_cell_id",
+    "destination_cell_id",
+    "prev_receipt_hash",
+    "state_hash",
+    "result_hash",
+    "nonce",
+    "expires_at",
+    "created_at",
+    "public_key",
+    "signature"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "sip.execution_receipt.v1"
+    },
+    "receipt_id": {
+      "type": "string",
+      "minLength": 36,
+      "maxLength": 36
+    },
+    "capsule_id": {
+      "type": "string",
+      "minLength": 36,
+      "maxLength": 36
+    },
+    "sequence_number": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "source_cell_id": {
+      "type": "string",
+      "minLength": 8
+    },
+    "destination_cell_id": {
+      "type": "string",
+      "minLength": 8
+    },
+    "prev_receipt_hash": {
+      "type": "string",
+      "pattern": "^([a-f0-9]{64}|null)$"
+    },
+    "state_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "result_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "nonce": {
+      "type": "string",
+      "minLength": 16
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "public_key": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "signature": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{128}$"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,1 @@
+{"benchmark_id": "spsc-bounded-v1", "version": "v1", "run_id": "2026-10-09-run-175141", "timestamp": "2026-m-09T17:51:41Z", "source_commit": "dadef887c926b2d1585f99d8212f3e659d3d2309", "workload_type": "bare_metal", "metrics": {"throughput_eps": 12800000, "p99_latency_ns": 142, "jitter_ns": 12}}

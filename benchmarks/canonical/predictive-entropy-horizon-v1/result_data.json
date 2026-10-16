@@ -1,0 +1,1 @@
+{"benchmark_id": "predictive-entropy-horizon-v1", "workload_type": "real_compiled_c_predictive", "metrics": {"iterations": 5000000, "cycles_per_operation": 19.86, "anomalies_resurrected": 1310, "execution_time_sec": 0.0368}}

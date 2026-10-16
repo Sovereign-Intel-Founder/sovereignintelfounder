@@ -1,0 +1,13 @@
+{
+  "schema_version": "2.0",
+  "capsule_id": "capsule-alpha-01",
+  "task_id": "task-sip-2026-v2",
+  "sequence_number": 1000,
+  "previous_receipt_hash": "6475bea3dcdff405d18284c1404ff423e4f590383c7b7dfb147d8cd64f044fae",
+  "executing_cell": "Cell-B",
+  "final_state": 505497,
+  "final_accumulator": 317502442,
+  "final_result": "2c038937ffd2d37c74648c4f0b7aaee82702061bf25db2b7ffa47203c2709e57",
+  "timestamp": 1790235518.5254767,
+  "signature": "4378675f4b47c0c899031e0f2d55b2c480e68c09573d43eedc04f53ab73b02fbc8f3af40087f5b74fa27bd7169126f2481c6580bafff6e9c23556500be1ca70b"
+}

@@ -1,0 +1,6 @@
+[
+  {"benchmark_id": "spsc-ring-hardened-v2", "ops": 1000000, "sec": 0.007353, "ops_sec": 135992494.30, "producer_cycles": 19029465, "git_sha": "a654982cd16ea450f8f65f14844910b5cac33250", "cpu": "AMD EPYC 9334 32-Core Processor", "timestamp": "2026-10-09T19:04:34Z"}
+  ,{"benchmark_id": "spsc-ring-hardened-v2", "ops": 5000000, "sec": 0.058478, "ops_sec": 85502697.81, "producer_cycles": 156935151, "git_sha": "a654982cd16ea450f8f65f14844910b5cac33250", "cpu": "AMD EPYC 9334 32-Core Processor", "timestamp": "2026-10-09T19:04:34Z"}
+  ,{"benchmark_id": "spsc-ring-hardened-v2", "ops": 10000000, "sec": 0.070716, "ops_sec": 141410209.35, "producer_cycles": 190057158, "git_sha": "a654982cd16ea450f8f65f14844910b5cac33250", "cpu": "AMD EPYC 9334 32-Core Processor", "timestamp": "2026-10-09T19:04:34Z"}
+  ,{"benchmark_id": "spsc-ring-hardened-v2", "ops": 25000000, "sec": 0.192558, "ops_sec": 129831047.69, "producer_cycles": 518489424, "git_sha": "a654982cd16ea450f8f65f14844910b5cac33250", "cpu": "AMD EPYC 9334 32-Core Processor", "timestamp": "2026-10-09T19:04:34Z"}
+]
