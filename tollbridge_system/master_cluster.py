@@ -59,4 +59,11 @@ class ClusterSupervisorDaemon:
 if __name__ == "__main__":
     ledger = EnterpriseLedgerStore()
     ledger.commit_state("cluster_mode", "high-throughput-solana")
-    print(ledger.get_state("cluster_mode"))
+    supervisor = ClusterSupervisorDaemon()
+    print("[ASHBURN-CLUSTER-SUPERVISOR] Master Supervisor Daemon Active. Entering monitoring loop.")
+    try:
+        while True:
+            supervisor.perform_health_check()
+            time.sleep(30)
+    except KeyboardInterrupt:
+        print("Supervisor stopped.")

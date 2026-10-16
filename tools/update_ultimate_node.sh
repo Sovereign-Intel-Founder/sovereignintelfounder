@@ -160,13 +160,4 @@ echo "[+] Daemon PID: $DAEMON_PID"
 
 sleep 1
 
-echo "[+] Starting multi-source traffic generator loop..."
-while true; do
-    # Simulating mixed feeds: JSON RPC / Websocket / System Telemetry
-    echo '{"source":"solana_rpc","event":"mempool_tx","data":"0x7f8a..."}' | nc -w 1 127.0.0.1 9872 >/dev/null 2>&1
-    head -c 128 /dev/urandom > /dev/tcp/127.0.0.1/9872 2>/dev/null || true
-    sleep 0.05
-done &
-STREAM_PID=$!
-
-echo "[+] Ultimate Node Active! Check logs with: tail -f sip_daemon.log"
+echo "[+] Production Node Active (No Simulation)! Check logs with: tail -f sip_daemon.log"

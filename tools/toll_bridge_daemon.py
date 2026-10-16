@@ -78,7 +78,7 @@ def read_afxdp_shm_telemetry():
         return {"afxdp_active": False}
 
 class TollBridgeServer:
-    def __init__(self, host='0.0.0.0', port=8080):
+    def __init__(self, host="0.0.0.0", port=int(os.getenv("PORT", 7998))):
         self.host = host
         self.port = port
         init_db()
@@ -209,3 +209,24 @@ if __name__ == '__main__':
         asyncio.run(daemon.run())
     except KeyboardInterrupt:
         pass
+
+def load_system_manifest():
+    """Dynamically loads and registers active components from system_manifest.json on daemon startup."""
+    import json
+    from pathlib import Path
+    manifest_path = Path("system_manifest.json")
+    if manifest_path.exists():
+        try:
+            with open(manifest_path, "r", encoding="utf-8") as f:
+                manifest = json.load(f)
+            print(f"[+] SIP Daemon successfully loaded system manifest. Status: {manifest.get('status')}")
+            return manifest
+        except Exception as e:
+            print(f"[-] Failed to parse system manifest: {e}")
+    return {}
+
+# Hook manifest loading into database/startup initialization
+try:
+    load_system_manifest()
+except Exception:
+    pass

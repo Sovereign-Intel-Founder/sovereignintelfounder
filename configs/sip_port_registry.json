@@ -1,0 +1,25 @@
+{
+  "ports": {
+    "4021": {"component": "Direct Gateway Ingress", "path": "validate_direct_gateway.py"},
+    "6379": {"component": "Redis Backend", "path": "REDIS_PORT"},
+    "7998": {"component": "SIP Toll Bridge Daemon", "path": "tools/toll_bridge_daemon.py"},
+    "7999": {"component": "Storefront Operational Service", "path": "sip.sh"},
+    "8001": {"component": "Solana Gossip & Orchestrator Node", "path": "deploy_solana.sh"},
+    "8002": {"component": "Benchmark Load / Multi-Feed", "path": "benchmark_load.py"},
+    "8003": {"component": "Broadcast Beacon / Agent Mesh", "path": "broadcast_beacon.py"},
+    "8004": {"component": "Solana Master Engine Target", "path": "sovereign_master_engine.c"},
+    "8080": {"component": "Toll Bridge Ingress API Gateway", "path": "service/ingress/server.py"},
+    "8181": {"component": "Solana Local Test Cluster", "path": "check_and_harden.sh"},
+    "8545": {"component": "Reth Execution Client RPC", "path": "tollbridge_runtime.py"},
+    "8899": {"component": "Solana Validator JSON-RPC", "path": "settle.py"},
+    "9092": {"component": "Core Mesh Indexing / Matcher", "path": "core/mesh/indexing/tests/test_index.py"},
+    "9093": {"component": "Core Mesh Indexing Secondary", "path": "core/mesh/indexing/tests/test_index.py"},
+    "9872": {"component": "SIP Daemon Ingestion Listener", "path": "sip_daemon"},
+    "9999": {"component": "Bot Vault / MCP Registry", "path": "bot_vault/server.py"},
+    "10000": {"component": "Geyser Plugin Telemetry", "path": "geyser-plugin-config.json"},
+    "11434": {"component": "Ollama / Local LLM Inference", "path": "system/ollama"},
+    "20242": {"component": "Cloudflare Tunnel Ingress", "path": "cloudflared"},
+    "28950": {"component": "Ephemeral Mesh Dynamic Route", "path": "ephemeral/mesh"},
+    "32641": {"component": "Ephemeral Test Sockets", "path": "ephemeral/test"}
+  }
+}

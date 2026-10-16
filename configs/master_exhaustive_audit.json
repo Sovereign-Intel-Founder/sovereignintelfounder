@@ -1,0 +1,22 @@
+{
+  "listening_ports_count": 14,
+  "listening_ports": [
+    "tcp   LISTEN 0      128          0.0.0.0:22         0.0.0.0:*    users:((\"sshd\",pid=2494,fd=3))                                                     ",
+    "tcp   LISTEN 0      5            0.0.0.0:8080       0.0.0.0:*    users:((\"python3\",pid=2944813,fd=8))                                               ",
+    "tcp   LISTEN 0      1024         0.0.0.0:8181       0.0.0.0:*    users:((\"solana-test-val\",pid=2967491,fd=63))                                      ",
+    "tcp   LISTEN 0      128          0.0.0.0:8182       0.0.0.0:*    users:((\"solana-test-val\",pid=2967491,fd=72))                                      ",
+    "tcp   LISTEN 0      100          0.0.0.0:7998       0.0.0.0:*    users:((\"python3\",pid=619655,fd=6))                                                ",
+    "tcp   LISTEN 0      2048         0.0.0.0:8003       0.0.0.0:*    users:((\"python3\",pid=1223231,fd=6))                                               ",
+    "tcp   LISTEN 0      128          0.0.0.0:9911       0.0.0.0:*    users:((\"solana-test-val\",pid=2967491,fd=10))                                      ",
+    "tcp   LISTEN 1      4096         0.0.0.0:9872       0.0.0.0:*    users:((\"sip_daemon\",pid=3990306,fd=3))                                            ",
+    "tcp   LISTEN 0      128        127.0.0.1:8000       0.0.0.0:*    users:((\"solana-test-val\",pid=2967491,fd=17))                                      ",
+    "tcp   LISTEN 0      65535      127.0.0.1:11434      0.0.0.0:*    users:((\"ollama\",pid=2469,fd=3))                                                   ",
+    "tcp   LISTEN 0      4096       127.0.0.1:20242      0.0.0.0:*    users:((\"cloudflared\",pid=1223698,fd=9))                                           ",
+    "tcp   LISTEN 0      4096       127.0.0.1:20241      0.0.0.0:*    users:((\"cloudflared\",pid=1223237,fd=9))                                           ",
+    "tcp   LISTEN 0      128             [::]:22            [::]:*    users:((\"sshd\",pid=2494,fd=4))                                                     ",
+    "tcp   LISTEN 0      4096               *:9800             *:*    users:((\"fluidsynth\",pid=2290,fd=6))"
+  ],
+  "total_workspace_files": 108,
+  "active_services_count": 48,
+  "failed_services_count": 0
+}
