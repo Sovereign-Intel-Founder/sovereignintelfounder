@@ -1,0 +1,18 @@
+{
+  "generation": 0,
+  "parent_generation": null,
+  "parent_commit": null,
+  "proposal": null,
+  "pull_request": null,
+  "votes": [],
+  "checks": {
+    "status": "passed",
+    "evaluator": "genesis_chamber"
+  },
+  "artifacts": [
+    "experiments/artifacts/genesis_telemetry.json"
+  ],
+  "merged_commit": "genesis",
+  "release": "v0.1.0-genesis",
+  "signature": "pending_ed25519_signing"
+}

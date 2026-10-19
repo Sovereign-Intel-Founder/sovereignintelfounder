@@ -1,0 +1,12 @@
+[
+  {
+    "node_id": "dam_peer_alpha_12",
+    "status": "SYNCED",
+    "data_slots": 12
+  },
+  {
+    "node_id": "dam_peer_beta_04",
+    "status": "SYNCED",
+    "data_slots": 8
+  }
+]

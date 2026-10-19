@@ -1,0 +1,11 @@
+{
+  "evidence_id": "ev_2026_09_29_ashburn_01",
+  "timestamp": "2026-09-29T10:17:48Z",
+  "node_id": "ashburn-core-01",
+  "metrics": {
+    "events_processed": 12800000,
+    "backpressure_recovery_ms": 1.4,
+    "sharded_lanes": 128
+  },
+  "status": "verified"
+}

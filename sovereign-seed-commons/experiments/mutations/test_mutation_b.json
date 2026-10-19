@@ -1,0 +1,16 @@
+{
+  "mutation_id": "mut-comp-002",
+  "parent_commit": "b0437955e7ecc2abf643d93d3186e7befd6a74b8",
+  "objective": "Run secondary cell mutation objective",
+  "allowed_paths": [
+    "tools/"
+  ],
+  "allowed_commands": [
+    "python3",
+    "-c",
+    "print(\"CELL B EXECUTION OK\")"
+  ],
+  "timeout_seconds": 5,
+  "submission_policy": "local_only",
+  "signature": "f939b3a5cf672d47e28c118fc7b4557926803e3c0aa91c8e671c88d86f9a92ac"
+}

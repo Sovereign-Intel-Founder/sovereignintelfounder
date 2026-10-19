@@ -1,0 +1,16 @@
+{
+  "mutation_id": "mut-p12-cell-beta",
+  "parent_commit": "ffc1ad47076246780087b1a6ce8060af6e70ee2d",
+  "objective": "Execute Independent Beta Cell Pipeline",
+  "allowed_paths": [
+    "tools/"
+  ],
+  "allowed_commands": [
+    "python3",
+    "-c",
+    "print(\"BETA_CELL_EXECUTION_OK\")"
+  ],
+  "timeout_seconds": 5,
+  "submission_policy": "local_only",
+  "signature": "ae4a5121fe3c42fda19ea339cf87af904721f125c6d6fa88395f37989378d3ea"
+}

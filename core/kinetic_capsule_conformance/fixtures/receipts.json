@@ -1,0 +1,17 @@
+{
+  "receipts": [
+    {
+      "schema_version": "2.0",
+      "capsule_id": "capsule-conformance-01",
+      "task_id": "task-sip-conf-2026",
+      "sequence_number": 1000,
+      "previous_receipt_hash": "461f779b417e778ea04f11174e2ba045fcd6cb92304fc2a8ecb7eadc37fc89ca",
+      "executing_cell": "Cell-B",
+      "final_state": 505497,
+      "final_accumulator": 317502442,
+      "final_result": "2c038937ffd2d37c74648c4f0b7aaee82702061bf25db2b7ffa47203c2709e57",
+      "timestamp": 1790233520,
+      "signature": "41a24b5105410d2f8320f367d2d36a54aa78bf7830327a2769b3a54b6b5d68b759f914a90845f8b41dac0c3debc9dd76cce5265932436f9f9ec57199d7f46306"
+    }
+  ]
+}

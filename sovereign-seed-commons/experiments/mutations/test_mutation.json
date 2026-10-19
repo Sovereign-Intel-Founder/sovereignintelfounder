@@ -1,0 +1,16 @@
+{
+  "mutation_id": "mut-comp-001",
+  "parent_commit": "e1b52096dbbc414b853888c4f85b7d4ad205dd3f",
+  "objective": "Run valid test objective",
+  "allowed_paths": [
+    "tools/"
+  ],
+  "allowed_commands": [
+    "python3",
+    "-c",
+    "print('OK')"
+  ],
+  "timeout_seconds": 5,
+  "submission_policy": "local_only",
+  "signature": "d223f4e07ee189849b1d5fe44183ee4afe585a56bc6ea6a1847ee5e881acc2a8"
+}

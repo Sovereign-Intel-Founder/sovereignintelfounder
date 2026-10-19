@@ -1,0 +1,16 @@
+{
+  "mutation_id": "mut-p12-cell-bravo",
+  "parent_commit": "3a45beb364d069caeb29c966caf16dcb1e16d792",
+  "objective": "P12 Multi-Cell Network Execution - Cell Bravo",
+  "allowed_paths": [
+    "tools/"
+  ],
+  "allowed_commands": [
+    "python3",
+    "-c",
+    "print('CELL_BRAVO_SUCCESS')"
+  ],
+  "timeout_seconds": 5,
+  "submission_policy": "local_only",
+  "signature": "3f62965358797eef63630449795089cad6ed51a80cb7004ea29853bf6bf0e70d"
+}

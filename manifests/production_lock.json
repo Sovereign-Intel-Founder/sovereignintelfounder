@@ -1,0 +1,7 @@
+{
+  "system": "Sovereign Intelligence Protocol",
+  "node": "ashburn-baremetal",
+  "listener": "0.0.0.0:8080",
+  "persistence": "SQLite WAL Shards",
+  "status": "PRODUCTION_LOCKED"
+}

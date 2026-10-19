@@ -1,0 +1,16 @@
+{
+  "mutation_id": "mut-p12-cell-alpha",
+  "parent_commit": "ffc1ad47076246780087b1a6ce8060af6e70ee2d",
+  "objective": "Execute Independent Alpha Cell Pipeline",
+  "allowed_paths": [
+    "tools/"
+  ],
+  "allowed_commands": [
+    "python3",
+    "-c",
+    "print(\"ALPHA_CELL_EXECUTION_OK\")"
+  ],
+  "timeout_seconds": 5,
+  "submission_policy": "local_only",
+  "signature": "07b8200e44dde1986e26ca7b63b3e006d701261222518e93087bd7ab35c9b3cc"
+}

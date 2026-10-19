@@ -1,0 +1,28 @@
+[build-system]
+<<<<<<< HEAD
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sovereign-intelligence-protocol"
+version = "0.1.0"
+dependencies = [
+    "cryptography>=38.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+=======
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sip_remote_handoff"
+version = "0.1.0"
+dependencies = [
+    "cryptography>=40.0.0",
+]
+
+[tool.setuptools]
+packages = ["sip_remote_handoff"]
+>>>>>>> benchmark-reorganization-2026-10-09

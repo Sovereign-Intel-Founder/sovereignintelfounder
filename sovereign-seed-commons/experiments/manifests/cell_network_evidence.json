@@ -1,0 +1,20 @@
+{
+  "opt_in_manifest": {
+    "cell_identity": "@research_cell_alpha",
+    "opt_in_timestamp": "2026-09-22T16:55:48Z",
+    "protocol_version": "Sovereign Seed Commons v1.0",
+    "status": "OPTED_IN"
+  },
+  "opt_in_signature": "a97d73bb6452301e24730ac855402ee7bca9c328df4cf1155caf2e28b30ec8c9",
+  "evidence_return": {
+    "cell_identity": "@research_cell_alpha",
+    "task_id": "task-mutation-099",
+    "execution_status": "SUCCESS",
+    "metrics": {
+      "events_processed": 133000,
+      "latency_p99_us": 14.2
+    },
+    "timestamp": "2026-09-22T16:55:48Z"
+  },
+  "evidence_signature": "3e8557455eedb698b0e03c82635539b3f290d3a1b78b178df8ebc4350a6ba43f"
+}

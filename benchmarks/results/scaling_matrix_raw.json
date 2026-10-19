@@ -1,0 +1,1568 @@
+[
+  {
+    "mode": "in-memory",
+    "concurrency": 32,
+    "runs": [
+      {
+        "concurrency": 32,
+        "mode": "in-memory",
+        "metrics": {
+          "submitted": 32,
+          "accepted": 32,
+          "completed": 32,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 84539.53,
+        "drain_time_sec": 0.0004,
+        "latency_ms": {
+          "p50": 0.1222,
+          "p95": 0.1546,
+          "p99": 0.1643,
+          "p99.9": 0.1643,
+          "max": 0.1643
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 32,
+        "mode": "in-memory",
+        "metrics": {
+          "submitted": 32,
+          "accepted": 32,
+          "completed": 32,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 88666.29,
+        "drain_time_sec": 0.0004,
+        "latency_ms": {
+          "p50": 0.1145,
+          "p95": 0.1287,
+          "p99": 0.1387,
+          "p99.9": 0.1387,
+          "max": 0.1387
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 32,
+        "mode": "in-memory",
+        "metrics": {
+          "submitted": 32,
+          "accepted": 32,
+          "completed": 32,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 109311.56,
+        "drain_time_sec": 0.0003,
+        "latency_ms": {
+          "p50": 0.1048,
+          "p95": 0.1153,
+          "p99": 0.1207,
+          "p99.9": 0.1207,
+          "max": 0.1207
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      }
+    ]
+  },
+  {
+    "mode": "in-memory",
+    "concurrency": 128,
+    "runs": [
+      {
+        "concurrency": 128,
+        "mode": "in-memory",
+        "metrics": {
+          "submitted": 128,
+          "accepted": 128,
+          "completed": 128,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 113431.84,
+        "drain_time_sec": 0.0011,
+        "latency_ms": {
+          "p50": 0.4169,
+          "p95": 0.5351,
+          "p99": 0.5429,
+          "p99.9": 0.5486,
+          "max": 0.5486
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 128,
+        "mode": "in-memory",
+        "metrics": {
+          "submitted": 128,
+          "accepted": 128,
+          "completed": 128,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 130579.17,
+        "drain_time_sec": 0.001,
+        "latency_ms": {
+          "p50": 0.3941,
+          "p95": 0.4776,
+          "p99": 0.4861,
+          "p99.9": 0.4905,
+          "max": 0.4905
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 128,
+        "mode": "in-memory",
+        "metrics": {
+          "submitted": 128,
+          "accepted": 128,
+          "completed": 128,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 133687.87,
+        "drain_time_sec": 0.001,
+        "latency_ms": {
+          "p50": 0.3854,
+          "p95": 0.468,
+          "p99": 0.4772,
+          "p99.9": 0.4819,
+          "max": 0.4819
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      }
+    ]
+  },
+  {
+    "mode": "in-memory",
+    "concurrency": 512,
+    "runs": [
+      {
+        "concurrency": 512,
+        "mode": "in-memory",
+        "metrics": {
+          "submitted": 512,
+          "accepted": 512,
+          "completed": 512,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 112311.41,
+        "drain_time_sec": 0.0046,
+        "latency_ms": {
+          "p50": 2.1667,
+          "p95": 2.5786,
+          "p99": 2.6091,
+          "p99.9": 2.6215,
+          "max": 2.6215
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 512,
+        "mode": "in-memory",
+        "metrics": {
+          "submitted": 512,
+          "accepted": 512,
+          "completed": 512,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 133431.85,
+        "drain_time_sec": 0.0038,
+        "latency_ms": {
+          "p50": 1.6551,
+          "p95": 1.9613,
+          "p99": 1.9898,
+          "p99.9": 2.0031,
+          "max": 2.0031
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 512,
+        "mode": "in-memory",
+        "metrics": {
+          "submitted": 512,
+          "accepted": 512,
+          "completed": 512,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 131168.88,
+        "drain_time_sec": 0.0039,
+        "latency_ms": {
+          "p50": 1.727,
+          "p95": 2.0315,
+          "p99": 2.0614,
+          "p99.9": 2.0755,
+          "max": 2.0755
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      }
+    ]
+  },
+  {
+    "mode": "in-memory",
+    "concurrency": 2048,
+    "runs": [
+      {
+        "concurrency": 2048,
+        "mode": "in-memory",
+        "metrics": {
+          "submitted": 2048,
+          "accepted": 2048,
+          "completed": 2048,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 93477.48,
+        "drain_time_sec": 0.0219,
+        "latency_ms": {
+          "p50": 12.1257,
+          "p95": 13.936,
+          "p99": 14.0498,
+          "p99.9": 14.0751,
+          "max": 14.083
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 2048,
+        "mode": "in-memory",
+        "metrics": {
+          "submitted": 2048,
+          "accepted": 2048,
+          "completed": 2048,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 126068.62,
+        "drain_time_sec": 0.0162,
+        "latency_ms": {
+          "p50": 7.0845,
+          "p95": 8.7727,
+          "p99": 8.8895,
+          "p99.9": 8.9164,
+          "max": 8.9233
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 2048,
+        "mode": "in-memory",
+        "metrics": {
+          "submitted": 2048,
+          "accepted": 2048,
+          "completed": 2048,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 129849.63,
+        "drain_time_sec": 0.0158,
+        "latency_ms": {
+          "p50": 6.5587,
+          "p95": 8.2789,
+          "p99": 8.3875,
+          "p99.9": 8.4134,
+          "max": 8.4216
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      }
+    ]
+  },
+  {
+    "mode": "in-memory",
+    "concurrency": 8192,
+    "runs": [
+      {
+        "concurrency": 8192,
+        "mode": "in-memory",
+        "metrics": {
+          "submitted": 8192,
+          "accepted": 8192,
+          "completed": 8192,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 107383.6,
+        "drain_time_sec": 0.0763,
+        "latency_ms": {
+          "p50": 31.0017,
+          "p95": 37.8299,
+          "p99": 38.3195,
+          "p99.9": 38.41,
+          "max": 38.4273
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 8192,
+        "mode": "in-memory",
+        "metrics": {
+          "submitted": 8192,
+          "accepted": 8192,
+          "completed": 8192,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 112200.49,
+        "drain_time_sec": 0.073,
+        "latency_ms": {
+          "p50": 29.1874,
+          "p95": 35.2595,
+          "p99": 35.9369,
+          "p99.9": 36.032,
+          "max": 36.0518
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 8192,
+        "mode": "in-memory",
+        "metrics": {
+          "submitted": 8192,
+          "accepted": 8192,
+          "completed": 8192,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 102222.98,
+        "drain_time_sec": 0.0801,
+        "latency_ms": {
+          "p50": 37.1068,
+          "p95": 43.4124,
+          "p99": 43.9297,
+          "p99.9": 44.0329,
+          "max": 44.0511
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      }
+    ]
+  },
+  {
+    "mode": "in-memory",
+    "concurrency": 16384,
+    "runs": [
+      {
+        "concurrency": 16384,
+        "mode": "in-memory",
+        "metrics": {
+          "submitted": 16384,
+          "accepted": 16384,
+          "completed": 16384,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 98814.27,
+        "drain_time_sec": 0.1658,
+        "latency_ms": {
+          "p50": 77.8472,
+          "p95": 90.4524,
+          "p99": 91.4644,
+          "p99.9": 91.6476,
+          "max": 91.6821
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 16384,
+        "mode": "in-memory",
+        "metrics": {
+          "submitted": 16384,
+          "accepted": 16384,
+          "completed": 16384,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 91028.13,
+        "drain_time_sec": 0.18,
+        "latency_ms": {
+          "p50": 80.768,
+          "p95": 104.5188,
+          "p99": 105.5368,
+          "p99.9": 105.7196,
+          "max": 105.7527
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 16384,
+        "mode": "in-memory",
+        "metrics": {
+          "submitted": 16384,
+          "accepted": 16384,
+          "completed": 16384,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 94970.86,
+        "drain_time_sec": 0.1725,
+        "latency_ms": {
+          "p50": 78.7555,
+          "p95": 91.3205,
+          "p99": 92.27,
+          "p99.9": 92.4663,
+          "max": 92.5019
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      }
+    ]
+  },
+  {
+    "mode": "cpu-pipeline",
+    "concurrency": 32,
+    "runs": [
+      {
+        "concurrency": 32,
+        "mode": "cpu-pipeline",
+        "metrics": {
+          "submitted": 32,
+          "accepted": 32,
+          "completed": 32,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 8074.8,
+        "drain_time_sec": 0.004,
+        "latency_ms": {
+          "p50": 0.1517,
+          "p95": 0.238,
+          "p99": 0.2854,
+          "p99.9": 0.2854,
+          "max": 0.2854
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 32,
+        "mode": "cpu-pipeline",
+        "metrics": {
+          "submitted": 32,
+          "accepted": 32,
+          "completed": 32,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 78388.19,
+        "drain_time_sec": 0.0004,
+        "latency_ms": {
+          "p50": 0.1654,
+          "p95": 0.226,
+          "p99": 0.2446,
+          "p99.9": 0.2446,
+          "max": 0.2446
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 32,
+        "mode": "cpu-pipeline",
+        "metrics": {
+          "submitted": 32,
+          "accepted": 32,
+          "completed": 32,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 82549.88,
+        "drain_time_sec": 0.0004,
+        "latency_ms": {
+          "p50": 0.1484,
+          "p95": 0.2085,
+          "p99": 0.2298,
+          "p99.9": 0.2298,
+          "max": 0.2298
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      }
+    ]
+  },
+  {
+    "mode": "cpu-pipeline",
+    "concurrency": 128,
+    "runs": [
+      {
+        "concurrency": 128,
+        "mode": "cpu-pipeline",
+        "metrics": {
+          "submitted": 128,
+          "accepted": 128,
+          "completed": 128,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 92501.18,
+        "drain_time_sec": 0.0014,
+        "latency_ms": {
+          "p50": 0.5859,
+          "p95": 0.8699,
+          "p99": 0.8926,
+          "p99.9": 0.9123,
+          "max": 0.9123
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 128,
+        "mode": "cpu-pipeline",
+        "metrics": {
+          "submitted": 128,
+          "accepted": 128,
+          "completed": 128,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 92222.22,
+        "drain_time_sec": 0.0014,
+        "latency_ms": {
+          "p50": 0.6235,
+          "p95": 0.8524,
+          "p99": 0.8769,
+          "p99.9": 0.8971,
+          "max": 0.8971
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 128,
+        "mode": "cpu-pipeline",
+        "metrics": {
+          "submitted": 128,
+          "accepted": 128,
+          "completed": 128,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 92947.87,
+        "drain_time_sec": 0.0014,
+        "latency_ms": {
+          "p50": 0.6295,
+          "p95": 0.8458,
+          "p99": 0.8694,
+          "p99.9": 0.884,
+          "max": 0.884
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      }
+    ]
+  },
+  {
+    "mode": "cpu-pipeline",
+    "concurrency": 512,
+    "runs": [
+      {
+        "concurrency": 512,
+        "mode": "cpu-pipeline",
+        "metrics": {
+          "submitted": 512,
+          "accepted": 512,
+          "completed": 512,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 95396.52,
+        "drain_time_sec": 0.0054,
+        "latency_ms": {
+          "p50": 2.4037,
+          "p95": 3.3918,
+          "p99": 3.4688,
+          "p99.9": 3.508,
+          "max": 3.508
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 512,
+        "mode": "cpu-pipeline",
+        "metrics": {
+          "submitted": 512,
+          "accepted": 512,
+          "completed": 512,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 95341.9,
+        "drain_time_sec": 0.0054,
+        "latency_ms": {
+          "p50": 2.3431,
+          "p95": 3.2141,
+          "p99": 3.2884,
+          "p99.9": 3.3306,
+          "max": 3.3306
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 512,
+        "mode": "cpu-pipeline",
+        "metrics": {
+          "submitted": 512,
+          "accepted": 512,
+          "completed": 512,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 97570.62,
+        "drain_time_sec": 0.0052,
+        "latency_ms": {
+          "p50": 2.3401,
+          "p95": 3.2057,
+          "p99": 3.2804,
+          "p99.9": 3.323,
+          "max": 3.323
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      }
+    ]
+  },
+  {
+    "mode": "cpu-pipeline",
+    "concurrency": 2048,
+    "runs": [
+      {
+        "concurrency": 2048,
+        "mode": "cpu-pipeline",
+        "metrics": {
+          "submitted": 2048,
+          "accepted": 2048,
+          "completed": 2048,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 95244.17,
+        "drain_time_sec": 0.0215,
+        "latency_ms": {
+          "p50": 9.4326,
+          "p95": 13.442,
+          "p99": 13.7505,
+          "p99.9": 13.8188,
+          "max": 13.8481
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 2048,
+        "mode": "cpu-pipeline",
+        "metrics": {
+          "submitted": 2048,
+          "accepted": 2048,
+          "completed": 2048,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 79782.31,
+        "drain_time_sec": 0.0257,
+        "latency_ms": {
+          "p50": 9.4819,
+          "p95": 13.347,
+          "p99": 13.661,
+          "p99.9": 13.7316,
+          "max": 13.7624
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 2048,
+        "mode": "cpu-pipeline",
+        "metrics": {
+          "submitted": 2048,
+          "accepted": 2048,
+          "completed": 2048,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 95968.69,
+        "drain_time_sec": 0.0213,
+        "latency_ms": {
+          "p50": 9.6473,
+          "p95": 13.2108,
+          "p99": 13.5104,
+          "p99.9": 13.5792,
+          "max": 13.6101
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      }
+    ]
+  },
+  {
+    "mode": "cpu-pipeline",
+    "concurrency": 8192,
+    "runs": [
+      {
+        "concurrency": 8192,
+        "mode": "cpu-pipeline",
+        "metrics": {
+          "submitted": 8192,
+          "accepted": 8192,
+          "completed": 8192,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 87906.35,
+        "drain_time_sec": 0.0932,
+        "latency_ms": {
+          "p50": 40.2345,
+          "p95": 55.0303,
+          "p99": 56.2208,
+          "p99.9": 56.4713,
+          "max": 56.5316
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 8192,
+        "mode": "cpu-pipeline",
+        "metrics": {
+          "submitted": 8192,
+          "accepted": 8192,
+          "completed": 8192,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 79090.63,
+        "drain_time_sec": 0.1036,
+        "latency_ms": {
+          "p50": 49.1714,
+          "p95": 64.2586,
+          "p99": 65.5293,
+          "p99.9": 65.7992,
+          "max": 65.8658
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 8192,
+        "mode": "cpu-pipeline",
+        "metrics": {
+          "submitted": 8192,
+          "accepted": 8192,
+          "completed": 8192,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 84646.96,
+        "drain_time_sec": 0.0968,
+        "latency_ms": {
+          "p50": 40.504,
+          "p95": 63.6992,
+          "p99": 64.9337,
+          "p99.9": 65.1946,
+          "max": 65.259
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      }
+    ]
+  },
+  {
+    "mode": "cpu-pipeline",
+    "concurrency": 16384,
+    "runs": [
+      {
+        "concurrency": 16384,
+        "mode": "cpu-pipeline",
+        "metrics": {
+          "submitted": 16384,
+          "accepted": 16384,
+          "completed": 16384,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 69397.33,
+        "drain_time_sec": 0.2361,
+        "latency_ms": {
+          "p50": 116.3747,
+          "p95": 159.7851,
+          "p99": 162.4836,
+          "p99.9": 163.015,
+          "max": 163.1185
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 16384,
+        "mode": "cpu-pipeline",
+        "metrics": {
+          "submitted": 16384,
+          "accepted": 16384,
+          "completed": 16384,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 75118.97,
+        "drain_time_sec": 0.2181,
+        "latency_ms": {
+          "p50": 103.5151,
+          "p95": 132.3382,
+          "p99": 134.9931,
+          "p99.9": 135.5136,
+          "max": 135.6133
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 16384,
+        "mode": "cpu-pipeline",
+        "metrics": {
+          "submitted": 16384,
+          "accepted": 16384,
+          "completed": 16384,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 69972.19,
+        "drain_time_sec": 0.2342,
+        "latency_ms": {
+          "p50": 110.7689,
+          "p95": 152.0881,
+          "p99": 154.5344,
+          "p99.9": 155.0528,
+          "max": 155.1551
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      }
+    ]
+  },
+  {
+    "mode": "durable-pipeline",
+    "concurrency": 32,
+    "runs": [
+      {
+        "concurrency": 32,
+        "mode": "durable-pipeline",
+        "metrics": {
+          "submitted": 32,
+          "accepted": 32,
+          "completed": 32,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 8235.79,
+        "drain_time_sec": 0.0039,
+        "latency_ms": {
+          "p50": 0.1199,
+          "p95": 0.1248,
+          "p99": 0.1257,
+          "p99.9": 0.1257,
+          "max": 0.1257
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 32,
+        "mode": "durable-pipeline",
+        "metrics": {
+          "submitted": 32,
+          "accepted": 32,
+          "completed": 32,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 23507.58,
+        "drain_time_sec": 0.0014,
+        "latency_ms": {
+          "p50": 1.1752,
+          "p95": 1.1981,
+          "p99": 1.205,
+          "p99.9": 1.205,
+          "max": 1.205
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 32,
+        "mode": "durable-pipeline",
+        "metrics": {
+          "submitted": 32,
+          "accepted": 32,
+          "completed": 32,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 23653.27,
+        "drain_time_sec": 0.0014,
+        "latency_ms": {
+          "p50": 1.167,
+          "p95": 1.1918,
+          "p99": 1.1969,
+          "p99.9": 1.1969,
+          "max": 1.1969
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      }
+    ]
+  },
+  {
+    "mode": "durable-pipeline",
+    "concurrency": 128,
+    "runs": [
+      {
+        "concurrency": 128,
+        "mode": "durable-pipeline",
+        "metrics": {
+          "submitted": 128,
+          "accepted": 128,
+          "completed": 128,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 121782.42,
+        "drain_time_sec": 0.0011,
+        "latency_ms": {
+          "p50": 0.3968,
+          "p95": 0.5282,
+          "p99": 0.5362,
+          "p99.9": 0.5418,
+          "max": 0.5418
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 128,
+        "mode": "durable-pipeline",
+        "metrics": {
+          "submitted": 128,
+          "accepted": 128,
+          "completed": 128,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 132018.41,
+        "drain_time_sec": 0.001,
+        "latency_ms": {
+          "p50": 0.3829,
+          "p95": 0.4551,
+          "p99": 0.4632,
+          "p99.9": 0.4679,
+          "max": 0.4679
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 128,
+        "mode": "durable-pipeline",
+        "metrics": {
+          "submitted": 128,
+          "accepted": 128,
+          "completed": 128,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 133053.38,
+        "drain_time_sec": 0.001,
+        "latency_ms": {
+          "p50": 0.3833,
+          "p95": 0.4543,
+          "p99": 0.463,
+          "p99.9": 0.4681,
+          "max": 0.4681
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      }
+    ]
+  },
+  {
+    "mode": "durable-pipeline",
+    "concurrency": 512,
+    "runs": [
+      {
+        "concurrency": 512,
+        "mode": "durable-pipeline",
+        "metrics": {
+          "submitted": 512,
+          "accepted": 512,
+          "completed": 512,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 128554.58,
+        "drain_time_sec": 0.004,
+        "latency_ms": {
+          "p50": 1.6501,
+          "p95": 2.0305,
+          "p99": 2.0575,
+          "p99.9": 2.0702,
+          "max": 2.0702
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 512,
+        "mode": "durable-pipeline",
+        "metrics": {
+          "submitted": 512,
+          "accepted": 512,
+          "completed": 512,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 132516.66,
+        "drain_time_sec": 0.0039,
+        "latency_ms": {
+          "p50": 1.6345,
+          "p95": 1.9523,
+          "p99": 1.9817,
+          "p99.9": 1.9944,
+          "max": 1.9944
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 512,
+        "mode": "durable-pipeline",
+        "metrics": {
+          "submitted": 512,
+          "accepted": 512,
+          "completed": 512,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 131640.39,
+        "drain_time_sec": 0.0039,
+        "latency_ms": {
+          "p50": 1.6216,
+          "p95": 1.9297,
+          "p99": 1.957,
+          "p99.9": 1.9693,
+          "max": 1.9693
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      }
+    ]
+  },
+  {
+    "mode": "durable-pipeline",
+    "concurrency": 2048,
+    "runs": [
+      {
+        "concurrency": 2048,
+        "mode": "durable-pipeline",
+        "metrics": {
+          "submitted": 2048,
+          "accepted": 2048,
+          "completed": 2048,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 123665.17,
+        "drain_time_sec": 0.0166,
+        "latency_ms": {
+          "p50": 7.3653,
+          "p95": 8.8336,
+          "p99": 8.9446,
+          "p99.9": 8.9678,
+          "max": 8.9761
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 2048,
+        "mode": "durable-pipeline",
+        "metrics": {
+          "submitted": 2048,
+          "accepted": 2048,
+          "completed": 2048,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 124476.35,
+        "drain_time_sec": 0.0165,
+        "latency_ms": {
+          "p50": 7.1348,
+          "p95": 8.7966,
+          "p99": 8.9085,
+          "p99.9": 8.934,
+          "max": 8.9426
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 2048,
+        "mode": "durable-pipeline",
+        "metrics": {
+          "submitted": 2048,
+          "accepted": 2048,
+          "completed": 2048,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 97805.77,
+        "drain_time_sec": 0.0209,
+        "latency_ms": {
+          "p50": 7.0041,
+          "p95": 8.68,
+          "p99": 8.7891,
+          "p99.9": 8.815,
+          "max": 8.8236
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      }
+    ]
+  },
+  {
+    "mode": "durable-pipeline",
+    "concurrency": 8192,
+    "runs": [
+      {
+        "concurrency": 8192,
+        "mode": "durable-pipeline",
+        "metrics": {
+          "submitted": 8192,
+          "accepted": 8192,
+          "completed": 8192,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 113590.32,
+        "drain_time_sec": 0.0721,
+        "latency_ms": {
+          "p50": 29.2027,
+          "p95": 41.9602,
+          "p99": 42.6453,
+          "p99.9": 42.7377,
+          "max": 42.7548
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 8192,
+        "mode": "durable-pipeline",
+        "metrics": {
+          "submitted": 8192,
+          "accepted": 8192,
+          "completed": 8192,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 110451.62,
+        "drain_time_sec": 0.0742,
+        "latency_ms": {
+          "p50": 29.0204,
+          "p95": 35.1651,
+          "p99": 35.6606,
+          "p99.9": 35.7622,
+          "max": 35.7813
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 8192,
+        "mode": "durable-pipeline",
+        "metrics": {
+          "submitted": 8192,
+          "accepted": 8192,
+          "completed": 8192,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 109358.56,
+        "drain_time_sec": 0.0749,
+        "latency_ms": {
+          "p50": 29.5508,
+          "p95": 35.6368,
+          "p99": 36.1235,
+          "p99.9": 36.2156,
+          "max": 36.235
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      }
+    ]
+  },
+  {
+    "mode": "durable-pipeline",
+    "concurrency": 16384,
+    "runs": [
+      {
+        "concurrency": 16384,
+        "mode": "durable-pipeline",
+        "metrics": {
+          "submitted": 16384,
+          "accepted": 16384,
+          "completed": 16384,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 96040.06,
+        "drain_time_sec": 0.1706,
+        "latency_ms": {
+          "p50": 77.8002,
+          "p95": 89.7194,
+          "p99": 90.9688,
+          "p99.9": 91.1413,
+          "max": 91.1703
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 16384,
+        "mode": "durable-pipeline",
+        "metrics": {
+          "submitted": 16384,
+          "accepted": 16384,
+          "completed": 16384,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 99050.41,
+        "drain_time_sec": 0.1654,
+        "latency_ms": {
+          "p50": 61.3942,
+          "p95": 87.2608,
+          "p99": 88.5505,
+          "p99.9": 88.7337,
+          "max": 88.7612
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      },
+      {
+        "concurrency": 16384,
+        "mode": "durable-pipeline",
+        "metrics": {
+          "submitted": 16384,
+          "accepted": 16384,
+          "completed": 16384,
+          "failed": 0,
+          "missing": 0,
+          "duplicates": 0,
+          "queue_overflow": false
+        },
+        "throughput_events_sec": 87489.35,
+        "drain_time_sec": 0.1873,
+        "latency_ms": {
+          "p50": 81.449,
+          "p95": 93.9778,
+          "p99": 94.9072,
+          "p99.9": 95.0954,
+          "max": 95.1292
+        },
+        "environment": {
+          "platform": "Linux-6.1.0-52-amd64-x86_64-with-glibc2.36",
+          "cpu_count": 128,
+          "runtime": "3.11.2"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "mutation_id": "mut-p12-cell-alpha",
+  "parent_commit": "3a45beb364d069caeb29c966caf16dcb1e16d792",
+  "objective": "P12 Multi-Cell Network Execution - Cell Alpha",
+  "allowed_paths": [
+    "tools/"
+  ],
+  "allowed_commands": [
+    "python3",
+    "-c",
+    "print('CELL_ALPHA_SUCCESS')"
+  ],
+  "timeout_seconds": 5,
+  "submission_policy": "local_only",
+  "signature": "f55d1e3cefbd871e23d0bffc08194190783216913af5b6a3fd9b1b6a23f79dc8"
+}

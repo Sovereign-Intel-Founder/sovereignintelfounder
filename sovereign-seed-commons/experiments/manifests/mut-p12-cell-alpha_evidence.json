@@ -1,0 +1,12 @@
+{
+  "mutation_id": "mut-p12-cell-alpha",
+  "cell_id": "cell-local",
+  "commit": "ffc1ad47076246780087b1a6ce8060af6e70ee2d",
+  "result": {
+    "exit_code": 0,
+    "stdout": "ALPHA_CELL_EXECUTION_OK\n",
+    "stderr": ""
+  },
+  "timestamp": 1790099769.0343935,
+  "signature": "89d5da8a43aa0616f565e6a3ae20c8e54a7e5c6bb5783e19b6104a1ecb56863a"
+}

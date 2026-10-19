@@ -1,0 +1,12 @@
+{
+  "mutation_id": "mut-p11-real-execution",
+  "cell_id": "cell-local",
+  "commit": "2d2feac3c47af2beb75fbd54a4015982ded68de8",
+  "result": {
+    "exit_code": 0,
+    "stdout": "P11_REAL_MUTATION_EXECUTED_OK\n",
+    "stderr": ""
+  },
+  "timestamp": 1790100619.4915636,
+  "signature": "3b3e16cfbd229b548a9b269aaa3bbf2a7c713f9dff866034475ca230735b2b3e"
+}

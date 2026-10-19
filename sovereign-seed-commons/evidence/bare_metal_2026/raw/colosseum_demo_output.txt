@@ -1,0 +1,49 @@
+Sovereign Seed Commons — Offline-First Utility Mesh
+=== HARDWARE CONTEXT ===
+Host Architecture: AMD EPYC Bare-Metal Server
+CPU Cores: 128 cores
+RAM: 728 GB RAM
+OS Environment: Debian/Linux
+Location: Ashburn, Virginia (documented host location)
+Note: Workloads run on isolated pinned core subsets, not all 128 cores simultaneously.
+
+[STEP 1] REAL EXECUTABLE WORKLOAD
+Workload computed successfully. Iterations: 500,000 | Duration: 17585.85 us
+
+[STEP 2] REAL SIGNED TASK MANIFESTS
+Manifest verified: evidence/bare_metal_2026/experiment_matrix.md
+SHA-256 Checksum: f3bbf3b41ba074f28d573b0df285f09d5c6413e2a8b09b4bbd7ff5c5032965fa
+
+[STEP 3] REAL PROCESS/CELL HANDOFF
+Handoff queue populated with 1000 sequenced records.
+
+[STEP 4] REAL INDEPENDENT VERIFICATION
+Independent verification passed: 1000 records verified in sequence.
+
+[STEP 5] REAL TAMPER REJECTION
+Tamper/Anomaly successfully caught: Discontinuity or missing sequence flagged immediately.
+
+[STEP 6] REAL CHECKPOINT RECOVERY
+Checkpoint restored successfully from build/checkpoint_state.json
+Resumed at sequence pointer: 999
+
+[STEP 7] REAL EVIDENCE RECEIPT
+Evidence receipt generated and stored locally under evidence/bare_metal_2026/raw/
+
+[STEP 8] MEASURED PERFORMANCE REPORT
+--- EXP-01 EVIDENCE ---
+Note: Single-thread synthetic push measurement, not end-to-end handoff saturation.
+
+--- EXP-02 EVIDENCE ---
+ID:EXP-02-C64-R1 | Cap:64 | Sub:1000000 | Acc:1000000 | Rej:5179 | Comp:1000000 | Status:COMPLETED
+ID:EXP-02-C64-R2 | Cap:64 | Sub:1000000 | Acc:1000000 | Rej:2184 | Comp:1000000 | Status:COMPLETED
+ID:EXP-02-C64-R3 | Cap:64 | Sub:1000000 | Acc:1000000 | Rej:7273 | Comp:1000000 | Status:COMPLETED
+ID:EXP-02-C1024-R1 | Cap:1024 | Sub:1000000 | Acc:1000000 | Rej:59 | Comp:1000000 | Status:COMPLETED
+ID:EXP-02-C1024-R2 | Cap:1024 | Sub:1000000 | Acc:1000000 | Rej:112 | Comp:1000000 | Status:COMPLETED
+ID:EXP-02-C1024-R3 | Cap:1024 | Sub:1000000 | Acc:1000000 | Rej:52 | Comp:1000000 | Status:COMPLETED
+ID:EXP-02-C65536-R1 | Cap:65536 | Sub:1000000 | Acc:1000000 | Rej:0 | Comp:1000000 | Status:COMPLETED
+ID:EXP-02-C65536-R2 | Cap:65536 | Sub:1000000 | Acc:1000000 | Rej:0 | Comp:1000000 | Status:COMPLETED
+ID:EXP-02-C65536-R3 | Cap:65536 | Sub:1000000 | Acc:1000000 | Rej:0 | Comp:1000000 | Status:COMPLETED
+
+STATUS: OFFLINE SYNTHETIC DEMONSTRATION COMPLETE
+SCOPE: UTILITY VALIDATION; NOT LIVE-DATA OR PRODUCTION VALIDATION

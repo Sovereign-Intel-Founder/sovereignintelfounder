@@ -1,0 +1,1 @@
+{"benchmark_id": "numa-cross-fabric-latency-v1", "version": "v1", "run_id": "2026-10-09-run-180936", "timestamp": "2026-m-09T18:09:36Z", "source_commit": "9b7decef83b89ee0f562d36df6ab32c642f37569", "workload_type": "bare_metal_numa", "metrics": {"cross_node_latency_ns": 32.4, "interconnect_bandwidth_gbps": 384.6, "coherency_stalls_pct": 0.01}}

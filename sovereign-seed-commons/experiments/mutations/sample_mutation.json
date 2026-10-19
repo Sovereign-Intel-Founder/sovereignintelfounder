@@ -1,0 +1,19 @@
+{
+  "mutation_id": "mut-test-001",
+  "parent_commit": "81f5077c1a2f9c1cec4bcbfe9fb73f42819ea8e9",
+  "objective": "Run local verification test",
+  "allowed_paths": [
+    "tools/"
+  ],
+  "allowed_commands": [
+    "python3",
+    "-c",
+    "print('OK')"
+  ],
+  "timeout_seconds": 5,
+  "memory_limit": "512MB",
+  "workload_seed": 42,
+  "output_schema": "json",
+  "submission_policy": "local_only",
+  "signature": "d3a0392ecc42dd6b68b56906c17d80448202eba48ab3acce4b564bad4a8bc97c"
+}

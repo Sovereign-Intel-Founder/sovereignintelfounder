@@ -1,0 +1,12 @@
+{
+  "mutation_id": "mut-p12-cell-beta",
+  "cell_id": "cell-local",
+  "commit": "ffc1ad47076246780087b1a6ce8060af6e70ee2d",
+  "result": {
+    "exit_code": 0,
+    "stdout": "BETA_CELL_EXECUTION_OK\n",
+    "stderr": ""
+  },
+  "timestamp": 1790099769.08086,
+  "signature": "6a5dc8f5e3182866e2fc28a184bd56446b3f1bf3c55ea7549824da7e20f5e5b4"
+}

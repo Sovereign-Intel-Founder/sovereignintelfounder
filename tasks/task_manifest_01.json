@@ -1,0 +1,6 @@
+{
+  "task_id": "TASK-2026-001",
+  "target": "ashburn_node_0",
+  "action": "execute_spsc_benchmark",
+  "timeout_ms": 5000
+}

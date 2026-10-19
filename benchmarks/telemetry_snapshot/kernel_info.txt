@@ -1,0 +1,2 @@
+Linux s12590275 6.1.0-52-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.180-1 (2026-08-03) x86_64 GNU/Linux
+PREEMPT_RT: Standard/Patched

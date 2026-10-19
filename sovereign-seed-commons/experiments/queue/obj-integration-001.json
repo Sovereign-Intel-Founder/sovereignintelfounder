@@ -1,0 +1,7 @@
+{
+  "objective_id": "obj-integration-001",
+  "action": "verify_lineage",
+  "parameters": {
+    "target": "memory/"
+  }
+}

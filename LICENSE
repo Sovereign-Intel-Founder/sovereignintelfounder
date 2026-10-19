@@ -1,0 +1,42 @@
+<<<<<<< HEAD
+SOVEREIGN INTELLIGENCE PROTOCOL (SIP)
+SOURCE-AVAILABLE EVALUATION & COMMERCIAL LICENSE
+
+Copyright (c) 2026 Sovereign Intelligence Protocol. All rights reserved.
+
+1. GRANT OF EVALUATION RIGHTS
+Subject to the terms of this License, Sovereign Intelligence Protocol ("Licensor") grants you a free, non-exclusive, worldwide, revocable license to view, download, inspect, copy, and run the software locally for the purposes of development, testing, benchmarking, and internal evaluation.
+
+2. COMMERCIAL PRODUCTION RESTRICTIONS
+You are strictly prohibited from using, packaging, embedding, or operating this software within a commercial production environment, managed service, cloud-hosted node infrastructure, or paid API relay without an active commercial subscription agreement or written authorization from Licensor.
+
+3. MODIFICATION AND REDISTRIBUTION
+You may modify or create derivative works of this software for internal evaluation and development purposes. However, public redistribution of modified or unmodified source binaries as a competing hosted node service or commercial SaaS offering is expressly forbidden.
+
+4. NO WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+5. COMMERCIAL LICENSING INQUIRIES
+To obtain commercial production rights, enterprise node licenses, or subscription support agreements, contact Sovereign Intelligence Protocol directly.
+=======
+MIT License
+
+Copyright (c) 2026 Sovereign Intelligence Protocol
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY FROMIGN, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+>>>>>>> benchmark-reorganization-2026-10-09

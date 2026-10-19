@@ -1,0 +1,6 @@
+{
+  "status": "ACTIVE",
+  "node_slots_registered": 12,
+  "engine_pid": 2075071,
+  "mesh_transport": "omni_mesh_engine.py"
+}
